@@ -80,10 +80,11 @@
 
 ---
 
-## 📸 Sample Screenshots (Add if available)
+![image](https://github.com/user-attachments/assets/d45b0aab-6317-4689-a637-262994cb9d67)
+![image](https://github.com/user-attachments/assets/7bc86a58-78a7-4b69-b3d4-015b70f5f5a7)
+![image](https://github.com/user-attachments/assets/9719a01a-e794-4eaa-bfee-2cb836170783)![image](https://github.com/user-attachments/assets/ae9dc69a-5a83-46c4-8700-28714ae85535)![image](https://github.com/user-attachments/assets/3620a070-2339-49db-833e-7ab42e7bc77b)
 
-- Chatbot interface showing emergency detection
-- Visual dashboards (Radar chart, Stress vs Age, Bar plots)
+
 
 ---
 
