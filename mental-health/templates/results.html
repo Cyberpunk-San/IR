@@ -1,0 +1,275 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-10 mx-auto">
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h3 class="mb-0">Your Stress Analysis Results</h3>
+            </div>
+            
+            <div class="card-body">
+                <!-- Stress Level Summary -->
+                <div class="alert alert-{% if stress_level > 7 %}danger{% elif stress_level > 4 %}warning{% else %}success{% endif %}">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="alert-heading mb-0">
+                            <i class="fas fa-heartbeat me-2"></i>
+                            Stress Level: {{ stress_level }}/10 
+                            <span class="badge bg-dark ms-2">{{ stress_category }}</span>
+                        </h4>
+                        <span class="badge bg-{% if stress_level > 7 %}danger{% elif stress_level > 4 %}warning{% else %}success{% endif %}">
+                            {% if stress_level > 7 %}High Risk{% elif stress_level > 4 %}Moderate Risk{% else %}Low Risk{% endif %}
+                        </span>
+                    </div>
+                    <hr>
+                    <p class="mb-0">
+                        {% if stress_level > 7 %}
+                        <i class="fas fa-exclamation-triangle me-1"></i> Your stress levels are significantly elevated
+                        {% elif stress_level > 4 %}
+                        <i class="fas fa-info-circle me-1"></i> Your stress levels are moderately elevated
+                        {% else %}
+                        <i class="fas fa-check-circle me-1"></i> Your stress levels are well managed
+                        {% endif %}
+                    </p>
+                </div>
+
+                <!-- Visualization Section -->
+                <div class="card mb-4 border-{% if stress_level > 7 %}danger{% elif stress_level > 4 %}warning{% else %}success{% endif %}">
+                    <div class="card-header bg-light">
+                        <h4 class="mb-0">
+                            <i class="fas fa-chart-bar me-2"></i>
+                            Stress Analysis Dashboard
+                        </h4>
+                    </div>
+                    <div class="card-body p-0">
+                        {% if visualization %}
+                            <img src="data:image/png;base64,{{ visualization }}" 
+                                    class="img-fluid w-100" 
+                                    alt="Stress Analysis Visualization"
+                                    style="border-radius: 0 0 0.25rem 0.25rem;">
+                        {% else %}
+                            <div class="alert alert-warning m-3">
+                                <i class="fas fa-exclamation-circle me-2"></i>
+                                Visualization could not be generated. Showing textual results below.
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <!-- Health Metrics Table -->
+                <div class="card mb-4">
+                    <div class="card-header bg-light">
+                        <h4 class="mb-0">
+                            <i class="fas fa-clipboard-list me-2"></i>
+                            Health Metrics Breakdown
+                        </h4>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Metric</th>
+                                        <th>Your Value</th>
+                                        <th>Healthy Range</th>
+                                        <th>Status</th>
+                                        <th class="text-end">Impact</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for factor, (value, low, high, unit) in health_factors.items() %}
+                                    <tr>
+                                        <td>{{ factor }}</td>
+                                        <td>
+                                            <strong>{{ value }}{{ unit }}</strong>
+                                            {% if factor == 'Sleep Duration' and value < 7 %}
+                                                <i class="fas fa-moon text-warning ms-1" title="Insufficient sleep"></i>
+                                            {% elif factor == 'Physical Activity' and value < 30 %}
+                                                <i class="fas fa-running text-warning ms-1" title="Low activity"></i>
+                                            {% endif %}
+                                        </td>
+                                        <td>{{ low }}-{{ high }}{{ unit }}</td>
+                                        <td>
+                                            <span class="badge rounded-pill bg-{% if value < low or value > high %}warning{% else %}success{% endif %}">
+                                                {% if value < low %}Below{% elif value > high %}Above{% else %}Optimal{% endif %}
+                                            </span>
+                                        </td>
+                                        <td class="text-end">
+                                            {% if factor in ['Sleep Duration', 'Physical Activity'] %}
+                                                {% if value < low %}
+                                                    <span class="text-danger">+{{ ((low - value)/low*20)|round(1) }}% stress</span>
+                                                {% elif value > high %}
+                                                    <span class="text-warning">+{{ ((value - high)/high*10)|round(1) }}% stress</span>
+                                                {% else %}
+                                                    <span class="text-success">Optimal</span>
+                                                {% endif %}
+                                            {% else %}
+                                                {% if value < low or value > high %}
+                                                    <span class="text-warning">Potential risk</span>
+                                                {% else %}
+                                                    <span class="text-success">Normal</span>
+                                                {% endif %}
+                                            {% endif %}
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="card mb-4 border-primary">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">
+                            <i class="fas fa-lightbulb me-2"></i>
+                            Personalized Recommendations
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">
+                                            <i class="fas fa-heartbeat me-2"></i>
+                                            Stress Management
+                                        </h5>
+                                        <ul class="list-group list-group-flush">
+                                            {% for recommendation in recommendations %}
+                                                {% if loop.index <= (recommendations|length / 2)|round(0, 'ceil') %}
+                                                    <li class="list-group-item">
+                                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                                        {{ recommendation }}
+                                                    </li>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 border-0">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">
+                                            <i class="fas fa-chart-line me-2"></i>
+                                            Health Improvement
+                                        </h5>
+                                        <ul class="list-group list-group-flush">
+                                            {% for recommendation in recommendations %}
+                                                {% if loop.index > (recommendations|length / 2)|round(0, 'ceil') %}
+                                                    <li class="list-group-item">
+                                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                                        {{ recommendation }}
+                                                    </li>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Data & Actions -->
+                <div class="card">
+                    <div class="card-header bg-light">
+                        <h4 class="mb-0">
+                            <i class="fas fa-user-circle me-2"></i>
+                            Your Submission Details
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Gender:</span>
+                                        <strong>{{ user_data.gender }}</strong>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Age:</span>
+                                        <strong>{{ user_data.age }} years</strong>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Blood Pressure:</span>
+                                        <strong>{{ user_data.blood_pressure }}</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Sleep Duration:</span>
+                                        <strong>{{ user_data.sleep_duration }} hours</strong>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Physical Activity:</span>
+                                        <strong>{{ user_data.activity }} minutes</strong>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <span>Heart Rate:</span>
+                                        <strong>{{ user_data.heart_rate }} bpm</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white">
+                        <div class="d-flex justify-content-between">
+                            <a href="{{ url_for('stress_analyzer') }}" class="btn btn-outline-primary">
+                                <i class="fas fa-redo me-2"></i>Analyze Again
+                            </a>
+                            <div>
+                                <a href="{{ url_for('home') }}" class="btn btn-outline-secondary me-2">
+                                    <i class="fas fa-home me-2"></i>Return Home
+                                </a>
+                                <button class="btn btn-primary" onclick="window.print()">
+                                    <i class="fas fa-print me-2"></i>Print Report
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+
+<style>
+    .card {
+        box-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 50, 0.15);
+    }
+    .card-header {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
+    .table th {
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+    }
+    .list-group-item {
+        border-left: 0;
+        border-right: 0;
+    }
+    @media print {
+        .card-header {
+            background-color: white !important;
+            color: black !important;
+        }
+        .btn {
+            display: none !important;
+        }
+    }
+</style>
+{% endblock %}
