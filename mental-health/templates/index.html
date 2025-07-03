@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto text-center">
+        <h1 class="display-4 mb-4">Your Mental Wellness Companion</h1>
+        <p class="lead">Empowering you with tools for stress analysis, mental health support, and personalized recommendations </p>
+        
+        <div class="row mt-5">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Mental Health Chatbot</h5>
+                        <p class="card-text">Ask questions about mental health and get supportive answers.</p>
+                        <a href="{{ url_for('chatbot_interface') }}" class="btn btn-primary">Start Chatting</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Stress Analyzer</h5>
+                        <p class="card-text">Get insights about your stress level based on health metrics.</p>
+                        <a href="{{ url_for('stress_analyzer') }}" class="btn btn-primary">Analyze Stress</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

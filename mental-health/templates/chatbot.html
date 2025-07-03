@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h3>Mental Health Chatbot</h3>
+            </div>
+            <div class="card-body">
+                <div id="chat-container" style="height: 400px; overflow-y: scroll; margin-bottom: 20px; border: 1px solid #ddd; padding: 10px;">
+                    <div class="bot-message">Hello! I'm here to help with mental health questions. How can I assist you today?</div>
+                </div>
+                
+                <form id="chat-form">
+                    <div class="input-group">
+                        <input type="text" id="user-input" class="form-control" placeholder="Type your question here..." required>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+                
+                <div class="alert alert-warning mt-3">
+                    <strong>Emergency Help:</strong> If you're in crisis, type words like "suicide" or "self-harm" to get immediate help.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.getElementById('chat-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const userInput = document.getElementById('user-input');
+    const chatContainer = document.getElementById('chat-container');
+    
+    // Add user message to chat
+    const userMessage = document.createElement('div');
+    userMessage.className = 'user-message text-end mb-2';
+    userMessage.innerHTML = `<strong>You:</strong> ${userInput.value}`;
+    chatContainer.appendChild(userMessage);
+    
+    // Scroll to bottom
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+    
+    // Send to server
+    fetch('/chatbot', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `user_input=${encodeURIComponent(userInput.value)}`
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Add bot response to chat
+        const botMessage = document.createElement('div');
+        botMessage.className = 'bot-message mb-2';
+        botMessage.innerHTML = `<strong>Assistant:</strong> ${data.response.replace(/\n/g, '<br>')}`;
+        chatContainer.appendChild(botMessage);
+        
+        // Add feedback buttons
+        if (!data.response.includes('🚨')) { // Don't show feedback for emergency responses
+            const feedbackDiv = document.createElement('div');
+            feedbackDiv.className = 'feedback-buttons mb-3';
+            feedbackDiv.innerHTML = `
+                <small>Was this helpful?</small>
+                <button class="btn btn-sm btn-success feedback-btn" data-rating="5">👍</button>
+                <button class="btn btn-sm btn-warning feedback-btn" data-rating="3">😐</button>
+                <button class="btn btn-sm btn-danger feedback-btn" data-rating="1">👎</button>
+            `;
+            chatContainer.appendChild(feedbackDiv);
+            
+            // Add event listeners to feedback buttons
+            document.querySelectorAll('.feedback-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const rating = this.getAttribute('data-rating');
+                    const query = userInput.value;
+                    const answer = data.response;
+                    
+                    fetch('/feedback', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            query: query,
+                            answer: answer,
+                            rating: rating
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            const feedbackMsg = document.createElement('div');
+                            feedbackMsg.className = 'text-muted small';
+                            feedbackMsg.textContent = 'Thank you for your feedback!';
+                            feedbackDiv.appendChild(feedbackMsg);
+                            
+                            // Disable buttons after feedback
+                            document.querySelectorAll('.feedback-btn').forEach(b => {
+                                b.disabled = true;
+                            });
+                        }
+                    });
+                });
+            });
+        }
+        
+        // Scroll to bottom
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+        
+        // Clear input
+        userInput.value = '';
+    });
+});
+</script>
+<style>
+    .user-message {
+        background-color:rgba(227, 242, 253, 0.02);
+        padding: 8px;
+        border-radius: 10px;
+        margin-left: 20%;
+    }
+    .bot-message {
+        background-color:rgba(245, 245, 245, 0.23);
+        padding: 8px;
+        border-radius: 10px;
+        margin-right: 20%;
+    }
+    .feedback-buttons {
+        text-align: center;
+    }
+    .feedback-btn {
+        margin: 0 2px;
+    }
+</style>
+{% endblock %}
