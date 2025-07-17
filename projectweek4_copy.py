@@ -105,7 +105,7 @@ class MentalHealthChatbot:
         self.bm25 = BM25Okapi(tokenized_faqs)
         
         # Sentence-BERT
-        self.bert_model = SentenceTransformer('all-MiniLM-L6-v2')
+        self.bert_model = SentenceTransformer('paraphrase-MiniLM-L3-v2')
         self.bert_embeddings = self.bert_model.encode(self.faq_df['Questions'])
         try:
             if os.path.exists('user_feedback.csv'):
