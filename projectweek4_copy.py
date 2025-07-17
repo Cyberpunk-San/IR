@@ -13,6 +13,11 @@ import warnings
 from sklearn.metrics import ndcg_score
 warnings.filterwarnings('ignore')
 import os
+
+nltk.download('punkt')
+nltk.download('stopwords') 
+nltk.download('wordnet') 
+
 class MentalHealthChatbot:
     def __init__(self):
         # Initialize emergency keywords
