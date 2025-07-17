@@ -13,7 +13,6 @@ class StressAnalyzer:
         self._train_models()
     
     def _load_data(self):
-        """Load dataset with error handling"""
         try:
             df = pd.read_csv('Sleep_health_and_lifestyle_dataset.csv')
             required_columns = ['Gender', 'Age', 'Sleep Duration', 'Physical Activity Level',
@@ -23,7 +22,6 @@ class StressAnalyzer:
             return df[required_columns]
         except Exception as e:
             print(f"Error loading data: {str(e)}")
-            # Create empty dataframe with required columns if file not found
             return pd.DataFrame(columns=required_columns)
     
     def _preprocess_data(self):
@@ -176,13 +174,13 @@ class StressAnalyzer:
             x = np.arange(len(factors))
             width = 0.25
             
-            # Plot healthy ranges
+            # PlotTING healthy ranges
             ax3.bar(x - width, [f[1] for f in factors.values()], 
                     width, label='Healthy Min', color='lightgreen', edgecolor='darkgreen')
             ax3.bar(x + width, [f[2] for f in factors.values()], 
                     width, label='Healthy Max', color='lightgreen', edgecolor='darkgreen')
             
-            # Plot user values with color coding
+            # PlotTING user values with color coding
             colors = ['green' if low <= v <= high else 'red' 
                     for v, low, high in factors.values()]
             ax3.bar(x, [f[0] for f in factors.values()], 
@@ -210,12 +208,12 @@ class StressAnalyzer:
             except:
                 group_avg = 5.0  # Fallback if any error occurs
                 
-            # Plot comparison
+            # PlotTING comparison
             bars = ax4.bar(['Your Age Group Avg', 'Your Stress'], 
                         [group_avg, stress_level], 
                         color=['lightblue', stress_color])
             
-            # Add value labels
+            # value labels
             for bar in bars:
                 height = bar.get_height()
                 ax4.text(bar.get_x() + bar.get_width()/2., height,
@@ -232,12 +230,10 @@ class StressAnalyzer:
 
         except Exception as e:
             print(f"[ERROR] Visualization generation failed: {str(e)}")
-            # Return simple error figure
             fig = plt.figure(figsize=(12, 6))
             plt.text(0.5, 0.5, "Could not generate visualizations\nError: " + str(e),
                     ha='center', va='center', color='red')
             return fig
 
-# For testing
 if __name__ == "__main__":
     analyzer = StressAnalyzer()

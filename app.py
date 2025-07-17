@@ -199,6 +199,27 @@ def show_visualizations():
     
     return render_template('visualizations.html', stress_dist_img=img1, stress_age_img=img2)
 
+@app.route('/feedback', methods=['POST'])
+def handle_feedback():
+    try:
+        data = request.get_json()
+        query = data.get('query')
+        answer = data.get('answer')
+        rating = int(data.get('rating'))
+        
+        chatbot.user_feedback.append({
+            'query': query,
+            'answer': answer,
+            'rating': rating,
+            'timestamp': datetime.datetime.now()
+        })
+        
+        if len(chatbot.user_feedback) % 5 == 0:  
+            pd.DataFrame(chatbot.user_feedback).to_csv('user_feedback.csv', index=False)
+        
+        return jsonify({'success': True})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 400
+
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(debug=True)

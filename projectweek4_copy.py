@@ -12,7 +12,7 @@ from sentence_transformers import SentenceTransformer
 import warnings
 from sklearn.metrics import ndcg_score
 warnings.filterwarnings('ignore')
-
+import os
 class MentalHealthChatbot:
     def __init__(self):
         # Initialize emergency keywords
@@ -27,12 +27,12 @@ class MentalHealthChatbot:
         self._setup_retrieval_models()
         self.user_feedback = []
         
-        # Localized emergency resources (now includes India)
+        # Localized emergency resources 
         self.local_resources = {
             'India': {
-                'helpline': '9152987821',  # Vandrevala Foundation
-                'text': '85258',          # Crisis Text Line India
-                'emergency': '112',        # National Emergency Number
+                'helpline': '9152987821',  
+                'text': '85258',         
+                'emergency': '112',        
                 'additional': [
                     '044-24640050 (SNEHA Foundation)',
                     '022-25521111 (Aasra)'
@@ -59,7 +59,6 @@ class MentalHealthChatbot:
             f"• Emergency: Dial {self.local_resources['India']['emergency']}\n"
             f"• Additional Help:\n   - {self.local_resources['India']['additional'][0]}\n"
             f"   - {self.local_resources['India']['additional'][1]}\n\n"
-            "Would you like me to connect you to a counselor now? (yes/no)"
         )
 
     # ==================== FAQ SYSTEM ====================
@@ -76,7 +75,7 @@ class MentalHealthChatbot:
         lemmatizer = WordNetLemmatizer()
         stop_words = set(stopwords.words('english'))
         
-        # Handle mental health specific terms
+        
         mental_health_terms = {
             'depressed': 'depression',
             'anxious': 'anxiety',
@@ -86,7 +85,7 @@ class MentalHealthChatbot:
         processed_tokens = []
         for word in tokens:
             if word.isalpha() and word not in stop_words:
-                word = mental_health_terms.get(word, word)  # Normalize synonyms
+                word = mental_health_terms.get(word, word)  
                 processed_tokens.append(lemmatizer.lemmatize(word))
         return " ".join(processed_tokens)
     
@@ -103,6 +102,11 @@ class MentalHealthChatbot:
         # Sentence-BERT
         self.bert_model = SentenceTransformer('all-MiniLM-L6-v2')
         self.bert_embeddings = self.bert_model.encode(self.faq_df['Questions'])
+        try:
+            if os.path.exists('user_feedback.csv'):
+                self.user_feedback = pd.read_csv('user_feedback.csv').to_dict('records')
+        except Exception as e:
+            print(f"Error loading feedback: {str(e)}")
     
     def get_answer(self, question, top_k=3):
         """First check for emergency keywords"""
@@ -127,7 +131,7 @@ class MentalHealthChatbot:
             self.bert_embeddings
         ).flatten()
         
-        # Combine scores (adjust weights as needed)
+        # Combine scores 
         combined_scores = 0.4*bm25_scores + 0.3*tfidf_scores + 0.3*bert_scores
         
         # Get top answers
@@ -142,7 +146,7 @@ class MentalHealthChatbot:
         # Log interaction
         self._log_interaction(question, top_answers[0][0])
         
-        return top_answers[0][0] if combined_scores[top_idx[0]] > 0.5 else "I'm not sure I understand. Could you provide more details?"
+        return top_answers[0][0] if combined_scores[top_idx[0]] > 0.5 else "Oh interesting, but I'm not sure I understand. Could you provide more details?"
     
     def _log_interaction(self, query, selected_answer):
         """Store user interactions for improvement"""

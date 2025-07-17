@@ -132,9 +132,9 @@
                 </form>
             </div>
             
-            <div class="card-footer bg-light">
-                <small class="text-muted">
-                    <i class="fas fa-info-circle me-1"></i>
+            <div class="card-footer bg-light" style="background-color: rgba(248, 249, 250, 0.15);">
+                <small class="text-muted" style="font-size: 0.8rem , text-color: #666;">
+                    <i class="fas fa-info-circle me-1" style="background-color: rgba(248, 249, 250, 0.15);"></i>
                     Your data is processed securely and never stored permanently.
                 </small>
             </div>
@@ -193,9 +193,12 @@ document.addEventListener('DOMContentLoaded', function() {
     .form-control-lg, .form-select-lg {
         padding: 0.75rem 1rem;
         font-size: 1.05rem;
+        background-color: rgba(248, 249, 250, 0.14);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
     }
     .input-group-text {
-        background-color: #f8f9fa;
+        background-color:rgba(248, 249, 250, 0.14);
     }
     .form-text {
         font-size: 0.85rem;
@@ -203,6 +206,30 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     .invalid-feedback {
         font-size: 0.9rem;
+    }
+    /* Gender dropdown - matches your existing dark blue */
+    select {
+        background-color: #001a33;
+        color: white;
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    select option {
+        background-color: #001a33;
+        color: white;
+    }
+
+    /* Dark mode adjustment */
+    @media (prefers-color-scheme: dark) {
+        select {
+            background-color: #0d3b66;
+        }
+        select option {
+            background-color: #0d3b66;
+        }
     }
 </style>
 {% endblock %}

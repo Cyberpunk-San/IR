@@ -60,6 +60,54 @@ document.getElementById('chat-form').addEventListener('submit', function(e) {
         botMessage.innerHTML = `<strong>Assistant:</strong> ${data.response.replace(/\n/g, '<br>')}`;
         chatContainer.appendChild(botMessage);
         
+        // Add feedback buttons
+        if (!data.response.includes('🚨')) { // Don't show feedback for emergency responses
+            const feedbackDiv = document.createElement('div');
+            feedbackDiv.className = 'feedback-buttons mb-3';
+            feedbackDiv.innerHTML = `
+                <small>Was this helpful?</small>
+                <button class="btn btn-sm btn-success feedback-btn" data-rating="5">👍</button>
+                <button class="btn btn-sm btn-warning feedback-btn" data-rating="3">😐</button>
+                <button class="btn btn-sm btn-danger feedback-btn" data-rating="1">👎</button>
+            `;
+            chatContainer.appendChild(feedbackDiv);
+            
+            // Add event listeners to feedback buttons
+            document.querySelectorAll('.feedback-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const rating = this.getAttribute('data-rating');
+                    const query = userInput.value;
+                    const answer = data.response;
+                    
+                    fetch('/feedback', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            query: query,
+                            answer: answer,
+                            rating: rating
+                        })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            const feedbackMsg = document.createElement('div');
+                            feedbackMsg.className = 'text-muted small';
+                            feedbackMsg.textContent = 'Thank you for your feedback!';
+                            feedbackDiv.appendChild(feedbackMsg);
+                            
+                            // Disable buttons after feedback
+                            document.querySelectorAll('.feedback-btn').forEach(b => {
+                                b.disabled = true;
+                            });
+                        }
+                    });
+                });
+            });
+        }
+        
         // Scroll to bottom
         chatContainer.scrollTop = chatContainer.scrollHeight;
         
@@ -68,4 +116,24 @@ document.getElementById('chat-form').addEventListener('submit', function(e) {
     });
 });
 </script>
+<style>
+    .user-message {
+        background-color:rgba(227, 242, 253, 0.02);
+        padding: 8px;
+        border-radius: 10px;
+        margin-left: 20%;
+    }
+    .bot-message {
+        background-color:rgba(245, 245, 245, 0.23);
+        padding: 8px;
+        border-radius: 10px;
+        margin-right: 20%;
+    }
+    .feedback-buttons {
+        text-align: center;
+    }
+    .feedback-btn {
+        margin: 0 2px;
+    }
+</style>
 {% endblock %}
