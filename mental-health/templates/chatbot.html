@@ -1,0 +1,559 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card">
+            <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <h3 class="mb-0">Mental Health Chatbot</h3>
+                <div class="d-flex align-items-center gap-2">
+                    <button type="button" class="btn btn-sm btn-info" data-bs-toggle="modal" data-bs-target="#modelInfoModal">
+                        Model Info
+                    </button>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="ragToggle" checked>
+                        <label class="form-check-label text-white" for="ragToggle">RAG Mode</label>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div id="chat-container" style="height: 400px; overflow-y: scroll; margin-bottom: 20px; border: 1px solid #ddd; padding: 10px; background-color: #f8f9fa;">
+                    <div class="bot-message">
+                        <strong>Assistant:</strong> Hello! I'm here to help with mental health questions. How can I assist you today?
+                    </div>
+                </div>
+                
+                <form id="chat-form">
+                    <div class="input-group">
+                        <input type="text" id="user-input" class="form-control" placeholder="Type your question here..." required>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </form>
+                
+                <div class="alert alert-warning mt-3">
+                    <strong>Emergency Help:</strong> If you're in crisis, type words like "suicide" or "self-harm" to get immediate India-specific helplines.
+                </div>
+                
+                <div class="mt-2 text-muted small">
+                    <span id="model-status">RAG Mode: AI-generated responses enabled (FLAN-T5-small)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modelInfoModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title">Mann-o-meter Model Architecture</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="model-info-content" class="p-3">
+                    <div class="text-center">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p>Loading model information...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+
+document.getElementById('modelInfoModal').addEventListener('show.bs.modal', function() {
+    const contentDiv = document.getElementById('model-info-content');
+    
+    fetch('/api/model-info')
+        .then(response => response.json())
+        .then(data => {
+            let html = '';
+            
+            if (data.error) {
+                html = `<div class="alert alert-danger">Error: ${data.error}</div>`;
+            } else {
+                html += `
+                    <div class="card mb-3">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0">Retrieval Models (Hybrid Search)</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="text-center mb-2">
+                                        <span class="badge bg-primary">TF-IDF</span>
+                                    </div>
+                                    <p class="small">Traditional bag-of-words model that matches keywords</p>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-primary" style="width: ${data.retrieval_models.weights['TF-IDF']*100}%">
+                                            Weight: ${data.retrieval_models.weights['TF-IDF']}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-center mb-2">
+                                        <span class="badge bg-success">BM25</span>
+                                    </div>
+                                    <p class="small">Advanced term frequency model for better keyword matching</p>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-success" style="width: ${data.retrieval_models.weights.BM25*100}%">
+                                            Weight: ${data.retrieval_models.weights.BM25}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-center mb-2">
+                                        <span class="badge bg-warning text-dark">BERT</span>
+                                    </div>
+                                    <p class="small">Sentence-BERT (all-MiniLM-L6-v2) for semantic understanding</p>
+                                    <div class="progress mb-2">
+                                        <div class="progress-bar bg-warning text-dark" style="width: ${data.retrieval_models.weights.BERT*100}%">
+                                            Weight: ${data.retrieval_models.weights.BERT}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                if (data.generation_model) {
+                    const gen = data.generation_model;
+                    html += `
+                        <div class="card mb-3">
+                            <div class="card-header bg-success text-white">
+                                <h5 class="mb-0">Generation Model (RAG)</h5>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-sm">
+                                    <tr>
+                                        <th style="width: 150px;">Model Name:</th>
+                                        <td><code>${gen.name}</code></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Type:</th>
+                                        <td>${gen.type}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Parameters:</th>
+                                        <td><span class="badge bg-info">${gen.parameters}</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Context Window:</th>
+                                        <td>${gen.max_length} tokens</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Training:</th>
+                                        <td>${gen.training}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>License:</th>
+                                        <td><span class="badge bg-success">${gen.source}</span></td>
+                                    </tr>
+                                </table>
+                                <p class="text-muted mt-2 small">
+                                    <strong>Note:</strong> FLAN-T5 is fine-tuned on thousands of tasks, making it effective for mental health conversations while being lightweight enough to run on CPU.
+                                </p>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                html += `
+                    <div class="card">
+                        <div class="card-header bg-secondary text-white">
+                            <h5 class="mb-0">How RAG Works</h5>
+                        </div>
+                        <div class="card-body">
+                            <ol class="small">
+                                <li><strong>Retrieve:</strong> Your question is matched against FAQ database using hybrid search (TF-IDF + BM25 + BERT)</li>
+                                <li><strong>Rank:</strong> Top relevant FAQs are selected based on weighted scores</li>
+                                <li><strong>Generate:</strong> FLAN-T5 creates a natural, empathetic response using the retrieved context</li>
+                                <li><strong>Fallback:</strong> If generation fails, returns direct FAQ match or supportive message</li>
+                            </ol>
+                        </div>
+                    </div>
+                `;
+            }
+            
+            contentDiv.innerHTML = html;
+        })
+        .catch(error => {
+            contentDiv.innerHTML = `<div class="alert alert-danger">Error loading model info: ${error}</div>`;
+        });
+});
+
+document.getElementById('chat-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const userInput = document.getElementById('user-input');
+    const chatContainer = document.getElementById('chat-container');
+    const userMessage = userInput.value.trim();
+    
+    if (!userMessage) return;
+    
+    const userMessageDiv = document.createElement('div');
+    userMessageDiv.className = 'user-message mb-2';
+    userMessageDiv.innerHTML = `<strong>You:</strong> ${escapeHtml(userMessage)}`;
+    chatContainer.appendChild(userMessageDiv);
+    
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+    
+    const typingDiv = document.createElement('div');
+    typingDiv.className = 'bot-message typing-indicator mb-2';
+    typingDiv.innerHTML = `<strong>Assistant:</strong> <em>typing...</em>`;
+    chatContainer.appendChild(typingDiv);
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+    
+    fetch('/chatbot', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `user_input=${encodeURIComponent(userMessage)}`
+    })
+    .then(response => response.json())
+    .then(data => {
+        chatContainer.removeChild(typingDiv);
+        
+        const botMessageDiv = document.createElement('div');
+        botMessageDiv.className = 'bot-message mb-2';
+        
+        let messageHtml = '<strong>Assistant:</strong> ';
+        
+        if (data.type === 'emergency') {
+            messageHtml += `<span class="emergency-text">${escapeHtml(data.text).replace(/\n/g, '<br>')}</span>`;
+            botMessageDiv.classList.add('emergency-message');
+        } 
+        else if (data.type === 'generated') {
+            messageHtml += `
+                <div class="generated-response">
+                    ${escapeHtml(data.text).replace(/\n/g, '<br>')}
+                </div>
+                <div class="mt-2 small">
+                    <span class="badge bg-info">AI Generated (FLAN-T5-small)</span>
+                    <span class="badge bg-secondary">Confidence: ${(data.confidence * 100).toFixed(1)}%</span>
+                </div>
+            `;
+            
+            if (data.context_used && data.context_used.length > 0) {
+                messageHtml += `
+                    <div class="mt-2">
+                        <small class="text-muted">
+                            <details>
+                                <summary>Sources used</summary>
+                                <ul class="mt-1">
+                                    ${data.context_used.map(ctx => 
+                                        `<li><small>${escapeHtml(ctx.question)} (conf: ${(ctx.confidence * 100).toFixed(1)}%)</small></li>`
+                                    ).join('')}
+                                </ul>
+                            </details>
+                        </small>
+                    </div>
+                `;
+            }
+        }
+        else if (data.type === 'retrieved') {
+            messageHtml += `
+                <div class="retrieved-response">
+                    ${escapeHtml(data.text).replace(/\n/g, '<br>')}
+                </div>
+                <div class="mt-2 small">
+                    <span class="badge bg-success">FAQ Match</span>
+                    <span class="badge bg-secondary">Confidence: ${(data.confidence * 100).toFixed(1)}%</span>
+                </div>
+            `;
+            
+            if (data.question_matched) {
+                messageHtml += `
+                    <div class="mt-1">
+                        <small class="text-muted">Matched: "${escapeHtml(data.question_matched)}"</small>
+                    </div>
+                `;
+            }
+        }
+        else {
+            messageHtml += escapeHtml(data.text).replace(/\n/g, '<br>');
+        }
+        
+        botMessageDiv.innerHTML = messageHtml;
+        chatContainer.appendChild(botMessageDiv);
+        
+        if (data.type !== 'emergency') {
+            addFeedbackButtons(chatContainer, userMessage, data.text, data.type);
+        }
+        
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+        
+        userInput.value = '';
+    })
+    .catch(error => {
+        chatContainer.removeChild(typingDiv);
+        
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'bot-message error-message mb-2';
+        errorDiv.innerHTML = `<strong>Assistant:</strong> Sorry, I encountered an error. Please try again.`;
+        chatContainer.appendChild(errorDiv);
+        console.error('Error:', error);
+    });
+});
+
+
+document.getElementById('ragToggle').addEventListener('change', function(e) {
+    const enabled = e.target.checked;
+    const statusSpan = document.getElementById('model-status');
+    
+    fetch('/toggle-rag', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ enabled: enabled })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            statusSpan.textContent = enabled ? 
+                'RAG Mode: AI-generated responses enabled (FLAN-T5-small)' : 
+                'Retrieval Mode: Using FAQ database only';
+            
+            const notification = document.createElement('div');
+            notification.className = 'alert alert-info alert-dismissible fade show mt-2';
+            notification.setAttribute('role', 'alert');
+            notification.innerHTML = `
+                ${data.message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            document.querySelector('.card-body').insertBefore(notification, document.querySelector('.alert-warning'));
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+    });
+});
+
+function addFeedbackButtons(container, query, answer, type) {
+    const feedbackDiv = document.createElement('div');
+    feedbackDiv.className = 'feedback-buttons mb-3';
+    feedbackDiv.innerHTML = `
+        <small class="text-muted me-2">Was this helpful?</small>
+        <button class="btn btn-sm btn-outline-success feedback-btn" data-rating="5" title="Very helpful">👍</button>
+        <button class="btn btn-sm btn-outline-warning feedback-btn" data-rating="3" title="Somewhat helpful">😐</button>
+        <button class="btn btn-sm btn-outline-danger feedback-btn" data-rating="1" title="Not helpful">👎</button>
+        <span class="feedback-status ms-2"></span>
+    `;
+    container.appendChild(feedbackDiv);
+    
+    feedbackDiv.querySelectorAll('.feedback-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const rating = this.getAttribute('data-rating');
+            
+            feedbackDiv.querySelectorAll('.feedback-btn').forEach(b => {
+                b.disabled = true;
+                b.classList.remove('btn-outline-success', 'btn-outline-warning', 'btn-outline-danger');
+                b.classList.add('btn-secondary', 'disabled');
+            });
+            
+            const statusSpan = feedbackDiv.querySelector('.feedback-status');
+            statusSpan.innerHTML = '<em>Sending feedback...</em>';
+            
+            fetch('/feedback', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    query: query,
+                    answer: answer,
+                    rating: rating
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    statusSpan.innerHTML = '<span class="text-success">✓ Thank you for your feedback!</span>';
+                } else {
+                    statusSpan.innerHTML = '<span class="text-danger">✗ Error sending feedback</span>';
+                }
+            })
+            .catch(error => {
+                statusSpan.innerHTML = '<span class="text-danger">✗ Error sending feedback</span>';
+                console.error('Feedback error:', error);
+            });
+        });
+    });
+}
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+window.addEventListener('load', function() {
+    fetch('/api/chat/history')
+        .then(response => response.json())
+        .then(history => {
+            const chatContainer = document.getElementById('chat-container');
+            
+            if (history.length > 0) {
+                chatContainer.innerHTML = '';
+                
+                history.forEach(msg => {
+                    const userDiv = document.createElement('div');
+                    userDiv.className = 'user-message mb-2';
+                    userDiv.innerHTML = `<strong>You:</strong> ${escapeHtml(msg.user)}`;
+                    chatContainer.appendChild(userDiv);
+                    
+                    const botDiv = document.createElement('div');
+                    botDiv.className = 'bot-message mb-2';
+                    botDiv.innerHTML = `<strong>Assistant:</strong> ${escapeHtml(msg.bot).replace(/\n/g, '<br>')}`;
+                    chatContainer.appendChild(botDiv);
+                });
+                
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }
+        });
+});
+</script>
+
+<style>
+    .user-message {
+        background-color: #e3f2fd;
+        padding: 10px;
+        border-radius: 15px 15px 5px 15px;
+        margin-left: 20%;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    }
+    
+    .bot-message {
+        background-color: #f5f5f5;
+        padding: 10px;
+        border-radius: 15px 15px 15px 5px;
+        margin-right: 20%;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    }
+    
+    .emergency-message {
+        background-color: #ffebee;
+        border-left: 4px solid #f44336;
+    }
+    
+    .emergency-text {
+        color: #d32f2f;
+        font-weight: 500;
+    }
+    
+    .generated-response {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 500;
+    }
+    
+    .retrieved-response {
+        color: #2e7d32;
+    }
+    
+    .typing-indicator {
+        opacity: 0.7;
+        font-style: italic;
+    }
+    
+    .feedback-buttons {
+        text-align: left;
+        margin-left: 20%;
+        padding-left: 10px;
+    }
+    
+    .feedback-btn {
+        margin: 0 2px;
+        transition: all 0.2s;
+    }
+    
+    .feedback-btn:hover {
+        transform: scale(1.1);
+    }
+    
+    .badge {
+        font-size: 0.7rem;
+        margin-right: 5px;
+    }
+    
+    details {
+        cursor: pointer;
+        color: #666;
+    }
+    
+    details summary {
+        user-select: none;
+    }
+    
+    details ul {
+        margin-top: 5px;
+        padding-left: 20px;
+    }
+    
+    
+    .modal-lg {
+        max-width: 800px;
+    }
+    
+    .progress {
+        height: 20px;
+        margin-top: 5px;
+    }
+    
+    .progress-bar {
+        line-height: 20px;
+        font-size: 11px;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+        .user-message {
+            background-color: #1e3a5f;
+            color: white;
+        }
+        .bot-message {
+            background-color: #2d2d2d;
+            color: #e0e0e0;
+        }
+        .emergency-message {
+            background-color: #4a1c1c;
+        }
+        .feedback-buttons small {
+            color: #aaa !important;
+        }
+        .modal-content {
+            background-color: #2d2d2d;
+            color: #e0e0e0;
+        }
+        .modal-header {
+            border-bottom-color: #444;
+        }
+        .modal-footer {
+            border-top-color: #444;
+        }
+        .card {
+            background-color: #1e1e1e;
+            border-color: #444;
+        }
+        .card-header {
+            border-bottom-color: #444;
+        }
+        .table {
+            color: #e0e0e0;
+        }
+    }
+</style>
+{% endblock %}
