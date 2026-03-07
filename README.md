@@ -52,7 +52,7 @@ Uses **three complementary retrieval models** for maximum accuracy:
 ### 🤖 2. Stress Analyzer (Neural Network)
 
 #### **Neural Network Architecture**
-You built **two specialized neural networks** from scratch:
+Built **two specialized neural networks** :
 
 ```python
 Regression Network (Stress Level 0-10):
