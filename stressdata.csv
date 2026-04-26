@@ -1,0 +1,1501 @@
+Person ID,Gender,Age,Occupation,Sleep Duration,Quality of Sleep,Physical Activity Level,Stress Level,BMI Category,Blood Pressure,Heart Rate,Daily Steps,Sleep Disorder
+1,Male,41,Nurse,7.0,5,91,10,Normal,111/71.15,56,9476,None
+2,Male,42,Software Engineer,6.7,7,123,5,Overweight,129/85.85000000000001,67,10661,None
+3,Female,45,Doctor,8.7,4,49,7,Normal,119/79.35000000000001,60,5033,None
+4,Male,24,Writer,8.0,6,4,5,Normal,98/62.7,97,1610,None
+5,Female,18,Salesperson,8.8,6,66,4,Overweight,110/66.5,71,6574,None
+6,Male,78,Manager,7.7,5,34,6,Normal,115/72.75,76,6347,None
+7,Male,41,Lawyer,6.8,5,35,9,Normal,107/72.55,56,3866,Insomnia
+8,Female,21,Artist,6.7,7,30,6,Overweight,115/70.75,80,4009,None
+9,Female,50,Accountant,7.2,6,37,7,Underweight,106/63.900000000000006,65,3605,None
+10,Female,68,Accountant,7.5,7,26,6,Obese,136/85.4,89,2375,Sleep Apnea
+11,Male,71,Artist,8.5,5,23,6,Overweight,131/89.15,106,1808,Sleep Apnea
+12,Male,46,Sales Representative,7.3,5,93,7,Normal,113/74.45,76,9510,None
+13,Female,77,Engineer,7.0,3,7,3,Overweight,122/81.3,72,2341,None
+14,Male,78,Software Engineer,8.2,5,59,4,Overweight,130/86.5,62,6168,None
+15,Female,23,Scientist,7.8,9,65,3,Normal,98/66.7,78,6174,None
+16,Female,30,Scientist,8.8,9,68,7,Obese,122/74.3,78,7416,Sleep Apnea
+17,Male,69,Chef,7.5,4,142,10,Underweight,119/74.35000000000001,73,11731,Restless Leg Syndrome
+18,Male,56,Student,8.2,6,127,9,Normal,115/71.75,63,10227,Narcolepsy
+19,Male,51,Doctor,7.7,4,51,8,Overweight,124/76.60000000000001,66,7235,None
+20,Male,75,Teacher,7.7,4,106,10,Obese,128/81.2,73,10450,Sleep Apnea
+21,Female,69,Nurse,7.4,1,91,7,Overweight,117/80.05,57,7936,Sleep Apnea
+22,Male,24,Accountant,7.6,7,50,7,Overweight,127/82.55,73,6423,None
+23,Male,61,Teacher,6.8,1,7,8,Normal,126/82.9,99,1871,None
+24,Female,37,Engineer,7.5,6,30,7,Overweight,126/80.9,65,5201,None
+25,Female,31,Lawyer,8.0,7,21,9,Obese,128/80.2,82,4349,None
+26,Male,77,Manager,9.5,3,52,4,Underweight,118/77.7,69,5654,Restless Leg Syndrome
+27,Female,31,Chef,7.1,6,99,8,Underweight,109/72.85000000000001,62,11241,Insomnia
+28,Male,50,Writer,8.7,7,21,6,Normal,117/78.05,81,1799,None
+29,Male,72,Scientist,8.0,5,0,2,Obese,145/96.25,93,2039,None
+30,Female,19,Student,7.4,5,128,4,Normal,114/78.10000000000001,61,11879,None
+31,Male,24,Lawyer,8.2,4,13,7,Overweight,109/75.85000000000001,92,2341,None
+32,Female,60,Doctor,5.8,6,63,9,Overweight,120/83.0,66,5693,None
+33,Female,37,Salesperson,7.4,8,157,4,Overweight,125/83.25,53,11840,None
+34,Male,78,Sales Representative,8.6,5,45,3,Overweight,134/85.10000000000001,57,3938,None
+35,Male,20,Artist,7.2,7,50,5,Underweight,101/66.65,77,6125,None
+36,Female,46,Salesperson,6.8,7,31,7,Overweight,115/73.75,65,3312,None
+37,Male,60,Accountant,7.1,7,51,8,Normal,111/74.15,70,6153,Insomnia
+38,Female,21,Manager,10.0,2,20,4,Underweight,100/69.0,76,3052,Sleep Apnea
+39,Male,18,Lawyer,7.7,5,36,8,Normal,107/65.55,84,3537,Narcolepsy
+40,Male,39,Manager,6.4,4,35,9,Normal,102/64.3,79,4910,None
+41,Female,24,Chef,7.8,6,68,8,Normal,108/72.2,77,5961,None
+42,Male,19,Scientist,7.4,8,65,2,Normal,102/66.3,84,7686,Narcolepsy
+43,Male,35,Nurse,7.4,6,43,8,Overweight,115/70.75,65,4879,None
+44,Female,24,Salesperson,8.3,7,63,1,Overweight,110/72.5,68,6022,Restless Leg Syndrome
+45,Female,60,Salesperson,7.6,5,118,5,Normal,122/84.3,91,9996,None
+46,Male,64,Accountant,7.4,6,52,6,Obese,137/89.05,80,4401,Sleep Apnea
+47,Male,58,Sales Representative,8.3,5,86,6,Normal,115/72.75,68,7860,None
+48,Male,46,Salesperson,7.6,5,100,8,Overweight,113/77.45,70,9485,None
+49,Female,33,Sales Representative,8.5,4,49,1,Overweight,126/86.9,64,2968,None
+50,Male,73,Lawyer,7.3,2,22,9,Obese,143/88.95,71,3486,Sleep Apnea
+51,Female,79,Doctor,8.2,4,50,8,Normal,127/77.55,83,5380,None
+52,Male,36,Teacher,8.6,4,16,3,Overweight,126/76.9,87,1328,Narcolepsy
+53,Male,67,Manager,6.7,4,14,10,Obese,140/91.0,99,2944,None
+54,Male,33,Student,9.0,8,79,5,Underweight,116/71.4,69,6825,Sleep Apnea
+55,Female,43,Engineer,8.5,5,53,3,Overweight,122/76.3,76,5193,Sleep Apnea
+56,Male,31,Writer,7.8,5,52,3,Underweight,103/69.95,87,5613,None
+57,Female,49,Student,8.0,8,58,5,Overweight,117/75.05,61,4979,Narcolepsy
+58,Female,75,Lawyer,7.4,2,42,9,Overweight,121/77.65,65,4665,Sleep Apnea
+59,Female,38,Software Engineer,7.3,9,2,3,Underweight,109/75.85000000000001,77,2602,None
+60,Male,40,Accountant,8.4,7,67,7,Overweight,121/81.65,75,6059,None
+61,Male,65,Artist,9.3,7,4,5,Underweight,111/77.15,95,1415,None
+62,Male,75,Chef,9.4,3,79,5,Obese,129/84.85000000000001,63,7345,None
+63,Female,44,Engineer,7.1,7,31,6,Normal,110/73.5,69,4407,None
+64,Female,44,Teacher,6.3,6,12,5,Overweight,115/75.75,94,3219,None
+65,Male,30,Nurse,8.2,6,28,7,Obese,132/85.8,79,2510,Narcolepsy
+66,Female,49,Artist,8.2,7,77,5,Overweight,125/77.25,80,6698,None
+67,Female,35,Accountant,8.4,6,58,6,Normal,114/71.10000000000001,71,5359,None
+68,Female,56,Manager,7.3,8,54,8,Normal,115/71.75,70,6285,None
+69,Female,57,Chef,6.6,6,107,8,Overweight,127/83.55,75,10192,None
+70,Female,63,Chef,8.0,6,69,8,Normal,117/72.05,67,8463,None
+71,Male,49,Artist,8.4,7,57,4,Normal,114/75.10000000000001,66,7619,None
+72,Male,20,Scientist,8.6,10,50,3,Obese,138/87.7,76,5217,Sleep Apnea
+73,Male,64,Scientist,7.4,7,0,7,Overweight,122/79.3,85,1920,Insomnia
+74,Male,51,Manager,8.5,7,20,3,Obese,136/84.4,92,3470,None
+75,Male,42,Manager,7.8,3,29,7,Normal,108/73.2,95,2810,Sleep Apnea
+76,Male,53,Salesperson,6.5,5,98,3,Overweight,125/81.25,68,7556,None
+77,Male,46,Sales Representative,7.4,7,54,10,Obese,128/81.2,74,4780,None
+78,Female,60,Accountant,9.1,6,6,5,Normal,118/81.7,94,3876,None
+79,Male,54,Accountant,7.0,6,45,5,Obese,141/95.65,53,3663,None
+80,Male,26,Software Engineer,7.3,7,149,3,Obese,138/86.7,72,10636,Narcolepsy
+81,Male,56,Chef,7.1,4,93,10,Overweight,128/81.2,61,9595,None
+82,Male,29,Student,8.1,2,42,4,Normal,106/70.9,73,4402,None
+83,Female,30,Writer,6.6,8,9,5,Obese,121/73.65,72,3651,Restless Leg Syndrome
+84,Female,19,Teacher,7.0,7,35,8,Normal,104/64.60000000000001,82,4915,None
+85,Male,49,Engineer,8.4,5,44,3,Underweight,121/82.65,72,6102,None
+86,Female,62,Manager,8.1,1,0,7,Overweight,124/77.60000000000001,82,1280,None
+87,Male,49,Accountant,8.8,5,12,8,Obese,125/85.25,86,2062,None
+88,Male,40,Salesperson,6.9,4,42,4,Normal,119/78.35000000000001,78,5728,Insomnia
+89,Female,68,Software Engineer,8.2,4,56,3,Underweight,110/69.5,75,5041,None
+90,Male,46,Salesperson,6.3,8,46,10,Underweight,109/75.85000000000001,68,5430,Insomnia
+91,Male,56,Lawyer,8.3,4,14,7,Overweight,115/69.75,88,2689,None
+92,Female,66,Nurse,7.7,2,95,8,Normal,122/83.3,62,8846,None
+93,Male,64,Doctor,7.3,3,75,8,Normal,124/79.60000000000001,67,8124,Insomnia
+94,Female,52,Student,5.5,7,73,7,Underweight,120/79.0,70,6022,Narcolepsy
+95,Male,21,Teacher,6.5,4,108,9,Obese,126/78.9,63,11001,None
+96,Female,58,Student,8.0,6,122,7,Overweight,118/80.7,49,11363,None
+97,Female,35,Sales Representative,7.9,6,74,6,Overweight,113/69.45,82,6390,Restless Leg Syndrome
+98,Female,34,Artist,8.8,9,71,4,Overweight,129/85.85000000000001,64,6820,None
+99,Male,79,Salesperson,9.2,4,68,8,Overweight,137/84.05,65,6864,None
+100,Male,55,Doctor,6.8,3,5,7,Obese,128/88.2,79,2830,None
+101,Male,19,Software Engineer,8.6,5,70,4,Normal,97/63.050000000000004,78,6686,None
+102,Female,20,Engineer,8.1,8,78,6,Overweight,125/78.25,69,7248,Insomnia
+103,Female,36,Accountant,7.1,6,67,7,Overweight,113/69.45,69,6706,None
+104,Female,62,Chef,6.9,4,116,6,Obese,128/87.2,58,9707,None
+105,Male,35,Doctor,8.1,5,23,8,Overweight,130/79.5,78,5122,Sleep Apnea
+106,Male,20,Chef,8.2,7,136,9,Normal,113/71.45,63,10513,Restless Leg Syndrome
+107,Male,54,Student,7.6,7,134,6,Normal,122/74.3,72,10697,None
+108,Female,18,Teacher,6.3,7,61,9,Normal,109/71.85000000000001,69,8339,Insomnia
+109,Female,63,Teacher,7.4,7,180,10,Underweight,117/77.05,66,14615,Insomnia
+110,Female,29,Lawyer,7.5,5,31,10,Overweight,114/71.10000000000001,73,4624,Restless Leg Syndrome
+111,Female,54,Sales Representative,6.9,7,65,6,Normal,118/71.7,63,6433,Restless Leg Syndrome
+112,Female,71,Accountant,7.5,7,9,6,Obese,136/83.4,68,1427,Sleep Apnea
+113,Male,39,Student,5.8,8,89,6,Overweight,116/72.4,60,8827,None
+114,Female,46,Accountant,8.6,6,12,5,Obese,122/80.3,89,1504,Sleep Apnea
+115,Male,30,Scientist,9.0,8,53,3,Normal,102/67.3,68,6244,None
+116,Female,60,Engineer,7.9,10,16,5,Obese,138/94.7,91,3762,None
+117,Male,59,Artist,6.3,8,26,9,Overweight,123/82.95,91,2287,None
+118,Female,53,Software Engineer,8.0,8,29,4,Overweight,131/86.15,74,6460,None
+119,Female,31,Doctor,7.9,4,14,7,Normal,107/71.55,83,2416,None
+120,Male,75,Writer,7.9,8,13,3,Overweight,126/76.9,96,1000,Sleep Apnea
+121,Male,37,Chef,5.7,5,96,10,Normal,101/69.65,74,10075,None
+122,Female,25,Lawyer,7.3,5,12,8,Overweight,110/67.5,99,3527,Insomnia
+123,Male,64,Artist,8.6,9,45,1,Normal,123/74.95,71,6346,Restless Leg Syndrome
+124,Female,65,Scientist,10.0,5,24,2,Overweight,135/91.75,100,2884,Sleep Apnea
+125,Male,60,Teacher,8.1,5,63,7,Obese,133/90.45,75,7770,None
+126,Male,40,Writer,9.9,7,57,1,Normal,105/69.25,92,4271,Restless Leg Syndrome
+127,Female,19,Salesperson,8.4,5,72,7,Normal,101/61.650000000000006,80,5923,Sleep Apnea
+128,Female,70,Sales Representative,7.4,3,74,5,Normal,121/75.65,67,5253,Sleep Apnea
+129,Female,34,Manager,7.5,7,48,6,Overweight,110/76.5,77,5201,None
+130,Female,63,Writer,7.5,5,25,3,Overweight,136/86.4,68,1946,None
+131,Male,36,Nurse,7.4,8,120,8,Overweight,114/77.10000000000001,64,9296,Restless Leg Syndrome
+132,Male,36,Nurse,8.0,6,104,8,Normal,105/73.25,80,10661,None
+133,Male,31,Chef,7.9,6,89,8,Normal,117/81.05,77,7366,None
+134,Male,39,Sales Representative,6.4,5,50,8,Overweight,112/74.8,67,4614,None
+135,Female,58,Accountant,7.9,9,29,6,Overweight,123/81.95,71,4114,None
+136,Male,20,Engineer,9.1,7,140,2,Normal,106/70.9,49,11131,None
+137,Female,75,Teacher,7.6,5,39,9,Normal,119/81.35000000000001,82,5433,Insomnia
+138,Male,80,Engineer,7.2,7,17,3,Normal,126/79.9,91,2932,None
+139,Male,79,Writer,8.4,8,33,1,Normal,123/80.95,73,1611,None
+140,Male,72,Nurse,6.0,5,128,9,Normal,110/72.5,46,10120,None
+141,Male,65,Manager,8.2,7,38,6,Overweight,126/80.9,93,5776,None
+142,Male,77,Sales Representative,6.4,7,40,7,Overweight,120/78.0,74,6019,None
+143,Female,36,Teacher,7.3,7,56,8,Obese,127/86.55,70,5302,Insomnia
+144,Male,46,Chef,7.5,8,94,5,Obese,123/79.95,61,9140,Restless Leg Syndrome
+145,Male,74,Scientist,8.3,7,119,3,Underweight,116/70.4,57,10146,None
+146,Male,47,Salesperson,7.2,6,56,9,Underweight,110/66.5,63,6298,None
+147,Female,28,Accountant,7.4,5,23,7,Obese,133/89.45,94,2724,None
+148,Female,25,Software Engineer,8.0,7,81,3,Obese,129/84.85000000000001,77,8569,None
+149,Female,43,Nurse,7.2,6,51,9,Obese,140/86.0,70,5156,None
+150,Female,35,Lawyer,7.7,5,10,9,Obese,138/86.7,79,3232,Sleep Apnea
+151,Male,38,Doctor,6.2,4,29,9,Normal,104/65.60000000000001,79,4881,None
+152,Female,39,Nurse,7.0,7,46,8,Normal,115/78.75,70,6147,Insomnia
+153,Male,38,Manager,7.1,7,69,7,Normal,114/78.10000000000001,78,8603,Narcolepsy
+154,Male,51,Chef,7.2,7,107,8,Normal,111/71.15,84,8300,Insomnia
+155,Male,31,Nurse,7.2,7,116,7,Obese,131/86.15,90,10009,Narcolepsy
+156,Female,48,Writer,8.7,7,26,7,Obese,132/86.8,104,3301,Insomnia
+157,Male,31,Teacher,9.7,9,134,9,Normal,109/72.85000000000001,60,10560,Insomnia
+158,Female,34,Accountant,7.1,4,47,6,Normal,114/73.10000000000001,73,4250,Restless Leg Syndrome
+159,Female,42,Writer,8.9,6,0,2,Overweight,120/79.0,79,1793,None
+160,Male,41,Teacher,6.4,7,63,9,Overweight,128/82.2,75,5422,Insomnia
+161,Male,70,Lawyer,8.5,7,32,9,Obese,133/82.45,65,3907,Restless Leg Syndrome
+162,Female,37,Accountant,7.0,6,30,5,Underweight,100/64.0,59,2771,None
+163,Female,23,Lawyer,6.1,5,27,10,Normal,99/62.35000000000001,82,5133,None
+164,Female,71,Chef,7.8,4,152,8,Normal,125/80.25,65,12411,None
+165,Male,21,Sales Representative,7.3,7,50,5,Normal,112/76.8,69,3822,None
+166,Male,39,Teacher,7.1,5,76,10,Normal,104/70.60000000000001,93,9391,None
+167,Male,55,Nurse,6.4,5,144,7,Normal,120/74.0,55,13226,None
+168,Male,30,Engineer,8.3,7,0,6,Overweight,114/71.10000000000001,97,1000,None
+169,Female,72,Sales Representative,7.0,3,105,7,Normal,112/73.8,74,10003,Insomnia
+170,Female,78,Engineer,7.9,7,42,7,Overweight,123/76.95,59,3837,None
+171,Female,78,Lawyer,7.2,5,14,8,Overweight,121/74.65,92,1705,Sleep Apnea
+172,Female,77,Sales Representative,9.1,4,25,3,Overweight,134/91.10000000000001,76,2350,None
+173,Male,78,Nurse,6.6,4,101,7,Normal,112/74.8,78,6956,None
+174,Female,26,Engineer,7.1,8,7,7,Overweight,111/70.15,99,4269,None
+175,Male,49,Manager,5.7,6,13,9,Obese,122/74.3,66,1173,Sleep Apnea
+176,Female,42,Engineer,7.9,7,38,5,Overweight,122/82.3,62,5558,None
+177,Female,77,Student,10.0,7,132,1,Overweight,132/88.8,59,9128,None
+178,Female,43,Lawyer,7.1,5,0,10,Overweight,128/83.2,104,3126,Insomnia
+179,Female,36,Sales Representative,6.6,6,92,8,Normal,101/61.650000000000006,80,9807,None
+180,Male,30,Salesperson,7.3,5,40,6,Underweight,101/62.650000000000006,62,4807,None
+181,Female,46,Engineer,9.1,4,29,2,Overweight,118/72.7,100,4855,None
+182,Female,61,Doctor,6.8,4,38,8,Overweight,134/85.10000000000001,67,4352,Sleep Apnea
+183,Female,18,Artist,7.7,5,45,4,Underweight,103/64.95,72,4583,Restless Leg Syndrome
+184,Male,67,Salesperson,6.3,4,61,8,Underweight,119/82.35000000000001,68,6847,None
+185,Female,34,Chef,7.1,7,106,9,Obese,139/89.35000000000001,69,9998,None
+186,Male,63,Student,8.8,4,121,4,Normal,122/77.3,53,9182,Restless Leg Syndrome
+187,Female,62,Lawyer,7.2,5,30,7,Overweight,136/87.4,84,5249,Sleep Apnea
+188,Female,48,Artist,6.4,4,0,5,Normal,121/81.65,71,1447,None
+189,Female,49,Salesperson,6.6,3,77,9,Obese,135/85.75,60,9799,Insomnia
+190,Female,60,Artist,9.1,6,22,3,Overweight,118/71.7,96,2127,None
+191,Male,66,Teacher,8.3,4,105,5,Overweight,118/75.7,80,9961,None
+192,Female,23,Student,9.4,4,44,1,Normal,99/61.35000000000001,59,3878,None
+193,Male,71,Student,7.3,6,33,9,Normal,113/77.45,66,3685,Narcolepsy
+194,Male,42,Manager,7.1,6,62,8,Normal,107/70.55,70,6783,None
+195,Female,78,Software Engineer,8.8,5,54,4,Overweight,118/76.7,64,5220,None
+196,Male,66,Doctor,6.5,6,24,8,Underweight,107/70.55,82,4059,Insomnia
+197,Male,51,Teacher,8.3,9,113,7,Obese,134/86.10000000000001,78,10767,None
+198,Male,79,Manager,8.2,3,50,7,Obese,134/89.10000000000001,82,6388,Sleep Apnea
+199,Female,36,Doctor,7.1,4,28,9,Obese,140/90.0,78,4138,None
+200,Male,79,Student,9.1,3,24,2,Overweight,122/81.3,101,3547,Sleep Apnea
+201,Female,28,Salesperson,6.9,6,85,10,Obese,137/88.05,80,7168,Restless Leg Syndrome
+202,Female,59,Teacher,8.0,7,130,7,Normal,111/67.15,71,12845,None
+203,Female,80,Teacher,7.7,4,82,7,Overweight,128/86.2,82,9750,Sleep Apnea
+204,Female,57,Software Engineer,7.8,7,72,4,Overweight,117/75.05,81,7793,None
+205,Female,44,Scientist,9.4,9,56,1,Normal,116/79.4,57,7564,None
+206,Female,28,Chef,7.4,8,150,7,Underweight,99/60,59,13170,None
+207,Female,68,Teacher,8.1,7,33,8,Normal,107/68.55,68,5549,Narcolepsy
+208,Female,54,Artist,8.1,7,22,4,Normal,115/72.75,80,3837,None
+209,Female,76,Accountant,7.7,7,61,6,Obese,129/86.85000000000001,76,6261,Sleep Apnea
+210,Female,39,Lawyer,7.6,5,27,8,Normal,105/66.25,92,2511,None
+211,Female,63,Accountant,8.5,5,15,6,Overweight,116/79.4,84,4301,Insomnia
+212,Female,56,Teacher,6.7,5,109,6,Normal,121/77.65,60,10377,None
+213,Male,26,Manager,7.5,6,51,8,Normal,107/65.55,80,5259,Insomnia
+214,Female,76,Accountant,6.7,5,51,7,Overweight,122/82.3,91,5403,Insomnia
+215,Male,41,Salesperson,7.7,7,80,5,Overweight,130/85.5,72,7068,None
+216,Female,79,Salesperson,9.3,6,119,4,Normal,128/84.2,79,12356,Sleep Apnea
+217,Female,80,Software Engineer,7.1,5,34,6,Overweight,123/78.95,87,4264,None
+218,Male,46,Software Engineer,8.8,6,56,3,Overweight,132/82.8,57,4729,None
+219,Male,45,Student,7.1,9,33,8,Underweight,107/67.55,65,4214,None
+220,Male,63,Writer,7.1,6,19,6,Obese,127/80.55,69,3217,None
+221,Male,79,Salesperson,8.4,6,73,6,Normal,109/75.85000000000001,59,7196,Restless Leg Syndrome
+222,Male,21,Lawyer,8.2,5,46,8,Normal,104/69.60000000000001,75,5534,Insomnia
+223,Male,71,Student,5.6,4,56,6,Obese,142/93.3,79,7347,Sleep Apnea
+224,Male,36,Lawyer,7.2,8,13,8,Overweight,112/75.8,81,2442,None
+225,Male,69,Engineer,7.5,5,54,4,Overweight,125/83.25,78,6589,None
+226,Male,36,Artist,8.8,10,51,1,Overweight,120/73.0,64,4494,Restless Leg Syndrome
+227,Female,26,Sales Representative,6.9,7,42,4,Overweight,116/76.4,89,3853,None
+228,Female,77,Nurse,7.2,7,92,6,Normal,121/81.65,88,9704,None
+229,Female,54,Student,8.5,3,15,2,Obese,133/83.45,75,2705,Insomnia
+230,Male,64,Software Engineer,8.1,9,115,2,Normal,117/75.05,67,10441,None
+231,Female,67,Sales Representative,8.3,3,60,6,Normal,114/79.10000000000001,59,7704,Narcolepsy
+232,Male,20,Engineer,8.2,7,105,5,Normal,116/77.4,68,9787,Insomnia
+233,Male,58,Doctor,8.0,6,57,8,Normal,105/70.25,75,6465,Insomnia
+234,Female,29,Chef,8.7,6,57,5,Normal,108/69.2,69,5058,None
+235,Male,49,Software Engineer,8.3,6,104,4,Normal,115/79.75,86,8742,None
+236,Male,29,Writer,7.9,5,5,1,Overweight,117/81.05,66,3601,Insomnia
+237,Male,30,Sales Representative,6.6,8,112,8,Overweight,123/78.95,59,11281,None
+238,Male,27,Doctor,6.4,7,26,9,Obese,130/83.5,87,4450,Sleep Apnea
+239,Male,78,Chef,6.8,3,120,6,Normal,111/70.15,70,10632,None
+240,Male,76,Teacher,8.4,5,104,5,Obese,133/90.45,71,9016,None
+241,Female,77,Accountant,9.1,5,31,7,Normal,124/79.60000000000001,87,3335,None
+242,Female,69,Salesperson,8.8,5,30,4,Normal,126/82.9,59,3712,None
+243,Female,32,Doctor,8.2,6,22,8,Underweight,113/73.45,61,3590,None
+244,Female,27,Artist,8.3,5,20,7,Overweight,112/72.8,65,3290,None
+245,Female,66,Student,8.0,6,75,6,Normal,120/82.0,78,6463,None
+246,Male,61,Software Engineer,7.3,8,94,5,Overweight,119/73.35000000000001,89,8331,None
+247,Female,52,Student,8.0,3,106,6,Normal,121/73.65,58,8970,None
+248,Female,19,Nurse,6.7,7,45,8,Overweight,113/72.45,84,4211,None
+249,Female,61,Nurse,7.7,3,64,7,Overweight,126/85.9,86,6653,Restless Leg Syndrome
+250,Female,53,Nurse,8.4,7,117,6,Normal,106/73.9,69,10671,Sleep Apnea
+251,Female,29,Engineer,6.8,6,24,6,Obese,131/90.15,89,4553,Restless Leg Syndrome
+252,Male,18,Student,8.6,8,70,4,Underweight,103/65.95,84,5136,None
+253,Male,45,Doctor,6.9,3,11,8,Normal,108/70.2,94,3096,Restless Leg Syndrome
+254,Female,72,Scientist,7.2,5,30,3,Overweight,126/77.9,89,5771,None
+255,Female,49,Artist,9.0,7,26,2,Normal,104/72.60000000000001,87,4085,None
+256,Male,58,Manager,8.6,7,40,5,Normal,111/75.15,89,4504,None
+257,Female,33,Sales Representative,8.3,6,101,6,Normal,118/75.7,84,7763,None
+258,Male,32,Scientist,7.3,5,41,3,Overweight,116/73.4,60,4976,None
+259,Male,61,Student,8.3,5,40,4,Overweight,132/85.8,57,5243,None
+260,Female,41,Sales Representative,7.9,6,82,5,Normal,116/80.4,79,7503,None
+261,Female,58,Artist,8.8,7,19,1,Normal,114/74.10000000000001,103,2451,None
+262,Male,68,Manager,7.5,5,43,9,Normal,113/75.45,72,4980,None
+263,Male,23,Salesperson,9.0,4,87,1,Obese,132/83.8,84,8088,None
+264,Female,39,Software Engineer,9.5,7,54,4,Normal,102/69.3,72,6907,Narcolepsy
+265,Female,19,Doctor,7.5,5,21,8,Obese,116/76.4,96,2842,Restless Leg Syndrome
+266,Male,78,Sales Representative,8.2,3,95,6,Normal,109/73.85000000000001,85,8999,Restless Leg Syndrome
+267,Male,39,Teacher,7.0,9,60,8,Normal,115/69.75,85,5674,None
+268,Male,33,Artist,8.1,8,84,4,Normal,107/74.55,94,7021,None
+269,Male,78,Chef,6.7,3,108,6,Overweight,135/82.75,79,8691,None
+270,Male,45,Nurse,6.3,7,61,10,Overweight,114/76.10000000000001,65,6445,None
+271,Female,45,Student,9.6,5,105,3,Overweight,127/85.55,82,9344,None
+272,Female,56,Sales Representative,6.8,8,125,4,Normal,121/73.65,74,9924,None
+273,Male,63,Nurse,7.7,3,110,6,Normal,109/68.85000000000001,59,10772,None
+274,Female,50,Sales Representative,8.2,4,97,6,Overweight,130/85.5,72,7910,None
+275,Female,20,Writer,8.2,7,43,1,Overweight,113/73.45,76,4559,None
+276,Male,28,Writer,8.0,9,11,6,Underweight,113/71.45,88,3542,None
+277,Female,68,Artist,9.6,6,64,1,Overweight,118/81.7,54,6969,Sleep Apnea
+278,Female,47,Writer,7.1,3,11,5,Normal,117/78.05,77,1471,None
+279,Male,70,Manager,7.3,5,29,7,Overweight,121/82.65,86,1769,None
+280,Male,33,Nurse,7.7,5,96,7,Overweight,120/73.0,74,7492,None
+281,Male,45,Writer,9.4,8,30,4,Overweight,120/76.0,63,2738,Restless Leg Syndrome
+282,Female,73,Salesperson,8.5,7,108,7,Overweight,129/80.85000000000001,73,7906,None
+283,Female,49,Writer,8.8,6,20,1,Overweight,123/79.95,84,1768,None
+284,Male,43,Accountant,7.4,6,52,6,Obese,124/75.60000000000001,76,6195,None
+285,Male,34,Software Engineer,7.9,9,100,5,Underweight,111/70.15,68,8567,Narcolepsy
+286,Male,46,Student,8.0,7,50,5,Normal,102/71.3,60,6138,None
+287,Female,75,Writer,7.2,7,31,4,Normal,117/81.05,69,5472,Sleep Apnea
+288,Female,79,Engineer,8.2,5,73,6,Normal,109/67.85000000000001,71,7337,Insomnia
+289,Female,75,Engineer,7.5,6,39,6,Overweight,138/85.7,75,3436,None
+290,Male,26,Scientist,9.4,8,32,5,Normal,101/64.65,81,3890,None
+291,Male,31,Sales Representative,8.0,4,21,7,Obese,136/87.4,91,4844,None
+292,Female,26,Salesperson,8.5,9,79,4,Normal,103/61.95,70,6517,None
+293,Female,62,Doctor,6.6,5,67,8,Overweight,128/80.2,66,7165,Sleep Apnea
+294,Female,59,Nurse,8.5,5,131,5,Overweight,130/84.5,45,9070,None
+295,Male,76,Teacher,8.3,7,127,4,Normal,120/76.0,75,10223,None
+296,Male,75,Teacher,7.2,5,39,7,Underweight,128/80.2,70,4254,None
+297,Male,61,Student,6.3,5,33,10,Normal,115/79.75,71,2968,None
+298,Male,59,Engineer,8.6,8,81,5,Underweight,123/84.95,72,8401,None
+299,Female,78,Engineer,6.6,8,78,3,Obese,143/87.95,60,7071,None
+300,Male,67,Student,7.1,6,81,3,Overweight,123/75.95,65,6950,Sleep Apnea
+301,Female,59,Doctor,6.4,4,59,10,Obese,137/89.05,55,4038,None
+302,Male,60,Artist,8.4,6,42,4,Underweight,106/64.9,74,4942,None
+303,Male,78,Chef,6.6,5,104,9,Overweight,137/91.05,68,8446,Sleep Apnea
+304,Female,79,Chef,7.6,5,106,7,Overweight,120/77.0,67,10031,None
+305,Female,41,Software Engineer,7.7,7,72,2,Normal,107/66.55,59,6683,None
+306,Male,29,Doctor,8.7,7,32,9,Obese,128/88.2,91,4545,None
+307,Female,78,Scientist,7.9,5,65,7,Obese,147/94.55,53,5425,None
+308,Female,20,Writer,8.0,7,6,3,Overweight,109/69.85000000000001,82,2289,None
+309,Male,74,Student,6.8,5,104,5,Normal,118/79.7,68,8540,None
+310,Female,37,Artist,7.0,9,77,10,Overweight,110/70.5,53,7207,None
+311,Female,49,Writer,7.8,10,81,1,Obese,132/89.8,71,8660,None
+312,Male,42,Writer,8.0,5,25,6,Underweight,108/73.2,88,6327,None
+313,Male,27,Manager,6.9,7,47,9,Normal,115/78.75,62,3991,None
+314,Female,54,Doctor,6.9,2,18,9,Overweight,117/81.05,82,3703,Sleep Apnea
+315,Male,26,Scientist,8.5,10,73,3,Normal,107/70.55,66,7018,None
+316,Female,53,Artist,6.3,7,51,7,Obese,132/87.8,61,6303,None
+317,Male,23,Software Engineer,7.4,4,11,5,Overweight,115/78.75,109,2821,None
+318,Male,31,Chef,6.5,9,99,9,Normal,101/66.65,60,8109,None
+319,Female,42,Accountant,7.5,5,41,7,Normal,122/76.3,76,3305,Insomnia
+320,Male,63,Accountant,8.0,5,39,6,Overweight,134/86.10000000000001,61,3958,None
+321,Male,45,Nurse,6.1,5,95,9,Normal,109/67.85000000000001,75,9753,None
+322,Female,18,Engineer,8.0,6,92,6,Obese,127/84.55,53,8639,None
+323,Female,46,Software Engineer,6.6,8,60,6,Underweight,111/76.15,70,6695,None
+324,Male,68,Artist,6.9,8,3,9,Normal,108/72.2,97,1168,None
+325,Male,65,Teacher,9.6,7,73,8,Normal,122/79.3,94,6199,Sleep Apnea
+326,Male,42,Scientist,8.0,8,5,6,Overweight,118/78.7,88,4128,None
+327,Male,52,Manager,7.3,1,3,8,Normal,120/73.0,85,1726,Insomnia
+328,Male,65,Chef,7.5,6,113,9,Overweight,120/76.0,70,10410,None
+329,Male,33,Manager,8.9,5,45,5,Overweight,112/68.8,87,4632,Sleep Apnea
+330,Male,50,Chef,7.0,5,107,7,Underweight,106/65.9,60,8736,None
+331,Female,55,Doctor,8.1,5,12,9,Normal,105/73.25,73,1707,None
+332,Female,72,Nurse,7.2,6,83,7,Normal,116/80.4,74,8196,Insomnia
+333,Female,76,Chef,8.0,3,108,7,Obese,144/93.60000000000001,72,10375,Sleep Apnea
+334,Male,74,Accountant,8.2,4,24,7,Normal,126/80.9,82,3031,None
+335,Male,34,Chef,7.4,5,67,8,Overweight,129/87.85000000000001,53,8588,Restless Leg Syndrome
+336,Male,34,Sales Representative,8.9,7,29,6,Obese,125/78.25,66,2347,None
+337,Male,39,Scientist,8.3,8,51,4,Normal,108/72.2,76,6514,None
+338,Male,39,Software Engineer,7.9,8,97,4,Overweight,110/67.5,66,8445,None
+339,Female,31,Chef,8.3,4,106,10,Normal,101/60.650000000000006,77,10866,Restless Leg Syndrome
+340,Female,68,Doctor,8.2,3,8,9,Obese,137/92.05,96,1674,Narcolepsy
+341,Male,67,Chef,7.5,1,103,7,Normal,123/76.95,81,9424,None
+342,Female,61,Writer,9.6,5,0,5,Normal,123/83.95,78,1000,Restless Leg Syndrome
+343,Male,42,Nurse,8.2,8,113,10,Normal,110/72.5,83,9681,None
+344,Male,64,Teacher,7.6,4,75,9,Normal,122/80.3,83,6342,None
+345,Male,76,Lawyer,6.7,3,62,8,Normal,125/81.25,75,7065,Insomnia
+346,Male,57,Software Engineer,9.0,7,47,4,Normal,120/79.0,72,6272,Restless Leg Syndrome
+347,Male,53,Engineer,8.5,8,55,3,Overweight,130/79.5,73,5601,None
+348,Female,70,Chef,7.8,4,104,10,Obese,128/82.2,75,9655,None
+349,Male,19,Doctor,7.9,5,0,6,Obese,119/81.35000000000001,84,2198,None
+350,Female,35,Manager,6.9,4,16,5,Obese,140/92.0,89,3915,None
+351,Female,61,Writer,8.7,6,20,7,Overweight,131/82.15,97,2236,Sleep Apnea
+352,Female,50,Scientist,8.8,6,63,5,Normal,118/71.7,56,8733,None
+353,Male,65,Accountant,7.9,8,78,5,Overweight,135/86.75,62,8591,Insomnia
+354,Female,51,Accountant,6.0,5,73,6,Normal,124/81.60000000000001,64,6445,None
+355,Female,58,Student,5.8,2,96,9,Obese,140/89.0,70,8954,None
+356,Female,24,Chef,7.5,5,98,10,Normal,106/63.900000000000006,76,10068,Insomnia
+357,Female,34,Salesperson,7.8,7,76,5,Overweight,119/80.35000000000001,62,5928,None
+358,Female,56,Software Engineer,7.6,7,37,5,Obese,144/92.60000000000001,59,3880,None
+359,Female,42,Lawyer,8.3,4,12,7,Obese,142/93.3,91,4374,None
+360,Female,54,Manager,8.3,5,83,6,Normal,112/70.8,85,8453,None
+361,Male,59,Scientist,7.3,6,65,4,Normal,121/82.65,75,5682,None
+362,Male,37,Salesperson,8.6,7,155,6,Normal,104/71.60000000000001,63,11461,None
+363,Male,21,Salesperson,6.8,6,87,8,Obese,122/80.3,68,7711,Narcolepsy
+364,Male,26,Writer,7.5,8,10,7,Obese,118/72.7,71,3796,None
+365,Female,33,Doctor,7.2,7,45,9,Underweight,111/67.15,81,4666,Narcolepsy
+366,Female,59,Accountant,8.5,5,0,5,Obese,126/80.9,80,2714,None
+367,Female,71,Chef,7.3,1,112,8,Obese,145/97.25,72,11044,None
+368,Female,57,Artist,8.7,8,60,4,Normal,110/69.5,76,6122,None
+369,Female,62,Manager,6.8,4,56,8,Normal,123/81.95,85,5814,None
+370,Male,54,Writer,9.0,7,62,3,Underweight,118/77.7,75,7694,None
+371,Male,73,Accountant,7.8,4,44,7,Obese,146/93.9,56,5742,Sleep Apnea
+372,Female,67,Sales Representative,8.1,5,76,7,Obese,135/87.75,73,7994,Sleep Apnea
+373,Male,55,Lawyer,6.9,5,45,8,Underweight,107/70.55,80,5459,Insomnia
+374,Female,32,Teacher,8.5,5,83,6,Obese,138/93.7,82,8802,None
+375,Male,37,Doctor,7.0,5,44,10,Obese,134/85.10000000000001,75,4783,Sleep Apnea
+376,Female,60,Nurse,6.9,6,113,10,Obese,127/83.55,79,9474,Sleep Apnea
+377,Female,27,Teacher,6.8,8,52,10,Overweight,118/72.7,90,8272,Narcolepsy
+378,Male,25,Manager,8.3,4,63,6,Obese,130/88.5,91,5242,None
+379,Male,63,Manager,7.7,5,61,10,Overweight,121/75.65,70,7862,Restless Leg Syndrome
+380,Female,77,Lawyer,6.0,6,27,8,Normal,125/83.25,79,2935,Sleep Apnea
+381,Male,78,Student,6.2,5,13,10,Obese,137/88.05,89,4536,Insomnia
+382,Male,22,Writer,8.0,6,56,1,Normal,114/75.10000000000001,70,6300,None
+383,Male,19,Software Engineer,7.5,6,36,6,Obese,131/82.15,63,4102,None
+384,Female,52,Manager,8.1,7,57,7,Obese,134/89.10000000000001,52,5266,Restless Leg Syndrome
+385,Male,80,Artist,7.8,5,39,1,Obese,141/91.65,84,4802,Restless Leg Syndrome
+386,Male,69,Nurse,7.9,6,78,7,Normal,109/69.85000000000001,88,7279,Restless Leg Syndrome
+387,Male,22,Nurse,7.0,5,121,9,Normal,103/64.95,67,10061,None
+388,Female,30,Chef,7.3,7,113,7,Normal,101/68.65,68,9280,None
+389,Male,61,Software Engineer,6.2,9,98,5,Overweight,120/75.0,62,10421,None
+390,Female,61,Manager,7.0,4,21,7,Overweight,130/88.5,68,2732,Sleep Apnea
+391,Female,61,Artist,8.4,5,85,1,Normal,118/71.7,87,8932,Restless Leg Syndrome
+392,Female,44,Sales Representative,9.0,7,110,5,Normal,110/73.5,84,9866,None
+393,Male,75,Student,6.7,6,123,8,Normal,112/68.8,55,11094,Insomnia
+394,Female,60,Writer,8.6,6,54,3,Overweight,132/84.8,84,4180,None
+395,Female,57,Software Engineer,8.3,6,20,3,Obese,133/84.45,84,2897,None
+396,Male,18,Scientist,8.4,3,12,4,Obese,133/84.45,83,1623,Narcolepsy
+397,Male,37,Artist,9.1,6,16,3,Obese,140/89.0,76,3779,None
+398,Male,38,Lawyer,8.3,6,6,9,Normal,115/79.75,104,1694,Insomnia
+399,Female,30,Sales Representative,7.7,5,17,7,Obese,138/86.7,88,3689,None
+400,Female,25,Manager,7.4,5,29,9,Obese,126/76.9,83,3636,Insomnia
+401,Male,43,Lawyer,7.1,8,23,8,Obese,128/82.2,90,5825,Narcolepsy
+402,Female,32,Sales Representative,7.8,8,93,5,Overweight,122/76.3,57,9007,None
+403,Female,43,Chef,9.4,10,129,6,Normal,118/76.7,43,10913,None
+404,Male,48,Nurse,6.0,3,85,7,Overweight,128/79.2,89,6767,Restless Leg Syndrome
+405,Male,48,Manager,6.7,6,83,5,Normal,109/68.85000000000001,66,8252,Narcolepsy
+406,Female,60,Nurse,7.4,4,99,10,Overweight,131/82.15,82,9276,None
+407,Female,71,Teacher,8.9,7,88,5,Normal,115/74.75,71,8786,None
+408,Female,34,Salesperson,7.4,5,87,4,Normal,101/63.650000000000006,73,7669,None
+409,Female,45,Nurse,7.8,5,114,8,Normal,107/65.55,72,11702,Insomnia
+410,Male,30,Accountant,8.1,5,26,4,Overweight,112/67.8,87,3820,Restless Leg Syndrome
+411,Female,53,Salesperson,7.0,7,157,3,Normal,105/65.25,60,12956,None
+412,Male,32,Accountant,7.9,5,37,5,Obese,128/80.2,57,4275,None
+413,Female,27,Software Engineer,8.1,5,67,3,Overweight,120/74.0,69,6105,Narcolepsy
+414,Male,80,Student,8.3,9,80,3,Normal,119/80.35000000000001,77,9079,None
+415,Female,45,Artist,8.2,6,0,2,Overweight,115/79.75,83,1969,None
+416,Male,35,Salesperson,8.8,3,32,4,Obese,124/82.60000000000001,74,4976,None
+417,Female,32,Engineer,8.1,4,11,3,Normal,114/77.10000000000001,101,3246,Narcolepsy
+418,Female,61,Writer,9.2,4,27,3,Overweight,119/72.35000000000001,72,3851,None
+419,Female,50,Salesperson,7.2,6,97,7,Overweight,118/74.7,89,9881,Narcolepsy
+420,Male,32,Accountant,7.6,6,81,6,Normal,110/72.5,72,7503,None
+421,Male,63,Doctor,9.0,4,39,9,Underweight,118/72.7,77,4844,Sleep Apnea
+422,Female,42,Teacher,7.7,5,59,8,Overweight,131/84.15,60,7477,None
+423,Female,34,Teacher,6.8,7,121,10,Underweight,117/75.05,56,8492,Insomnia
+424,Female,64,Nurse,7.3,4,108,5,Normal,106/67.9,75,9069,Sleep Apnea
+425,Female,61,Artist,8.8,6,46,1,Normal,118/76.7,77,5905,None
+426,Female,75,Student,7.5,5,0,9,Normal,109/75.85000000000001,67,2561,Insomnia
+427,Female,64,Manager,8.5,6,21,5,Normal,106/72.9,97,4078,None
+428,Female,35,Accountant,7.2,5,16,5,Overweight,117/81.05,82,1663,None
+429,Female,67,Scientist,8.1,6,68,2,Normal,118/79.7,74,5897,None
+430,Female,70,Student,8.7,1,101,7,Normal,127/86.55,65,10119,Sleep Apnea
+431,Female,51,Teacher,8.5,9,104,9,Normal,119/76.35000000000001,90,9548,None
+432,Male,38,Manager,7.5,4,26,9,Obese,139/94.35000000000001,98,3680,None
+433,Female,59,Salesperson,8.2,4,57,3,Overweight,117/79.05,56,5253,None
+434,Male,25,Teacher,7.7,5,48,4,Overweight,109/74.85000000000001,79,5658,None
+435,Male,74,Artist,8.8,8,160,1,Overweight,133/81.45,45,12234,None
+436,Female,25,Engineer,9.6,5,78,3,Normal,118/76.7,78,8590,None
+437,Male,47,Teacher,6.1,3,64,7,Overweight,117/77.05,73,6407,Insomnia
+438,Male,31,Sales Representative,8.1,6,98,7,Normal,113/71.45,74,7260,Sleep Apnea
+439,Male,70,Writer,8.2,3,65,5,Overweight,136/93.4,90,5936,Sleep Apnea
+440,Male,27,Engineer,8.0,6,47,4,Normal,118/79.7,74,5363,None
+441,Male,36,Student,8.5,4,43,6,Underweight,109/67.85000000000001,62,5583,None
+442,Male,52,Engineer,7.7,5,53,6,Underweight,114/78.10000000000001,73,5840,None
+443,Male,36,Manager,8.6,7,0,5,Obese,133/90.45,62,1000,None
+444,Female,20,Manager,5.7,6,82,10,Normal,118/80.7,74,7597,None
+445,Male,51,Scientist,8.2,6,50,1,Normal,107/71.55,72,6642,None
+446,Male,35,Writer,7.4,7,59,5,Overweight,115/69.75,86,8138,Restless Leg Syndrome
+447,Male,58,Nurse,7.5,9,128,9,Normal,105/72.25,63,9792,None
+448,Male,39,Software Engineer,7.5,5,22,3,Overweight,120/83.0,93,1975,Restless Leg Syndrome
+449,Male,29,Writer,7.9,8,23,1,Underweight,118/75.7,93,2412,Insomnia
+450,Male,52,Lawyer,7.7,1,38,8,Overweight,130/84.5,59,7089,None
+451,Male,76,Accountant,6.5,6,47,5,Overweight,137/84.05,61,5813,Narcolepsy
+452,Female,69,Sales Representative,8.0,5,73,7,Normal,111/75.15,86,7034,None
+453,Female,69,Writer,7.7,6,45,4,Overweight,120/81.0,77,4866,Sleep Apnea
+454,Male,74,Lawyer,8.4,6,17,8,Normal,123/77.95,80,2494,Insomnia
+455,Female,21,Scientist,6.6,6,38,2,Normal,104/64.60000000000001,63,4352,None
+456,Female,28,Salesperson,6.3,6,17,7,Overweight,108/69.2,66,3363,None
+457,Male,69,Engineer,7.9,5,50,5,Overweight,131/90.15,78,5765,None
+458,Female,37,Teacher,6.6,4,90,10,Overweight,120/77.0,85,7727,None
+459,Female,77,Scientist,9.1,6,43,3,Normal,119/79.35000000000001,60,4456,Sleep Apnea
+460,Female,20,Manager,7.9,5,52,7,Normal,104/70.60000000000001,80,4535,None
+461,Female,43,Doctor,8.3,6,6,7,Overweight,131/81.15,70,2387,None
+462,Male,69,Salesperson,7.2,8,180,9,Obese,141/90.65,70,14047,Sleep Apnea
+463,Male,34,Doctor,7.8,6,0,9,Obese,137/90.05,97,3831,Insomnia
+464,Male,45,Scientist,8.8,9,29,5,Obese,132/90.8,100,2485,Restless Leg Syndrome
+465,Female,35,Salesperson,8.8,6,87,3,Overweight,111/68.15,70,8922,Narcolepsy
+466,Male,52,Manager,7.3,4,28,7,Overweight,130/79.5,81,5447,None
+467,Female,49,Teacher,6.9,6,101,6,Normal,105/64.25,89,8955,None
+468,Male,41,Accountant,7.3,7,46,6,Normal,113/78.45,81,4106,None
+469,Female,32,Teacher,8.6,4,68,5,Overweight,125/77.25,71,7514,None
+470,Female,32,Writer,7.1,8,65,6,Normal,117/77.05,63,6841,None
+471,Male,80,Teacher,8.5,4,100,7,Overweight,132/87.8,70,8843,None
+472,Male,19,Scientist,8.6,7,15,5,Normal,97/62.050000000000004,77,2698,Narcolepsy
+473,Female,67,Software Engineer,7.1,5,92,5,Normal,107/65.55,79,10738,None
+474,Male,46,Lawyer,8.4,5,59,7,Normal,109/71.85000000000001,71,6745,None
+475,Male,33,Chef,6.2,4,87,8,Normal,118/74.7,74,7193,None
+476,Male,33,Software Engineer,7.2,5,40,5,Obese,134/92.10000000000001,78,5183,None
+477,Female,29,Nurse,5.5,6,126,10,Underweight,117/73.05,66,10761,None
+478,Female,78,Doctor,5.5,3,11,8,Overweight,118/78.7,86,2194,None
+479,Female,47,Chef,7.9,4,153,7,Normal,116/72.4,59,11336,None
+480,Female,35,Software Engineer,8.6,8,0,2,Obese,124/85.60000000000001,79,1326,None
+481,Female,47,Scientist,7.5,7,43,3,Normal,110/72.5,60,5092,None
+482,Male,49,Scientist,7.7,4,0,5,Obese,130/89.5,75,1743,None
+483,Female,77,Teacher,7.0,5,85,8,Overweight,121/78.65,66,7936,Sleep Apnea
+484,Male,31,Scientist,8.4,7,36,3,Overweight,118/74.7,72,4339,None
+485,Male,33,Artist,8.5,8,72,3,Obese,132/82.8,81,7708,None
+486,Male,30,Scientist,10.0,9,49,1,Obese,134/87.10000000000001,86,5290,Insomnia
+487,Female,19,Software Engineer,8.9,7,20,1,Overweight,122/83.3,97,4826,None
+488,Male,40,Sales Representative,9.3,7,65,5,Overweight,126/77.9,77,5953,None
+489,Male,46,Accountant,7.8,4,2,6,Overweight,115/74.75,74,1870,None
+490,Female,26,Sales Representative,8.9,9,141,5,Normal,106/65.9,66,12207,None
+491,Female,63,Artist,8.3,7,73,5,Underweight,106/65.9,72,5826,None
+492,Male,63,Scientist,8.5,4,76,4,Normal,114/77.10000000000001,87,7124,None
+493,Female,71,Teacher,8.1,7,129,6,Normal,123/75.95,50,10329,None
+494,Male,31,Nurse,8.3,6,138,9,Overweight,130/85.5,58,10905,None
+495,Male,37,Nurse,5.5,5,109,8,Normal,105/71.25,71,7205,None
+496,Male,52,Writer,8.5,7,0,4,Obese,138/91.7,104,1000,None
+497,Female,57,Salesperson,7.6,6,51,4,Normal,114/71.10000000000001,86,3400,None
+498,Female,42,Writer,8.2,7,38,5,Normal,118/78.7,83,3988,None
+499,Male,61,Writer,7.4,7,66,7,Overweight,124/85.60000000000001,60,6995,None
+500,Female,47,Teacher,9.1,7,70,4,Normal,105/63.25,61,6974,None
+501,Male,64,Salesperson,7.5,4,74,5,Normal,111/67.15,65,8203,Sleep Apnea
+502,Female,22,Teacher,7.9,6,83,9,Obese,122/80.3,77,7258,None
+503,Male,56,Student,6.8,4,120,5,Normal,122/78.3,90,10397,None
+504,Female,21,Chef,7.6,5,77,9,Normal,113/74.45,75,7415,Insomnia
+505,Male,68,Scientist,9.3,5,60,3,Obese,137/85.05,69,7941,None
+506,Female,30,Manager,9.4,8,67,1,Overweight,115/73.75,82,6411,None
+507,Male,30,Accountant,7.8,6,0,6,Overweight,125/77.25,74,2759,None
+508,Female,60,Salesperson,9.6,6,30,3,Obese,130/80.5,86,4277,Restless Leg Syndrome
+509,Male,48,Manager,8.6,9,13,7,Normal,122/79.3,80,2874,Narcolepsy
+510,Female,40,Salesperson,7.4,8,137,10,Normal,112/67.8,67,10698,None
+511,Female,73,Chef,8.6,1,56,7,Obese,146/96.9,67,5069,Sleep Apnea
+512,Female,39,Engineer,8.5,6,17,7,Overweight,124/76.60000000000001,68,2954,None
+513,Female,59,Writer,7.6,7,57,7,Overweight,123/77.95,64,5585,None
+514,Female,44,Writer,9.0,5,10,5,Obese,133/87.45,70,3288,None
+515,Male,58,Sales Representative,6.8,5,0,7,Underweight,115/71.75,98,1000,None
+516,Female,78,Writer,8.3,6,86,5,Overweight,120/75.0,71,7082,Sleep Apnea
+517,Female,47,Salesperson,8.0,3,77,7,Overweight,131/88.15,81,7476,None
+518,Male,52,Teacher,6.6,4,74,6,Overweight,117/77.05,54,6550,None
+519,Female,63,Student,7.0,3,123,6,Overweight,116/77.4,60,9309,Sleep Apnea
+520,Male,44,Artist,9.2,10,37,5,Underweight,106/73.9,58,4287,Insomnia
+521,Male,71,Teacher,7.0,3,29,9,Overweight,118/81.7,79,3461,Restless Leg Syndrome
+522,Male,47,Software Engineer,8.5,8,48,3,Normal,116/79.4,74,4680,Sleep Apnea
+523,Male,74,Chef,7.4,2,52,9,Normal,115/77.75,72,6553,None
+524,Female,47,Manager,7.3,10,83,10,Overweight,130/88.5,83,6504,None
+525,Female,19,Student,8.5,8,57,6,Normal,103/63.95,61,7326,Restless Leg Syndrome
+526,Female,62,Artist,8.3,6,36,3,Normal,121/79.65,57,4069,Restless Leg Syndrome
+527,Female,57,Student,7.0,8,131,5,Obese,142/87.3,64,10640,None
+528,Female,76,Accountant,7.8,5,9,7,Normal,125/83.25,77,2954,None
+529,Female,49,Software Engineer,8.2,5,65,4,Underweight,121/73.65,82,4735,None
+530,Female,60,Lawyer,7.7,5,11,9,Obese,133/82.45,106,5122,None
+531,Male,66,Software Engineer,9.4,4,10,4,Normal,112/68.8,71,4182,None
+532,Female,53,Student,6.8,5,68,6,Normal,113/69.45,60,5624,None
+533,Male,26,Engineer,8.4,7,88,7,Normal,112/76.8,70,7911,None
+534,Female,63,Software Engineer,8.0,6,85,5,Overweight,121/80.65,62,8345,None
+535,Female,76,Software Engineer,7.9,5,116,4,Normal,108/68.2,61,11115,Insomnia
+536,Male,38,Manager,6.6,7,68,10,Underweight,120/77.0,57,5402,Insomnia
+537,Male,61,Teacher,7.2,7,109,7,Normal,124/80.60000000000001,69,9541,Insomnia
+538,Male,27,Writer,7.3,5,0,5,Underweight,117/75.05,87,1000,Sleep Apnea
+539,Female,33,Nurse,7.6,7,105,9,Normal,101/65.65,89,9671,None
+540,Female,42,Salesperson,8.1,6,162,6,Normal,117/81.05,74,14835,None
+541,Male,33,Chef,8.1,4,89,5,Normal,100/62.0,74,8256,Insomnia
+542,Female,53,Nurse,7.6,7,42,6,Obese,129/81.85000000000001,69,5441,None
+543,Female,37,Salesperson,8.9,6,88,2,Overweight,122/82.3,63,7248,Insomnia
+544,Male,52,Chef,8.5,6,37,5,Normal,112/75.8,88,4973,None
+545,Female,42,Scientist,7.3,9,24,7,Obese,131/84.15,85,4326,Narcolepsy
+546,Male,40,Scientist,9.2,7,80,5,Obese,133/84.45,83,8523,None
+547,Female,74,Engineer,7.3,3,43,5,Obese,136/91.4,57,2800,None
+548,Female,78,Teacher,7.3,5,55,9,Underweight,117/79.05,75,4449,Sleep Apnea
+549,Female,50,Artist,7.7,8,65,6,Overweight,132/88.8,56,5149,Insomnia
+550,Male,20,Engineer,6.3,4,16,7,Overweight,113/78.45,95,4037,Narcolepsy
+551,Male,47,Accountant,7.6,6,34,5,Obese,129/78.85000000000001,69,3742,Narcolepsy
+552,Male,58,Software Engineer,8.6,10,40,7,Normal,121/78.65,74,4791,None
+553,Female,63,Nurse,7.0,5,98,10,Obese,137/88.05,78,8468,Narcolepsy
+554,Female,19,Lawyer,7.9,6,0,10,Overweight,113/76.45,86,2989,Sleep Apnea
+555,Male,30,Accountant,7.6,8,59,6,Underweight,113/69.45,78,7119,Restless Leg Syndrome
+556,Male,79,Scientist,7.0,5,67,1,Underweight,120/80.0,67,8389,None
+557,Male,43,Writer,8.7,7,16,2,Normal,116/76.4,68,5298,None
+558,Female,75,Doctor,7.7,4,82,8,Overweight,136/84.4,69,7736,Narcolepsy
+559,Male,46,Teacher,6.7,5,118,6,Normal,109/67.85000000000001,76,10665,None
+560,Male,75,Teacher,6.6,6,41,10,Normal,119/76.35000000000001,77,3961,None
+561,Male,48,Nurse,7.3,4,69,8,Overweight,120/74.0,79,5822,Restless Leg Syndrome
+562,Male,58,Nurse,8.9,7,67,6,Normal,106/66.9,84,4979,None
+563,Male,33,Student,7.8,6,111,7,Underweight,103/63.95,62,10583,None
+564,Male,25,Salesperson,8.8,6,144,7,Normal,116/73.4,47,11005,Restless Leg Syndrome
+565,Female,56,Scientist,7.0,8,58,9,Normal,119/77.35000000000001,71,6915,None
+566,Female,73,Chef,7.6,1,13,9,Normal,122/80.3,98,3775,None
+567,Male,39,Nurse,8.1,8,147,10,Normal,117/80.05,71,11799,Insomnia
+568,Female,79,Artist,9.1,6,96,1,Overweight,137/94.05,87,8015,None
+569,Female,61,Salesperson,9.5,3,69,1,Overweight,130/81.5,58,5221,Sleep Apnea
+570,Female,43,Salesperson,5.7,2,102,9,Overweight,124/75.60000000000001,60,8901,Restless Leg Syndrome
+571,Female,39,Accountant,7.3,7,9,6,Obese,126/82.9,98,2716,None
+572,Male,59,Artist,8.4,9,0,5,Obese,133/82.45,77,1483,Insomnia
+573,Male,49,Teacher,7.7,1,18,6,Obese,141/91.65,74,2332,Narcolepsy
+574,Female,36,Sales Representative,8.8,7,89,6,Overweight,129/81.85000000000001,62,6217,Narcolepsy
+575,Female,32,Writer,7.4,5,42,5,Overweight,124/85.60000000000001,75,4090,None
+576,Male,31,Nurse,8.0,4,39,4,Underweight,108/65.2,79,5048,None
+577,Female,58,Chef,7.2,6,145,7,Overweight,127/82.55,64,11568,None
+578,Male,54,Teacher,7.7,7,60,8,Overweight,133/82.45,56,5624,Sleep Apnea
+579,Male,22,Software Engineer,6.4,7,131,6,Normal,114/79.10000000000001,62,10136,None
+580,Female,62,Writer,8.3,8,22,4,Overweight,134/83.10000000000001,79,1530,Sleep Apnea
+581,Female,20,Salesperson,6.5,5,36,9,Overweight,120/77.0,57,2630,Insomnia
+582,Male,51,Sales Representative,9.0,9,107,4,Normal,118/78.7,67,9581,None
+583,Male,20,Scientist,6.5,8,37,9,Underweight,100/66.0,73,5515,None
+584,Female,19,Doctor,6.8,4,0,8,Overweight,110/70.5,84,2116,None
+585,Female,27,Engineer,8.7,7,88,3,Normal,102/70.3,60,8180,None
+586,Female,56,Accountant,8.7,6,63,7,Normal,104/66.60000000000001,75,6372,Sleep Apnea
+587,Male,54,Scientist,7.8,6,62,6,Normal,113/72.45,82,3970,Restless Leg Syndrome
+588,Male,64,Doctor,7.4,7,22,10,Overweight,129/86.85000000000001,71,3731,Sleep Apnea
+589,Female,32,Scientist,7.5,10,55,5,Overweight,129/79.85000000000001,59,6649,Narcolepsy
+590,Female,30,Student,7.5,9,85,9,Underweight,102/63.3,73,8799,Insomnia
+591,Female,19,Sales Representative,6.5,6,47,9,Normal,116/71.4,64,5648,None
+592,Male,76,Sales Representative,9.0,3,34,5,Normal,123/75.95,65,6346,None
+593,Female,30,Doctor,6.6,4,35,8,Obese,139/90.35000000000001,74,3649,None
+594,Female,21,Doctor,8.8,6,90,7,Normal,105/73.25,67,8503,None
+595,Female,43,Teacher,6.8,6,15,7,Overweight,112/70.8,89,3385,None
+596,Female,79,Manager,8.0,1,3,8,Underweight,109/65.85000000000001,64,1587,Insomnia
+597,Male,70,Sales Representative,8.7,8,86,3,Overweight,122/84.3,68,6956,None
+598,Female,20,Student,8.8,8,132,3,Normal,104/69.60000000000001,46,10435,None
+599,Female,28,Student,7.8,6,106,6,Underweight,116/76.4,58,7182,None
+600,Female,42,Scientist,7.3,9,70,4,Overweight,130/83.5,63,6850,None
+601,Female,32,Manager,8.0,6,62,6,Normal,120/78.0,60,6379,Narcolepsy
+602,Female,80,Salesperson,7.6,5,66,6,Overweight,138/89.7,72,6239,None
+603,Male,44,Writer,6.7,5,46,6,Overweight,125/86.25,69,5014,None
+604,Male,21,Chef,6.5,7,122,7,Normal,114/75.10000000000001,47,13069,None
+605,Female,77,Scientist,7.8,6,0,3,Obese,141/87.65,109,1931,None
+606,Male,20,Teacher,8.2,6,52,10,Obese,136/90.4,57,6768,None
+607,Female,23,Nurse,8.2,7,93,7,Normal,105/63.25,56,9391,None
+608,Male,63,Sales Representative,6.3,3,51,10,Overweight,120/77.0,60,4396,Narcolepsy
+609,Female,63,Accountant,7.6,6,71,5,Normal,125/85.25,79,6871,Insomnia
+610,Male,20,Chef,7.8,8,136,6,Underweight,106/71.9,46,9768,None
+611,Male,44,Student,7.7,8,35,10,Obese,130/83.5,87,6356,Insomnia
+612,Male,18,Doctor,8.4,3,25,7,Obese,128/85.2,84,2084,Narcolepsy
+613,Female,43,Nurse,7.3,6,61,6,Overweight,118/74.7,61,6308,None
+614,Female,43,Engineer,6.5,6,31,6,Overweight,126/76.9,76,5155,None
+615,Female,48,Lawyer,7.5,7,46,8,Normal,105/64.25,86,4067,Insomnia
+616,Male,62,Software Engineer,7.4,8,40,7,Normal,122/74.3,70,5440,Insomnia
+617,Male,26,Lawyer,7.5,4,44,8,Normal,118/80.7,77,4969,None
+618,Male,58,Writer,8.0,7,43,3,Overweight,120/83.0,65,4178,Insomnia
+619,Female,68,Sales Representative,7.0,4,2,7,Normal,123/82.95,80,1570,None
+620,Female,45,Manager,7.0,4,37,7,Overweight,122/83.3,88,4789,None
+621,Male,28,Lawyer,6.7,6,9,9,Overweight,125/80.25,90,4321,None
+622,Female,59,Software Engineer,7.6,7,53,9,Normal,106/67.9,69,3968,None
+623,Female,80,Scientist,9.6,7,51,1,Overweight,132/86.8,59,4840,None
+624,Female,36,Teacher,8.3,7,45,4,Overweight,116/80.4,85,3604,Restless Leg Syndrome
+625,Male,78,Doctor,7.9,4,67,7,Normal,121/80.65,75,6154,None
+626,Male,35,Writer,6.7,9,41,6,Obese,121/83.65,69,5220,None
+627,Male,46,Accountant,7.9,6,20,7,Normal,107/64.55,98,3387,None
+628,Female,62,Student,7.8,4,62,10,Normal,114/73.10000000000001,77,5606,None
+629,Female,66,Nurse,7.4,7,130,7,Normal,117/78.05,63,9955,None
+630,Female,55,Artist,7.7,7,75,6,Overweight,116/77.4,68,6125,None
+631,Female,51,Sales Representative,9.6,5,124,3,Normal,105/67.25,43,10879,None
+632,Female,28,Writer,8.2,5,0,6,Normal,118/71.7,90,2787,None
+633,Male,61,Artist,8.8,6,29,1,Normal,120/76.0,103,3567,Narcolepsy
+634,Female,48,Accountant,8.9,7,23,6,Overweight,118/81.7,78,2374,None
+635,Female,58,Accountant,9.0,6,38,6,Underweight,107/69.55,72,4583,Sleep Apnea
+636,Male,54,Nurse,6.6,4,10,10,Overweight,134/84.10000000000001,75,3423,None
+637,Female,37,Lawyer,8.0,6,12,7,Overweight,123/82.95,87,1975,None
+638,Male,58,Manager,8.5,3,23,4,Overweight,115/71.75,96,3795,None
+639,Female,64,Accountant,7.8,6,22,5,Obese,130/84.5,94,4346,Sleep Apnea
+640,Male,34,Artist,8.6,6,43,4,Underweight,107/66.55,60,5563,None
+641,Male,57,Nurse,7.6,6,43,8,Normal,121/82.65,74,5141,None
+642,Male,58,Salesperson,7.4,6,103,5,Normal,112/75.8,66,10708,Restless Leg Syndrome
+643,Female,26,Salesperson,7.5,6,128,4,Overweight,123/77.95,54,11373,Insomnia
+644,Female,38,Engineer,8.8,7,36,2,Normal,111/75.15,67,5542,None
+645,Male,43,Writer,7.8,8,32,4,Overweight,124/85.60000000000001,64,4159,None
+646,Male,78,Doctor,6.1,5,54,8,Overweight,130/86.5,72,6480,Sleep Apnea
+647,Female,74,Artist,8.0,7,104,5,Normal,112/71.8,74,11009,Narcolepsy
+648,Female,44,Engineer,8.4,6,32,7,Obese,133/86.45,58,6425,None
+649,Male,63,Software Engineer,8.4,6,49,4,Obese,140/95.0,75,4029,Sleep Apnea
+650,Female,27,Scientist,9.3,6,53,5,Normal,108/72.2,66,6719,None
+651,Female,18,Writer,8.6,7,79,4,Overweight,115/70.75,72,8571,None
+652,Female,48,Student,6.1,4,137,6,Normal,118/80.7,50,10251,None
+653,Male,46,Doctor,7.1,3,0,8,Overweight,118/75.7,88,4538,None
+654,Female,63,Student,7.5,6,84,5,Normal,122/81.3,84,9252,None
+655,Male,67,Nurse,8.7,5,73,7,Obese,131/90.15,56,8985,None
+656,Male,46,Salesperson,7.6,5,86,4,Overweight,114/69.10000000000001,71,9033,None
+657,Female,64,Sales Representative,9.0,6,48,5,Overweight,119/82.35000000000001,84,4146,None
+658,Female,23,Lawyer,8.2,3,39,8,Overweight,128/85.2,73,5314,None
+659,Female,78,Sales Representative,7.9,3,19,6,Overweight,126/83.9,82,5165,Sleep Apnea
+660,Female,72,Lawyer,6.4,2,3,9,Obese,133/84.45,94,2796,None
+661,Female,74,Doctor,7.7,3,7,9,Normal,117/74.05,78,2633,Restless Leg Syndrome
+662,Female,54,Doctor,7.4,4,55,9,Normal,106/66.9,78,6880,Narcolepsy
+663,Female,71,Artist,8.8,9,30,3,Overweight,132/82.8,61,3575,None
+664,Male,29,Artist,7.6,6,18,5,Normal,102/70.3,71,1535,Restless Leg Syndrome
+665,Female,35,Manager,6.8,7,114,8,Normal,102/67.3,68,9513,None
+666,Female,42,Scientist,8.7,8,66,2,Obese,122/76.3,73,7032,None
+667,Female,20,Chef,7.3,4,83,8,Obese,125/76.25,84,8320,Restless Leg Syndrome
+668,Male,67,Doctor,7.5,5,19,7,Underweight,113/75.45,91,4143,None
+669,Male,60,Chef,6.4,5,104,9,Overweight,134/84.10000000000001,77,8025,Insomnia
+670,Male,55,Doctor,7.3,5,60,8,Normal,116/72.4,53,7865,None
+671,Female,73,Salesperson,7.6,5,73,4,Normal,109/66.85000000000001,79,7632,Sleep Apnea
+672,Female,76,Engineer,8.6,5,92,5,Normal,123/76.95,76,9465,Sleep Apnea
+673,Male,67,Lawyer,7.6,4,32,7,Normal,108/75.2,70,3063,None
+674,Female,47,Doctor,9.3,5,27,8,Underweight,106/70.9,98,3190,Sleep Apnea
+675,Female,47,Scientist,7.9,7,24,3,Overweight,113/74.45,66,4819,Sleep Apnea
+676,Male,54,Chef,6.8,4,115,9,Normal,113/73.45,73,7816,None
+677,Female,36,Nurse,6.2,9,148,6,Normal,110/74.5,50,13263,Insomnia
+678,Male,73,Teacher,9.5,4,131,10,Normal,124/79.60000000000001,74,11319,None
+679,Female,41,Engineer,8.1,6,0,6,Overweight,126/76.9,90,3627,None
+680,Female,74,Chef,8.1,6,93,5,Normal,125/76.25,67,7516,None
+681,Male,31,Artist,9.1,7,0,2,Overweight,119/80.35000000000001,76,1928,Restless Leg Syndrome
+682,Male,65,Teacher,8.5,7,84,7,Normal,111/67.15,56,5574,None
+683,Female,24,Teacher,7.7,6,55,6,Normal,117/77.05,77,4937,None
+684,Male,68,Manager,8.3,3,0,10,Obese,129/86.85000000000001,82,3541,Restless Leg Syndrome
+685,Male,67,Nurse,7.2,6,78,8,Normal,116/74.4,68,6038,None
+686,Female,70,Nurse,7.9,8,42,7,Overweight,132/82.8,66,5334,None
+687,Male,56,Lawyer,7.1,5,21,8,Normal,116/73.4,109,3786,None
+688,Female,71,Accountant,6.7,8,37,6,Obese,136/85.4,80,6152,None
+689,Female,29,Chef,6.8,6,108,7,Normal,112/68.8,79,10410,Sleep Apnea
+690,Female,20,Doctor,8.4,4,68,6,Obese,131/80.15,65,6345,None
+691,Female,62,Teacher,6.8,5,57,8,Normal,125/86.25,86,5323,None
+692,Male,35,Scientist,10.0,4,55,5,Normal,116/70.4,83,5473,Narcolepsy
+693,Male,42,Lawyer,9.6,6,35,7,Normal,105/67.25,77,4833,None
+694,Male,41,Teacher,9.0,7,109,3,Overweight,114/72.10000000000001,69,10343,Sleep Apnea
+695,Female,24,Software Engineer,6.3,8,81,3,Normal,105/65.25,69,7849,Sleep Apnea
+696,Male,44,Manager,8.1,5,83,7,Normal,110/70.5,63,6592,None
+697,Female,31,Manager,8.2,5,60,7,Overweight,120/78.0,72,5411,None
+698,Male,46,Accountant,6.9,6,12,5,Obese,138/86.7,86,2208,None
+699,Male,77,Scientist,8.6,6,52,1,Overweight,126/80.9,61,6180,None
+700,Male,19,Teacher,7.7,6,61,9,Obese,118/76.7,87,6847,Insomnia
+701,Female,39,Scientist,7.3,3,58,5,Obese,127/86.55,79,6801,None
+702,Female,28,Salesperson,8.3,7,141,4,Underweight,107/68.55,61,11530,None
+703,Male,72,Lawyer,5.7,4,4,9,Overweight,135/86.75,68,2424,Insomnia
+704,Male,31,Chef,6.8,4,71,7,Overweight,115/70.75,80,6219,None
+705,Male,27,Teacher,6.8,5,116,7,Normal,104/65.60000000000001,89,9364,None
+706,Female,57,Lawyer,6.0,4,9,9,Normal,120/76.0,102,2390,None
+707,Male,58,Nurse,8.1,7,122,8,Normal,124/75.60000000000001,47,11539,None
+708,Male,19,Manager,7.5,4,42,5,Underweight,114/73.10000000000001,62,4508,Insomnia
+709,Male,72,Student,7.1,1,70,5,Normal,115/69.75,70,6743,Insomnia
+710,Female,53,Scientist,7.3,9,57,4,Normal,124/80.60000000000001,78,5243,None
+711,Male,80,Manager,6.9,2,40,6,Overweight,131/87.15,65,3586,None
+712,Male,50,Artist,8.1,7,65,4,Overweight,127/79.55,62,5622,None
+713,Male,26,Manager,7.2,7,4,8,Overweight,113/73.45,101,2205,None
+714,Male,39,Doctor,7.8,7,37,8,Normal,108/73.2,54,5514,None
+715,Female,63,Salesperson,9.2,7,96,1,Normal,109/66.85000000000001,73,8284,None
+716,Female,80,Sales Representative,7.7,6,18,5,Obese,140/91.0,95,3173,None
+717,Male,52,Lawyer,5.7,6,56,10,Underweight,112/76.8,83,5634,Narcolepsy
+718,Female,23,Chef,7.7,7,81,4,Underweight,104/65.60000000000001,86,8287,None
+719,Female,34,Doctor,7.2,5,38,7,Overweight,127/86.55,71,4630,None
+720,Male,22,Doctor,7.7,6,0,7,Underweight,101/67.65,87,3045,None
+721,Male,38,Accountant,6.5,6,51,6,Overweight,128/86.2,66,4942,None
+722,Male,79,Artist,8.7,7,77,4,Overweight,121/80.65,52,8309,None
+723,Female,52,Scientist,7.8,8,14,6,Overweight,122/74.3,106,2478,None
+724,Male,47,Lawyer,7.9,7,33,10,Overweight,127/77.55,55,4114,None
+725,Female,45,Doctor,6.8,7,45,10,Obese,122/76.3,85,6578,None
+726,Male,29,Lawyer,7.8,5,21,8,Normal,117/81.05,91,3129,None
+727,Male,47,Student,7.0,7,47,5,Obese,132/87.8,85,5206,Sleep Apnea
+728,Male,32,Manager,6.9,6,48,5,Obese,132/83.8,88,7054,None
+729,Female,19,Engineer,7.0,5,56,5,Obese,121/82.65,75,5979,None
+730,Female,52,Nurse,7.2,6,100,9,Normal,118/78.7,75,9356,None
+731,Female,28,Salesperson,7.0,5,115,8,Obese,128/80.2,74,10347,Sleep Apnea
+732,Female,77,Teacher,9.4,6,85,3,Underweight,124/78.60000000000001,80,7167,None
+733,Male,63,Chef,5.2,4,108,10,Overweight,128/81.2,89,7899,Sleep Apnea
+734,Male,53,Software Engineer,9.3,8,52,7,Overweight,123/82.95,61,7740,None
+735,Female,23,Sales Representative,7.1,6,134,7,Overweight,116/76.4,53,10499,None
+736,Female,70,Student,8.2,2,54,6,Overweight,124/84.60000000000001,78,5872,None
+737,Female,22,Teacher,7.4,6,35,6,Overweight,125/82.25,80,2652,None
+738,Female,46,Nurse,9.2,7,59,7,Overweight,116/77.4,66,5359,None
+739,Male,58,Chef,7.6,6,98,9,Normal,107/68.55,77,9954,Insomnia
+740,Female,70,Artist,7.5,6,102,2,Normal,125/85.25,61,10243,None
+741,Male,80,Writer,9.9,3,40,6,Overweight,134/87.10000000000001,73,5692,None
+742,Female,27,Writer,8.3,6,3,3,Normal,112/77.8,85,1011,None
+743,Female,64,Chef,6.6,5,92,8,Obese,141/88.65,80,9078,Sleep Apnea
+744,Male,35,Artist,7.9,7,124,3,Overweight,118/80.7,58,11649,None
+745,Female,41,Nurse,7.9,6,88,7,Overweight,112/67.8,84,8473,None
+746,Female,79,Scientist,6.7,5,52,7,Overweight,138/86.7,88,5026,Sleep Apnea
+747,Male,47,Scientist,5.2,7,45,7,Obese,137/86.05,61,4457,None
+748,Female,73,Accountant,6.3,5,29,7,Overweight,128/86.2,91,3636,Sleep Apnea
+749,Female,37,Engineer,8.4,4,19,7,Obese,139/94.35000000000001,102,4725,None
+750,Female,55,Nurse,7.5,9,86,8,Underweight,107/69.55,74,7628,Insomnia
+751,Female,45,Writer,7.4,5,13,4,Obese,141/93.65,78,2591,Insomnia
+752,Male,69,Software Engineer,7.7,5,62,4,Overweight,121/78.65,67,8039,None
+753,Male,23,Chef,9.3,7,173,3,Normal,100/65.0,58,13212,None
+754,Female,32,Nurse,8.1,5,68,7,Obese,129/78.85000000000001,60,9211,None
+755,Male,48,Scientist,7.6,7,47,4,Obese,132/80.8,66,6463,Narcolepsy
+756,Female,69,Student,8.6,4,61,1,Normal,123/77.95,71,7173,Insomnia
+757,Female,57,Teacher,7.1,7,58,8,Normal,119/82.35000000000001,91,5055,None
+758,Male,67,Software Engineer,9.2,4,0,1,Normal,118/74.7,65,3362,Narcolepsy
+759,Male,19,Salesperson,6.2,6,0,9,Overweight,125/84.25,102,2984,Restless Leg Syndrome
+760,Female,27,Scientist,8.1,7,36,2,Overweight,108/71.2,53,5125,None
+761,Male,46,Student,7.7,4,67,8,Obese,139/85.35000000000001,65,5806,Sleep Apnea
+762,Female,25,Engineer,7.8,8,70,5,Overweight,114/77.10000000000001,63,7514,None
+763,Female,27,Nurse,7.6,6,160,5,Normal,100/62.0,77,12700,Restless Leg Syndrome
+764,Male,42,Sales Representative,6.5,8,153,9,Normal,112/77.8,72,12727,Insomnia
+765,Female,74,Salesperson,6.8,3,29,8,Normal,111/70.15,81,3874,Insomnia
+766,Female,22,Accountant,5.4,7,33,6,Underweight,106/66.9,88,4227,None
+767,Female,32,Doctor,8.8,6,26,7,Normal,101/65.65,83,2850,Narcolepsy
+768,Female,66,Doctor,7.3,2,85,6,Normal,116/73.4,80,9175,Restless Leg Syndrome
+769,Male,18,Student,7.7,7,97,8,Underweight,111/72.15,62,9876,Insomnia
+770,Male,39,Sales Representative,9.5,5,88,5,Obese,125/82.25,68,7166,Restless Leg Syndrome
+771,Female,53,Student,7.5,5,0,5,Obese,128/83.2,89,2232,Restless Leg Syndrome
+772,Female,77,Teacher,8.2,6,100,5,Normal,109/74.85000000000001,71,7562,None
+773,Female,70,Lawyer,6.9,4,13,9,Obese,129/84.85000000000001,88,2792,Sleep Apnea
+774,Female,24,Teacher,6.0,8,180,7,Normal,102/70.3,68,13798,None
+775,Female,31,Accountant,8.9,6,25,5,Obese,123/78.95,94,4616,None
+776,Female,66,Sales Representative,7.7,7,57,6,Overweight,119/75.35000000000001,81,7237,None
+777,Female,79,Scientist,7.5,6,8,4,Normal,109/67.85000000000001,107,3506,None
+778,Male,49,Teacher,6.7,9,123,9,Normal,112/69.8,63,8589,Insomnia
+779,Female,38,Artist,7.3,5,25,7,Overweight,130/83.5,96,3189,None
+780,Female,40,Artist,8.1,8,0,1,Overweight,122/74.3,68,2719,Sleep Apnea
+781,Female,39,Student,8.7,7,180,6,Normal,103/68.95,47,13861,None
+782,Female,78,Lawyer,8.2,5,29,8,Obese,139/95.35000000000001,72,5642,Sleep Apnea
+783,Female,18,Scientist,8.9,7,20,7,Overweight,121/74.65,102,2989,None
+784,Female,73,Accountant,6.5,5,93,6,Underweight,110/75.5,68,7698,None
+785,Male,80,Manager,8.7,2,52,10,Underweight,113/70.45,90,5064,Sleep Apnea
+786,Male,47,Teacher,8.0,3,83,8,Normal,103/61.95,64,7396,None
+787,Male,20,Teacher,7.8,7,127,7,Normal,107/67.55,57,12219,None
+788,Male,39,Writer,8.5,5,55,1,Normal,116/73.4,72,5409,None
+789,Male,37,Writer,8.2,9,23,4,Underweight,101/64.65,98,2105,None
+790,Male,28,Manager,7.7,5,65,8,Normal,108/66.2,62,5090,None
+791,Female,19,Writer,8.3,10,54,7,Obese,133/89.45,92,3958,None
+792,Male,68,Writer,8.5,6,34,5,Underweight,114/79.10000000000001,51,4722,None
+793,Female,53,Sales Representative,7.4,4,87,4,Normal,109/68.85000000000001,63,8342,Sleep Apnea
+794,Male,66,Manager,7.0,7,28,8,Overweight,126/86.9,97,3903,Sleep Apnea
+795,Female,24,Student,6.1,6,19,7,Overweight,110/73.5,85,3307,Sleep Apnea
+796,Female,40,Chef,7.2,5,46,5,Overweight,116/80.4,86,4868,None
+797,Female,60,Doctor,8.2,6,0,8,Normal,121/77.65,80,1000,Insomnia
+798,Female,48,Chef,7.2,7,114,7,Normal,121/80.65,68,11651,None
+799,Male,75,Teacher,8.1,3,53,8,Normal,109/75.85000000000001,74,6829,Insomnia
+800,Female,63,Accountant,7.8,5,37,7,Overweight,126/81.9,89,5467,None
+801,Female,69,Sales Representative,8.9,5,65,5,Overweight,135/89.75,60,8085,Sleep Apnea
+802,Female,79,Scientist,9.0,5,57,5,Overweight,120/73.0,80,4289,Sleep Apnea
+803,Male,23,Student,7.8,5,53,6,Normal,109/70.85000000000001,70,7790,Restless Leg Syndrome
+804,Male,59,Software Engineer,8.7,6,70,4,Overweight,126/76.9,59,6135,None
+805,Male,57,Student,8.9,8,99,6,Overweight,129/81.85000000000001,60,8318,None
+806,Female,38,Lawyer,7.3,7,0,8,Overweight,119/80.35000000000001,62,2052,Sleep Apnea
+807,Female,34,Nurse,7.6,6,19,7,Overweight,124/83.60000000000001,109,3841,None
+808,Female,47,Writer,8.4,6,55,2,Normal,111/77.15,74,4152,None
+809,Female,34,Manager,8.4,5,42,6,Overweight,124/78.60000000000001,69,5667,None
+810,Female,40,Writer,8.2,4,10,5,Obese,139/90.35000000000001,71,1773,None
+811,Male,71,Salesperson,7.3,6,117,7,Overweight,129/80.85000000000001,61,9672,Insomnia
+812,Male,48,Lawyer,6.6,9,7,8,Obese,138/89.7,102,4317,None
+813,Male,39,Salesperson,6.6,7,98,10,Obese,130/84.5,67,8561,None
+814,Female,67,Teacher,8.7,6,140,6,Normal,123/78.95,55,11273,None
+815,Male,35,Manager,9.4,4,33,6,Overweight,127/83.55,68,3515,None
+816,Male,40,Lawyer,7.7,5,0,8,Underweight,103/65.95,71,2142,Restless Leg Syndrome
+817,Female,47,Chef,6.8,4,96,7,Normal,112/74.8,58,9728,None
+818,Male,42,Accountant,8.4,6,40,7,Normal,114/69.10000000000001,83,5332,Sleep Apnea
+819,Male,54,Salesperson,6.5,7,161,7,Normal,104/69.60000000000001,45,13652,None
+820,Male,37,Doctor,7.6,2,18,8,Overweight,117/78.05,99,3675,Insomnia
+821,Male,26,Artist,9.4,7,58,1,Overweight,122/77.3,90,4813,None
+822,Male,28,Software Engineer,8.0,7,93,5,Normal,108/65.2,74,9015,None
+823,Female,80,Software Engineer,8.8,6,35,3,Overweight,121/75.65,69,4392,None
+824,Male,20,Teacher,8.3,6,46,8,Normal,118/73.7,86,5931,Restless Leg Syndrome
+825,Female,55,Engineer,6.9,6,95,8,Normal,119/76.35000000000001,69,9617,None
+826,Female,28,Engineer,6.7,8,59,7,Overweight,120/73.0,72,7737,None
+827,Female,24,Sales Representative,8.7,8,136,7,Normal,115/73.75,60,10879,Sleep Apnea
+828,Female,38,Scientist,8.3,6,70,8,Normal,106/68.9,81,6055,None
+829,Male,36,Manager,7.5,6,64,5,Overweight,125/80.25,75,5451,None
+830,Male,56,Scientist,9.7,9,88,2,Normal,119/77.35000000000001,89,9242,None
+831,Female,80,Scientist,7.9,5,0,2,Obese,134/89.10000000000001,100,1576,None
+832,Female,45,Salesperson,8.4,7,16,8,Overweight,113/70.45,91,1888,None
+833,Female,29,Salesperson,8.5,2,85,9,Overweight,122/76.3,78,10273,None
+834,Male,56,Software Engineer,8.3,8,37,5,Normal,111/67.15,80,6663,None
+835,Female,32,Doctor,7.6,5,44,8,Overweight,121/81.65,94,5237,None
+836,Female,50,Doctor,8.2,4,20,7,Overweight,122/79.3,92,3025,None
+837,Male,40,Doctor,8.0,5,31,8,Overweight,127/78.55,82,4240,None
+838,Male,29,Engineer,9.1,6,44,5,Overweight,125/79.25,78,6822,Restless Leg Syndrome
+839,Male,45,Nurse,6.8,4,106,6,Normal,108/69.2,66,8734,None
+840,Female,43,Scientist,7.7,5,50,5,Normal,103/66.95,86,5696,None
+841,Female,80,Artist,7.3,5,0,6,Overweight,140/90.0,101,2448,None
+842,Female,79,Chef,5.8,4,80,8,Overweight,136/84.4,74,8998,None
+843,Male,30,Nurse,7.3,3,29,9,Overweight,122/78.3,83,4040,Narcolepsy
+844,Male,53,Manager,8.5,7,70,5,Overweight,119/76.35000000000001,59,7841,None
+845,Male,42,Sales Representative,9.2,7,27,4,Overweight,129/85.85000000000001,68,4416,Insomnia
+846,Female,24,Writer,8.1,3,64,3,Obese,128/88.2,52,6829,None
+847,Male,71,Lawyer,7.8,8,0,7,Obese,139/92.35000000000001,66,1000,Narcolepsy
+848,Male,20,Software Engineer,7.4,7,40,4,Overweight,117/73.05,60,3910,None
+849,Male,55,Salesperson,6.5,8,137,5,Normal,104/69.60000000000001,56,9525,None
+850,Female,59,Engineer,7.0,6,20,7,Underweight,121/80.65,73,3098,Narcolepsy
+851,Female,19,Artist,8.5,6,56,4,Underweight,107/64.55,71,5440,None
+852,Female,23,Sales Representative,7.8,4,33,6,Normal,118/75.7,72,3958,None
+853,Female,23,Sales Representative,7.2,8,29,5,Overweight,124/81.60000000000001,77,4863,Insomnia
+854,Male,22,Manager,7.7,5,26,8,Overweight,124/75.60000000000001,97,2471,None
+855,Female,44,Teacher,8.5,6,31,9,Normal,108/75.2,86,3940,None
+856,Female,38,Nurse,8.9,2,90,9,Normal,116/72.4,71,7024,None
+857,Female,47,Sales Representative,6.8,4,85,6,Normal,122/74.3,76,7199,Restless Leg Syndrome
+858,Male,49,Chef,7.5,7,89,9,Obese,122/84.3,60,8192,Insomnia
+859,Female,71,Artist,8.3,6,2,1,Underweight,117/76.05,70,1852,None
+860,Male,37,Salesperson,8.3,4,108,6,Overweight,116/71.4,71,7819,Narcolepsy
+861,Female,30,Student,8.2,7,117,1,Normal,107/70.55,81,10104,None
+862,Male,60,Engineer,7.7,5,62,5,Overweight,128/79.2,81,6345,None
+863,Male,26,Sales Representative,7.2,7,46,5,Normal,99/63.35000000000001,79,4813,None
+864,Female,18,Artist,7.4,7,73,2,Obese,118/75.7,53,6605,None
+865,Male,44,Doctor,6.8,6,85,9,Underweight,111/70.15,82,8045,Sleep Apnea
+866,Female,27,Student,8.9,5,139,1,Underweight,112/67.8,72,12002,None
+867,Female,35,Accountant,8.4,8,68,5,Overweight,129/84.85000000000001,75,5866,None
+868,Female,21,Nurse,6.6,9,32,8,Normal,99/64.35000000000001,60,4229,None
+869,Male,49,Nurse,6.9,5,133,9,Normal,111/73.15,70,11597,None
+870,Male,79,Nurse,6.5,2,101,6,Normal,121/76.65,82,11388,Restless Leg Syndrome
+871,Female,79,Chef,7.2,6,82,8,Overweight,134/85.10000000000001,75,6988,Restless Leg Syndrome
+872,Female,62,Student,7.7,4,66,7,Normal,126/76.9,76,6087,None
+873,Male,77,Scientist,6.1,4,71,6,Overweight,136/93.4,71,5985,None
+874,Male,48,Manager,7.3,3,42,7,Overweight,128/87.2,56,5981,None
+875,Female,50,Manager,8.9,7,25,9,Obese,124/80.60000000000001,79,3952,None
+876,Male,30,Software Engineer,8.3,5,102,2,Obese,139/92.35000000000001,85,11445,None
+877,Female,26,Teacher,7.9,7,146,9,Normal,116/80.4,59,12416,None
+878,Female,29,Lawyer,7.1,4,25,10,Overweight,117/75.05,81,2018,None
+879,Male,68,Engineer,9.7,4,24,1,Normal,121/82.65,92,3419,None
+880,Female,74,Lawyer,7.4,4,21,8,Obese,145/94.25,99,3475,Sleep Apnea
+881,Female,59,Engineer,6.4,5,18,3,Underweight,108/68.2,79,1891,None
+882,Male,24,Chef,7.9,7,137,7,Normal,108/69.2,76,13141,None
+883,Female,26,Manager,8.1,6,25,6,Normal,100/68.0,83,2280,None
+884,Male,68,Manager,7.3,2,38,5,Normal,122/78.3,76,4628,Restless Leg Syndrome
+885,Male,39,Software Engineer,8.2,10,88,5,Normal,112/76.8,72,8344,Restless Leg Syndrome
+886,Female,65,Chef,8.4,4,119,6,Overweight,126/84.9,59,11596,None
+887,Female,33,Teacher,7.5,6,59,10,Normal,112/74.8,72,5395,None
+888,Male,61,Sales Representative,6.3,4,0,6,Normal,125/82.25,93,1870,None
+889,Male,58,Writer,7.9,9,42,2,Normal,122/76.3,66,6260,Restless Leg Syndrome
+890,Female,43,Salesperson,7.8,7,51,5,Underweight,119/80.35000000000001,70,3938,Narcolepsy
+891,Male,24,Software Engineer,7.6,6,19,5,Overweight,111/70.15,98,3375,None
+892,Female,23,Salesperson,7.2,7,103,7,Underweight,98/67.7,71,10700,None
+893,Male,74,Software Engineer,8.2,6,70,1,Underweight,110/75.5,63,7285,None
+894,Female,68,Chef,7.7,1,73,8,Overweight,120/76.0,73,6413,None
+895,Male,26,Scientist,8.0,8,51,2,Overweight,126/83.9,82,6159,Sleep Apnea
+896,Female,67,Writer,7.2,3,0,3,Normal,124/84.60000000000001,95,1000,None
+897,Male,46,Scientist,7.3,6,34,8,Normal,105/68.25,73,4662,None
+898,Male,42,Lawyer,7.3,5,48,8,Underweight,121/77.65,75,6752,Sleep Apnea
+899,Female,26,Engineer,7.9,5,31,6,Overweight,119/74.35000000000001,71,5184,None
+900,Male,73,Software Engineer,8.8,3,27,4,Overweight,123/77.95,71,4442,None
+901,Female,19,Software Engineer,8.5,6,83,2,Normal,102/69.3,73,8859,None
+902,Male,75,Lawyer,7.9,3,22,9,Obese,135/85.75,79,4922,Sleep Apnea
+903,Female,58,Chef,7.5,5,90,7,Normal,118/77.7,81,9970,Restless Leg Syndrome
+904,Male,31,Software Engineer,7.8,8,55,1,Overweight,125/81.25,78,6992,Insomnia
+905,Male,75,Lawyer,6.1,4,56,8,Overweight,131/85.15,81,5269,Insomnia
+906,Male,61,Accountant,8.7,8,35,6,Normal,117/78.05,86,1000,None
+907,Female,45,Software Engineer,10.0,6,114,1,Obese,132/82.8,58,11105,Insomnia
+908,Male,34,Nurse,7.9,3,75,6,Normal,102/69.3,83,6441,None
+909,Male,33,Artist,8.7,6,94,4,Overweight,122/78.3,59,10709,None
+910,Female,74,Manager,8.5,8,52,6,Normal,112/70.8,65,5227,None
+911,Male,42,Engineer,7.6,6,22,5,Overweight,122/74.3,93,4076,None
+912,Male,29,Doctor,6.4,7,25,10,Obese,135/84.75,106,3013,None
+913,Male,57,Accountant,7.2,7,64,6,Obese,142/92.3,76,7710,Sleep Apnea
+914,Male,80,Artist,9.3,5,60,1,Obese,132/88.8,64,6855,Sleep Apnea
+915,Male,42,Nurse,7.4,7,120,6,Obese,122/79.3,71,10237,Insomnia
+916,Male,32,Software Engineer,8.0,7,89,6,Normal,112/67.8,81,7944,None
+917,Female,67,Chef,6.4,5,171,8,Normal,122/82.3,70,13858,None
+918,Male,75,Accountant,6.6,5,47,5,Obese,148/98.2,82,5475,None
+919,Female,57,Manager,7.3,5,10,8,Underweight,115/77.75,82,2234,Narcolepsy
+920,Female,31,Salesperson,8.6,6,64,3,Obese,120/75.0,76,6293,None
+921,Male,34,Student,5.3,6,89,10,Underweight,115/77.75,51,7575,Insomnia
+922,Male,27,Student,7.3,10,88,7,Normal,111/74.15,71,8934,None
+923,Female,64,Writer,6.3,4,40,4,Overweight,134/86.10000000000001,58,3633,None
+924,Male,21,Software Engineer,7.6,9,0,4,Overweight,122/75.3,85,1312,None
+925,Female,64,Chef,7.0,9,81,6,Overweight,135/92.75,76,8852,Sleep Apnea
+926,Male,20,Accountant,7.6,7,40,5,Normal,110/67.5,83,5343,None
+927,Male,26,Nurse,5.7,6,113,9,Overweight,122/81.3,67,10572,None
+928,Male,78,Salesperson,7.6,3,76,3,Underweight,127/77.55,70,7214,None
+929,Female,28,Manager,8.0,8,68,7,Normal,118/80.7,77,4882,None
+930,Female,31,Student,7.2,5,108,6,Overweight,114/77.10000000000001,69,10069,None
+931,Female,55,Chef,6.9,5,110,6,Underweight,106/68.9,74,9128,None
+932,Male,62,Teacher,8.0,5,124,7,Normal,121/78.65,54,10177,None
+933,Male,75,Writer,8.0,7,9,5,Normal,118/73.7,79,2386,Restless Leg Syndrome
+934,Male,52,Accountant,8.2,6,31,6,Overweight,120/81.0,68,7421,None
+935,Male,30,Engineer,7.6,6,87,6,Normal,114/72.10000000000001,63,8004,Narcolepsy
+936,Male,24,Doctor,7.6,7,55,8,Normal,100/66.0,72,5199,None
+937,Male,25,Lawyer,7.0,4,31,9,Obese,119/76.35000000000001,61,3669,None
+938,Female,78,Artist,7.6,7,73,6,Overweight,119/74.35000000000001,77,7377,None
+939,Male,39,Salesperson,10.0,5,85,2,Underweight,104/71.60000000000001,85,6815,None
+940,Female,45,Engineer,7.4,8,48,7,Obese,139/86.35000000000001,56,6401,Insomnia
+941,Male,43,Doctor,8.9,7,43,9,Normal,117/81.05,59,4198,Insomnia
+942,Male,26,Salesperson,7.8,10,126,7,Normal,103/67.95,68,9819,None
+943,Female,33,Doctor,8.2,8,59,7,Normal,119/81.35000000000001,65,5262,Narcolepsy
+944,Male,54,Chef,7.3,6,97,9,Obese,137/90.05,75,8868,None
+945,Female,41,Nurse,6.7,7,135,8,Underweight,117/80.05,59,11289,None
+946,Male,44,Doctor,7.2,7,34,8,Normal,122/82.3,67,4703,Insomnia
+947,Female,48,Accountant,8.0,7,42,6,Overweight,125/79.25,68,5459,None
+948,Female,18,Doctor,7.8,7,8,7,Normal,106/67.9,98,3251,None
+949,Male,61,Manager,8.2,5,45,10,Obese,126/83.9,58,4437,Sleep Apnea
+950,Female,64,Engineer,8.5,6,60,4,Obese,137/94.05,70,4454,Insomnia
+951,Female,37,Student,8.3,6,62,1,Obese,140/91.0,68,7483,None
+952,Female,53,Software Engineer,8.1,5,147,5,Normal,106/70.9,50,12900,None
+953,Female,69,Lawyer,6.7,1,0,9,Normal,121/74.65,76,2233,Insomnia
+954,Female,57,Accountant,8.9,7,30,5,Normal,105/66.25,69,4717,Narcolepsy
+955,Male,20,Doctor,7.8,8,47,8,Obese,124/78.60000000000001,58,6348,None
+956,Male,51,Software Engineer,7.0,5,114,5,Normal,117/73.05,73,9748,None
+957,Female,45,Doctor,7.2,6,82,7,Underweight,116/70.4,60,8227,None
+958,Female,73,Doctor,7.4,4,8,9,Underweight,123/76.95,90,3606,None
+959,Female,27,Software Engineer,8.5,10,0,4,Overweight,117/71.05,78,1000,Restless Leg Syndrome
+960,Female,70,Artist,9.5,6,31,4,Normal,118/74.7,71,4606,None
+961,Male,47,Teacher,7.4,5,36,7,Underweight,109/65.85000000000001,83,3454,None
+962,Male,73,Accountant,7.3,7,31,7,Underweight,113/77.45,54,2362,None
+963,Female,75,Salesperson,6.5,5,27,8,Obese,145/97.25,94,5395,Sleep Apnea
+964,Male,31,Artist,7.8,7,73,6,Overweight,112/75.8,60,7477,None
+965,Female,68,Artist,10.0,5,32,1,Obese,142/96.3,72,4571,None
+966,Male,58,Writer,8.3,10,54,3,Overweight,127/78.55,59,5371,None
+967,Male,58,Software Engineer,7.4,5,8,3,Normal,119/81.35000000000001,86,2799,None
+968,Female,67,Salesperson,7.0,4,49,10,Normal,118/73.7,72,3517,Sleep Apnea
+969,Female,35,Chef,7.1,3,112,9,Underweight,116/78.4,80,10500,None
+970,Male,43,Student,7.6,7,61,4,Overweight,119/79.35000000000001,68,5413,None
+971,Female,45,Engineer,7.8,4,62,5,Overweight,126/83.9,68,7109,None
+972,Male,36,Accountant,7.3,7,22,6,Obese,133/86.45,79,3620,None
+973,Male,43,Sales Representative,8.9,7,57,5,Obese,134/84.10000000000001,81,7312,None
+974,Male,40,Chef,7.3,8,97,9,Normal,114/72.10000000000001,88,9414,None
+975,Female,65,Salesperson,7.4,5,111,6,Obese,129/82.85000000000001,79,9410,Insomnia
+976,Male,23,Student,7.1,9,41,6,Normal,118/78.7,65,4234,None
+977,Male,24,Chef,6.8,4,78,8,Obese,128/86.2,74,8545,None
+978,Male,75,Engineer,7.4,6,99,6,Normal,109/69.85000000000001,64,9670,Insomnia
+979,Female,74,Sales Representative,8.9,4,113,6,Normal,127/80.55,76,9142,Insomnia
+980,Male,59,Teacher,8.0,3,87,4,Underweight,104/67.60000000000001,88,7019,Insomnia
+981,Male,65,Lawyer,8.7,5,48,7,Underweight,121/73.65,87,5262,None
+982,Female,48,Doctor,6.1,7,88,7,Overweight,128/87.2,86,7333,None
+983,Male,45,Software Engineer,6.9,7,80,4,Normal,106/66.9,69,7030,None
+984,Male,67,Doctor,6.5,4,26,7,Overweight,135/90.75,96,3091,None
+985,Female,45,Teacher,8.0,7,76,7,Normal,122/84.3,61,7288,None
+986,Male,53,Engineer,8.6,8,71,6,Normal,113/70.45,61,8378,None
+987,Male,74,Artist,7.5,8,53,5,Normal,111/72.15,51,4849,None
+988,Male,31,Salesperson,9.8,8,71,4,Normal,100/68.0,88,6985,Narcolepsy
+989,Female,35,Scientist,8.3,6,0,3,Overweight,128/78.2,103,2167,None
+990,Male,34,Doctor,6.7,7,35,9,Normal,107/73.55,76,4824,None
+991,Male,60,Doctor,7.2,3,38,7,Underweight,106/68.9,58,2561,Narcolepsy
+992,Male,65,Chef,7.3,7,128,8,Normal,111/73.15,50,10981,None
+993,Female,31,Doctor,6.0,3,19,8,Obese,121/77.65,92,2674,Sleep Apnea
+994,Male,43,Salesperson,7.9,6,84,1,Normal,122/80.3,57,8413,None
+995,Female,29,Engineer,7.1,8,13,4,Overweight,111/71.15,76,3839,None
+996,Female,78,Nurse,7.4,7,0,8,Overweight,130/82.5,81,2163,Sleep Apnea
+997,Female,67,Lawyer,8.2,4,37,7,Obese,141/92.65,70,5655,Narcolepsy
+998,Female,63,Nurse,8.0,5,54,6,Overweight,117/73.05,81,6211,None
+999,Male,79,Software Engineer,7.6,5,38,5,Normal,124/76.60000000000001,64,3460,Insomnia
+1000,Male,18,Scientist,8.4,6,70,6,Obese,124/85.60000000000001,83,7142,None
+1001,Male,29,Engineer,8.1,6,58,5,Normal,113/73.45,75,6585,None
+1002,Male,44,Software Engineer,9.5,7,34,2,Overweight,129/84.85000000000001,89,2911,None
+1003,Male,47,Scientist,6.3,4,34,8,Normal,103/70.95,76,3143,None
+1004,Male,79,Software Engineer,8.4,7,47,4,Obese,137/84.05,74,6223,Insomnia
+1005,Female,47,Sales Representative,6.4,5,102,8,Normal,115/74.75,82,9702,None
+1006,Female,60,Teacher,6.5,4,26,7,Normal,106/66.9,75,4020,None
+1007,Male,77,Doctor,8.6,3,56,7,Normal,114/69.10000000000001,56,5321,Sleep Apnea
+1008,Female,28,Manager,8.5,4,63,5,Underweight,102/61.3,85,5744,None
+1009,Female,41,Engineer,8.5,5,51,2,Overweight,128/82.2,67,5894,Insomnia
+1010,Male,19,Student,8.6,10,133,7,Normal,115/70.75,65,11729,None
+1011,Male,28,Nurse,7.8,7,61,9,Normal,105/64.25,71,6649,None
+1012,Female,25,Manager,8.9,6,67,6,Normal,103/69.95,71,7424,None
+1013,Male,34,Lawyer,7.0,4,29,9,Obese,134/86.10000000000001,90,4971,None
+1014,Male,27,Lawyer,8.3,3,3,8,Overweight,108/74.2,78,2719,Insomnia
+1015,Female,57,Software Engineer,8.8,6,22,3,Overweight,124/75.60000000000001,103,2618,Sleep Apnea
+1016,Female,58,Teacher,7.5,5,47,10,Normal,114/70.10000000000001,61,3852,None
+1017,Female,35,Manager,8.4,5,34,7,Obese,124/75.60000000000001,75,4967,None
+1018,Male,53,Sales Representative,7.4,4,128,4,Underweight,113/69.45,68,9131,Insomnia
+1019,Male,77,Student,6.9,4,49,10,Overweight,119/74.35000000000001,70,4352,Sleep Apnea
+1020,Male,36,Scientist,7.8,8,47,5,Obese,137/92.05,88,4183,None
+1021,Male,23,Sales Representative,7.5,6,87,8,Obese,126/83.9,78,8052,Sleep Apnea
+1022,Male,21,Student,6.8,6,15,10,Overweight,121/82.65,72,2518,None
+1023,Male,48,Scientist,9.5,4,36,4,Normal,116/75.4,61,4585,None
+1024,Male,28,Scientist,9.6,6,89,2,Obese,126/82.9,82,7719,None
+1025,Female,31,Artist,7.1,7,64,5,Normal,119/78.35000000000001,64,5349,Insomnia
+1026,Male,38,Student,7.1,8,91,3,Overweight,125/82.25,88,7961,Sleep Apnea
+1027,Male,66,Chef,7.2,4,101,8,Normal,117/74.05,91,8167,None
+1028,Male,22,Scientist,8.6,9,52,2,Underweight,103/63.95,63,6269,None
+1029,Female,37,Writer,8.1,7,56,3,Obese,137/85.05,85,5365,None
+1030,Female,57,Artist,6.8,7,82,6,Obese,142/94.3,78,7224,None
+1031,Female,51,Writer,8.4,9,27,3,Overweight,123/79.95,82,4054,None
+1032,Male,72,Student,8.3,5,74,2,Overweight,127/84.55,78,6592,Sleep Apnea
+1033,Male,20,Scientist,8.0,4,30,5,Overweight,118/72.7,63,3668,None
+1034,Female,77,Salesperson,6.3,7,40,8,Overweight,131/82.15,69,4347,Sleep Apnea
+1035,Female,24,Scientist,9.3,8,68,5,Obese,121/79.65,76,6552,Restless Leg Syndrome
+1036,Female,79,Writer,7.0,4,20,5,Underweight,118/76.7,93,2073,None
+1037,Female,41,Manager,6.4,6,50,5,Normal,107/65.55,79,5088,None
+1038,Female,80,Scientist,7.4,8,67,8,Overweight,120/80.0,75,5847,Sleep Apnea
+1039,Female,76,Software Engineer,8.7,7,28,3,Obese,134/85.10000000000001,94,2701,None
+1040,Female,27,Manager,7.8,7,30,7,Normal,111/72.15,74,3492,Insomnia
+1041,Female,72,Student,8.0,5,51,5,Normal,122/75.3,80,5671,Insomnia
+1042,Male,56,Writer,10.0,6,70,1,Normal,106/71.9,79,6098,Insomnia
+1043,Male,26,Teacher,8.4,5,43,6,Obese,132/83.8,55,4219,None
+1044,Male,43,Lawyer,7.7,4,61,8,Normal,105/64.25,78,7414,Sleep Apnea
+1045,Male,30,Artist,8.7,10,97,2,Normal,120/78.0,74,8324,None
+1046,Male,19,Teacher,7.6,5,26,7,Obese,121/83.65,79,4654,None
+1047,Male,24,Writer,7.7,5,0,3,Underweight,100/69.0,76,3047,Insomnia
+1048,Female,60,Student,6.2,5,75,8,Normal,116/79.4,67,8301,Insomnia
+1049,Female,21,Accountant,8.8,6,59,6,Overweight,121/75.65,79,6637,None
+1050,Male,59,Software Engineer,9.8,8,47,4,Underweight,113/75.45,78,5442,None
+1051,Male,45,Artist,8.5,8,66,2,Obese,123/81.95,79,6345,None
+1052,Female,68,Teacher,5.9,7,152,9,Normal,122/75.3,55,12277,None
+1053,Female,23,Doctor,7.1,5,49,9,Overweight,127/80.55,69,5576,None
+1054,Male,40,Software Engineer,9.7,4,10,2,Overweight,130/87.5,66,3787,Insomnia
+1055,Female,60,Artist,8.1,6,117,6,Overweight,117/76.05,69,10129,None
+1056,Male,23,Sales Representative,8.9,6,85,4,Overweight,126/77.9,90,8556,Narcolepsy
+1057,Male,42,Software Engineer,8.8,8,38,1,Overweight,118/78.7,68,5022,None
+1058,Female,60,Accountant,6.8,8,0,6,Obese,131/80.15,93,1000,None
+1059,Female,60,Doctor,7.5,2,0,8,Obese,143/90.95,72,1000,Sleep Apnea
+1060,Female,54,Scientist,8.6,8,64,2,Overweight,128/82.2,83,7702,None
+1061,Female,53,Teacher,6.3,7,26,5,Overweight,118/79.7,92,2368,None
+1062,Male,56,Accountant,8.8,6,32,5,Obese,134/86.10000000000001,70,3126,Sleep Apnea
+1063,Male,52,Artist,7.5,10,89,2,Normal,124/76.60000000000001,79,7758,None
+1064,Female,52,Software Engineer,7.6,6,32,4,Normal,121/81.65,93,4691,None
+1065,Female,66,Salesperson,8.2,6,60,4,Normal,125/85.25,79,6850,None
+1066,Male,33,Writer,9.1,5,67,1,Obese,130/87.5,75,4984,None
+1067,Female,55,Salesperson,8.4,5,102,5,Underweight,117/79.05,82,9488,None
+1068,Female,63,Sales Representative,5.7,4,0,7,Obese,144/88.60000000000001,94,1591,None
+1069,Male,76,Lawyer,7.0,4,0,9,Underweight,113/71.45,73,1486,None
+1070,Female,32,Accountant,7.5,5,44,5,Overweight,127/83.55,65,5394,Sleep Apnea
+1071,Female,27,Lawyer,7.0,4,5,9,Overweight,118/80.7,90,2565,None
+1072,Female,66,Lawyer,8.7,2,19,8,Obese,131/80.15,91,2707,Sleep Apnea
+1073,Female,65,Software Engineer,9.1,8,70,1,Overweight,134/92.10000000000001,79,7167,Sleep Apnea
+1074,Female,51,Lawyer,6.7,5,21,9,Overweight,131/85.15,98,2423,Restless Leg Syndrome
+1075,Female,53,Student,6.3,7,86,10,Normal,122/76.3,77,6615,None
+1076,Male,47,Sales Representative,7.6,8,105,7,Obese,139/91.35000000000001,79,9479,None
+1077,Female,62,Artist,9.6,3,67,1,Normal,115/73.75,63,6077,None
+1078,Male,30,Accountant,9.0,7,71,6,Normal,120/80.0,76,6954,None
+1079,Female,39,Engineer,7.7,7,85,7,Overweight,110/76.5,84,7636,None
+1080,Male,65,Sales Representative,7.5,6,82,7,Obese,146/97.9,54,8530,None
+1081,Female,40,Software Engineer,9.9,8,42,3,Overweight,129/78.85000000000001,76,4452,Insomnia
+1082,Male,76,Chef,7.0,4,94,8,Overweight,127/87.55,72,8558,Sleep Apnea
+1083,Male,26,Lawyer,5.9,5,62,9,Obese,137/89.05,81,7816,None
+1084,Female,54,Sales Representative,8.4,8,0,5,Overweight,126/80.9,86,1000,None
+1085,Male,35,Writer,8.0,8,62,1,Obese,123/80.95,54,7558,None
+1086,Male,36,Teacher,7.5,3,35,8,Obese,130/80.5,83,2707,Insomnia
+1087,Male,50,Software Engineer,8.4,7,34,4,Obese,134/87.10000000000001,79,4671,None
+1088,Male,68,Manager,7.9,4,59,8,Normal,122/82.3,83,6473,None
+1089,Male,50,Artist,8.1,7,46,4,Normal,108/71.2,67,5073,None
+1090,Female,30,Software Engineer,7.0,5,32,7,Overweight,130/84.5,87,4172,None
+1091,Female,34,Accountant,8.8,7,21,5,Normal,110/74.5,78,3900,None
+1092,Male,38,Doctor,6.9,6,54,8,Overweight,113/78.45,79,7390,Insomnia
+1093,Male,56,Engineer,8.4,5,42,3,Normal,111/72.15,75,4592,None
+1094,Male,22,Sales Representative,9.7,8,81,2,Underweight,115/71.75,69,7952,None
+1095,Male,80,Nurse,6.8,6,117,8,Overweight,139/92.35000000000001,59,11134,None
+1096,Female,31,Writer,7.5,5,42,4,Normal,105/65.25,77,6507,None
+1097,Female,68,Nurse,5.1,2,79,8,Overweight,130/87.5,64,6896,Insomnia
+1098,Female,79,Nurse,6.0,3,83,7,Overweight,137/84.05,65,8687,None
+1099,Female,50,Doctor,8.7,6,29,9,Normal,106/71.9,83,3180,Insomnia
+1100,Female,70,Chef,6.4,6,92,6,Normal,127/84.55,64,7359,Insomnia
+1101,Male,52,Software Engineer,7.4,6,43,6,Obese,140/91.0,63,4739,None
+1102,Male,52,Artist,8.2,8,62,5,Underweight,104/62.60000000000001,90,7049,None
+1103,Female,47,Manager,5.4,1,39,8,Overweight,126/86.9,68,4117,None
+1104,Male,47,Engineer,6.4,6,35,8,Overweight,128/80.2,72,3839,None
+1105,Female,78,Scientist,9.4,8,73,2,Normal,113/71.45,55,8138,None
+1106,Female,28,Lawyer,7.3,4,5,8,Underweight,111/77.15,102,2234,None
+1107,Female,75,Manager,7.4,1,1,8,Obese,140/87.0,70,1000,None
+1108,Male,49,Student,7.8,5,121,4,Underweight,118/72.7,60,9998,None
+1109,Male,62,Software Engineer,6.5,6,56,5,Normal,117/78.05,71,4779,Restless Leg Syndrome
+1110,Male,37,Lawyer,7.9,5,42,8,Obese,135/84.75,88,4476,None
+1111,Female,56,Teacher,7.4,6,98,9,Overweight,116/72.4,62,8069,None
+1112,Female,68,Student,8.5,7,169,2,Normal,106/64.9,67,12884,None
+1113,Female,63,Nurse,7.5,5,160,8,Overweight,119/75.35000000000001,61,14325,None
+1114,Male,80,Lawyer,7.2,6,8,10,Obese,140/95.0,75,2746,None
+1115,Female,60,Nurse,7.8,4,162,7,Overweight,133/88.45,75,13256,None
+1116,Male,21,Doctor,7.3,6,8,8,Obese,119/76.35000000000001,109,2884,Insomnia
+1117,Female,20,Lawyer,7.0,3,2,9,Normal,105/67.25,82,2928,Narcolepsy
+1118,Female,33,Student,8.5,8,0,5,Overweight,116/78.4,73,3226,None
+1119,Male,34,Salesperson,7.1,9,132,7,Overweight,123/83.95,66,9917,Insomnia
+1120,Male,24,Lawyer,7.5,4,48,9,Normal,106/71.9,88,5243,None
+1121,Male,18,Artist,9.2,6,63,2,Obese,129/87.85000000000001,68,6698,None
+1122,Female,45,Sales Representative,8.1,7,80,3,Overweight,122/83.3,84,6609,None
+1123,Male,58,Engineer,7.0,9,9,6,Normal,120/74.0,80,1558,Restless Leg Syndrome
+1124,Female,27,Chef,8.6,7,163,7,Overweight,113/78.45,56,11161,None
+1125,Female,65,Lawyer,7.0,5,9,9,Obese,132/88.8,96,4328,None
+1126,Female,71,Sales Representative,7.9,5,72,7,Obese,139/88.35000000000001,82,7398,None
+1127,Male,53,Artist,7.2,8,43,3,Obese,141/92.65,86,3991,None
+1128,Male,54,Teacher,6.5,5,49,9,Overweight,134/91.10000000000001,71,6304,None
+1129,Female,62,Salesperson,8.6,7,22,10,Normal,113/72.45,96,2315,None
+1130,Female,26,Artist,9.1,9,10,1,Overweight,109/75.85000000000001,86,2951,None
+1131,Female,77,Nurse,7.2,7,45,10,Obese,148/91.2,82,5933,None
+1132,Male,62,Writer,8.5,5,13,4,Obese,144/97.60000000000001,100,2059,Sleep Apnea
+1133,Female,45,Artist,7.2,6,0,7,Obese,131/82.15,63,2739,Restless Leg Syndrome
+1134,Female,71,Software Engineer,7.5,4,79,1,Normal,128/79.2,78,5826,None
+1135,Female,66,Scientist,8.2,3,42,5,Overweight,130/84.5,81,5429,Narcolepsy
+1136,Male,80,Lawyer,7.6,3,43,7,Obese,134/89.10000000000001,78,3345,None
+1137,Female,72,Doctor,6.4,5,15,8,Obese,131/84.15,81,3025,None
+1138,Female,42,Sales Representative,8.4,6,51,3,Overweight,129/88.85000000000001,69,5904,None
+1139,Female,38,Scientist,7.9,6,69,5,Normal,114/77.10000000000001,69,6136,Restless Leg Syndrome
+1140,Female,45,Scientist,8.3,8,39,4,Overweight,129/88.85000000000001,79,4321,None
+1141,Female,73,Lawyer,7.3,5,44,9,Normal,122/84.3,83,4854,Restless Leg Syndrome
+1142,Male,65,Salesperson,6.8,7,99,9,Normal,120/75.0,73,9308,None
+1143,Male,33,Doctor,7.9,2,70,7,Normal,103/69.95,87,7264,None
+1144,Male,50,Chef,7.3,4,115,6,Normal,119/75.35000000000001,61,11862,None
+1145,Male,55,Salesperson,8.0,9,122,3,Underweight,106/69.9,58,9029,Narcolepsy
+1146,Male,62,Manager,7.9,5,71,5,Underweight,125/78.25,85,6580,Insomnia
+1147,Female,48,Chef,7.0,2,117,9,Overweight,123/83.95,79,11269,None
+1148,Male,47,Lawyer,6.8,4,0,8,Overweight,123/83.95,72,3692,Restless Leg Syndrome
+1149,Female,64,Scientist,6.7,4,27,5,Normal,112/77.8,75,4108,None
+1150,Female,23,Lawyer,7.8,4,17,8,Overweight,119/76.35000000000001,92,2255,Insomnia
+1151,Female,69,Manager,8.2,6,102,7,Obese,137/94.05,78,8723,None
+1152,Female,79,Lawyer,7.1,5,37,10,Obese,132/82.8,81,3278,Sleep Apnea
+1153,Female,58,Manager,7.9,7,67,7,Overweight,116/75.4,70,6478,None
+1154,Female,55,Software Engineer,8.3,8,101,6,Obese,143/91.95,71,10100,Narcolepsy
+1155,Male,33,Writer,10.0,8,0,1,Obese,136/90.4,81,1000,None
+1156,Male,47,Doctor,6.3,7,63,9,Obese,131/89.15,57,6275,Insomnia
+1157,Female,20,Accountant,7.9,5,29,6,Overweight,114/75.10000000000001,79,3635,None
+1158,Male,24,Doctor,7.1,5,2,8,Overweight,123/84.95,81,4077,Sleep Apnea
+1159,Female,22,Salesperson,6.5,5,51,8,Obese,133/89.45,92,7123,None
+1160,Female,43,Engineer,8.4,7,67,5,Overweight,124/81.60000000000001,85,7094,Restless Leg Syndrome
+1161,Male,30,Manager,8.7,7,15,5,Obese,130/85.5,86,3693,None
+1162,Female,48,Accountant,8.3,6,33,6,Obese,135/88.75,56,3299,None
+1163,Female,76,Student,7.1,9,98,3,Normal,124/81.60000000000001,86,7659,None
+1164,Female,76,Lawyer,7.2,2,45,10,Overweight,136/86.4,73,5502,Insomnia
+1165,Male,29,Accountant,8.3,6,0,7,Obese,122/74.3,87,1561,None
+1166,Male,42,Sales Representative,8.0,7,97,5,Normal,110/67.5,56,8041,None
+1167,Male,65,Student,6.5,5,54,9,Underweight,117/75.05,58,5636,Sleep Apnea
+1168,Male,68,Doctor,6.7,4,72,8,Overweight,116/78.4,90,9851,Sleep Apnea
+1169,Male,50,Teacher,6.3,7,65,6,Overweight,120/80.0,63,6854,Restless Leg Syndrome
+1170,Female,19,Engineer,7.0,6,51,5,Normal,107/74.55,80,3954,Restless Leg Syndrome
+1171,Male,46,Chef,6.3,8,126,9,Normal,120/77.0,54,10612,Narcolepsy
+1172,Female,37,Lawyer,6.1,2,0,10,Obese,139/91.35000000000001,80,2746,Insomnia
+1173,Male,37,Doctor,7.6,6,68,9,Overweight,130/82.5,88,6626,Insomnia
+1174,Female,47,Teacher,7.5,5,0,8,Obese,138/89.7,73,4639,None
+1175,Female,66,Doctor,6.2,5,68,10,Obese,140/87.0,70,6806,Sleep Apnea
+1176,Female,68,Nurse,6.0,3,120,7,Overweight,130/79.5,73,9438,None
+1177,Male,35,Engineer,9.0,7,89,5,Overweight,129/84.85000000000001,64,9429,None
+1178,Female,65,Engineer,9.4,7,23,5,Underweight,121/81.65,87,3613,None
+1179,Male,33,Salesperson,6.1,6,65,8,Normal,109/72.85000000000001,51,5042,Insomnia
+1180,Male,79,Sales Representative,7.6,5,68,7,Underweight,126/76.9,65,5131,None
+1181,Female,49,Teacher,7.5,5,114,9,Normal,120/78.0,60,10723,Narcolepsy
+1182,Female,54,Teacher,8.4,7,81,5,Overweight,133/83.45,65,7446,None
+1183,Female,73,Doctor,7.9,6,38,6,Normal,125/80.25,71,4853,None
+1184,Male,28,Lawyer,8.5,4,48,8,Normal,105/73.25,84,5862,Narcolepsy
+1185,Female,22,Doctor,6.9,6,46,8,Overweight,115/69.75,68,4385,Sleep Apnea
+1186,Male,41,Software Engineer,7.0,8,60,6,Obese,123/78.95,51,5278,None
+1187,Female,61,Doctor,7.7,6,54,6,Overweight,119/72.35000000000001,68,6040,None
+1188,Female,21,Scientist,7.7,8,93,4,Overweight,112/68.8,54,8525,Narcolepsy
+1189,Female,39,Manager,6.3,6,54,8,Normal,114/69.10000000000001,92,5149,None
+1190,Female,69,Chef,7.0,6,67,9,Underweight,115/71.75,53,6038,Insomnia
+1191,Male,35,Student,8.2,8,77,6,Obese,129/86.85000000000001,79,8293,None
+1192,Male,40,Student,8.9,9,62,6,Obese,133/90.45,70,5905,None
+1193,Male,20,Chef,5.4,7,63,10,Underweight,116/77.4,68,7058,None
+1194,Female,74,Artist,9.2,6,130,1,Normal,121/82.65,56,10909,Narcolepsy
+1195,Male,23,Student,7.9,4,55,3,Normal,103/70.95,77,6131,Insomnia
+1196,Female,71,Artist,8.6,9,39,2,Normal,117/75.05,72,5462,Sleep Apnea
+1197,Female,48,Artist,7.9,9,127,3,Normal,109/72.85000000000001,54,11390,None
+1198,Male,20,Software Engineer,8.5,10,66,3,Normal,118/73.7,63,6762,Insomnia
+1199,Male,42,Artist,9.1,5,90,5,Underweight,104/63.60000000000001,92,8549,Sleep Apnea
+1200,Male,43,Artist,9.1,7,43,3,Normal,119/76.35000000000001,71,3684,Narcolepsy
+1201,Female,42,Doctor,6.8,7,36,7,Overweight,125/79.25,65,5878,None
+1202,Male,41,Writer,8.3,5,41,1,Normal,106/63.900000000000006,78,4504,Insomnia
+1203,Male,49,Engineer,8.2,9,38,3,Normal,103/63.95,62,4107,None
+1204,Male,54,Artist,7.7,6,126,5,Overweight,132/90.8,60,11798,None
+1205,Female,30,Sales Representative,6.8,7,74,7,Overweight,111/74.15,51,6244,None
+1206,Female,36,Sales Representative,7.4,5,97,5,Obese,131/87.15,77,9178,Sleep Apnea
+1207,Female,45,Teacher,8.4,6,41,4,Normal,117/73.05,74,3133,Restless Leg Syndrome
+1208,Male,73,Writer,7.5,4,0,4,Overweight,119/79.35000000000001,75,2809,Sleep Apnea
+1209,Female,58,Writer,8.6,10,38,1,Overweight,130/89.5,60,4469,None
+1210,Female,24,Accountant,8.3,6,65,6,Normal,111/70.15,72,7228,None
+1211,Male,35,Scientist,8.5,3,4,4,Obese,135/90.75,92,1997,Sleep Apnea
+1212,Male,57,Manager,9.5,5,25,7,Normal,116/70.4,89,3838,Insomnia
+1213,Female,29,Artist,6.6,8,54,10,Normal,108/68.2,58,5196,Sleep Apnea
+1214,Female,41,Manager,7.9,4,44,8,Normal,116/72.4,84,6720,None
+1215,Female,64,Nurse,6.7,5,81,7,Underweight,121/82.65,67,9144,None
+1216,Female,22,Chef,6.7,5,71,7,Normal,98/60,79,7382,None
+1217,Female,27,Manager,8.0,5,15,10,Overweight,127/84.55,84,3906,Insomnia
+1218,Female,34,Salesperson,8.9,6,73,1,Normal,114/69.10000000000001,87,8013,None
+1219,Male,30,Doctor,7.7,5,59,8,Overweight,125/77.25,79,6181,None
+1220,Male,57,Doctor,8.0,5,0,8,Obese,133/91.45,107,1000,None
+1221,Female,66,Manager,8.0,4,51,7,Obese,128/82.2,76,5392,None
+1222,Male,46,Lawyer,5.9,7,44,9,Normal,110/76.5,83,4819,Insomnia
+1223,Female,68,Software Engineer,7.7,4,80,5,Obese,126/77.9,77,7452,Sleep Apnea
+1224,Male,65,Student,8.5,7,81,7,Obese,130/80.5,61,9656,Sleep Apnea
+1225,Male,32,Manager,7.5,6,51,5,Obese,139/90.35000000000001,53,5347,None
+1226,Male,59,Chef,8.0,7,65,8,Normal,113/75.45,84,6824,Insomnia
+1227,Male,25,Writer,8.1,5,10,4,Overweight,110/70.5,101,3163,None
+1228,Male,52,Engineer,8.0,6,41,3,Normal,122/81.3,73,5189,None
+1229,Male,72,Scientist,7.3,6,82,7,Overweight,129/79.85000000000001,59,8600,None
+1230,Male,60,Writer,9.6,7,67,1,Normal,110/75.5,63,5889,Sleep Apnea
+1231,Female,75,Artist,7.2,9,69,4,Overweight,135/84.75,77,5205,Sleep Apnea
+1232,Male,28,Salesperson,8.3,6,74,3,Normal,118/78.7,84,5713,Restless Leg Syndrome
+1233,Female,21,Lawyer,6.7,1,15,9,Normal,107/73.55,83,3038,Insomnia
+1234,Male,45,Chef,7.3,7,65,8,Overweight,118/76.7,77,5681,Insomnia
+1235,Male,57,Accountant,7.9,7,59,4,Obese,139/86.35000000000001,66,6318,None
+1236,Male,68,Manager,7.6,5,73,6,Overweight,119/73.35000000000001,77,8010,None
+1237,Female,36,Scientist,6.6,8,37,5,Obese,135/92.75,62,4484,None
+1238,Female,72,Scientist,7.8,6,32,6,Normal,110/75.5,61,5503,Sleep Apnea
+1239,Male,42,Software Engineer,8.4,5,50,2,Normal,109/67.85000000000001,79,6739,None
+1240,Female,51,Writer,9.1,9,3,3,Obese,127/77.55,72,3603,None
+1241,Male,48,Student,8.0,6,77,2,Normal,116/79.4,75,7832,None
+1242,Female,29,Doctor,8.0,5,27,8,Overweight,114/74.10000000000001,79,2659,None
+1243,Female,64,Doctor,6.3,6,8,9,Normal,117/81.05,85,1000,None
+1244,Female,39,Engineer,6.6,8,83,5,Underweight,112/77.8,62,6429,Insomnia
+1245,Male,62,Salesperson,9.0,1,74,5,Overweight,135/84.75,76,7333,None
+1246,Male,63,Doctor,7.5,6,35,9,Obese,144/90.60000000000001,87,5251,Insomnia
+1247,Female,48,Teacher,5.8,5,107,9,Obese,141/88.65,87,8883,Sleep Apnea
+1248,Female,22,Artist,8.1,3,25,3,Overweight,126/83.9,99,4939,Narcolepsy
+1249,Male,72,Chef,6.4,3,105,9,Underweight,118/74.7,81,8689,None
+1250,Female,26,Accountant,8.0,6,80,6,Obese,124/78.60000000000001,75,6970,None
+1251,Male,63,Sales Representative,6.5,1,50,8,Overweight,136/91.4,82,6895,Narcolepsy
+1252,Female,53,Lawyer,6.9,7,11,7,Overweight,126/77.9,70,2723,None
+1253,Female,75,Software Engineer,7.5,8,64,7,Normal,112/67.8,72,5047,Narcolepsy
+1254,Female,66,Student,7.6,6,76,8,Normal,126/77.9,92,9536,None
+1255,Female,66,Manager,7.5,5,24,8,Obese,135/83.75,98,4985,None
+1256,Female,33,Teacher,7.6,4,83,7,Normal,117/73.05,81,8370,Restless Leg Syndrome
+1257,Male,28,Student,9.0,10,0,4,Obese,124/82.60000000000001,88,3493,Narcolepsy
+1258,Male,48,Engineer,6.8,8,64,6,Normal,111/67.15,67,5501,None
+1259,Male,61,Accountant,7.6,6,43,7,Normal,108/69.2,83,5780,Restless Leg Syndrome
+1260,Male,60,Chef,7.1,6,72,10,Overweight,135/85.75,85,5805,Insomnia
+1261,Male,28,Manager,9.6,4,96,8,Overweight,108/69.2,76,9108,None
+1262,Female,43,Chef,6.8,4,96,10,Normal,114/69.10000000000001,76,9977,None
+1263,Female,52,Accountant,8.6,5,82,4,Normal,119/81.35000000000001,67,8318,None
+1264,Female,20,Accountant,8.6,6,16,6,Normal,110/71.5,77,3857,Insomnia
+1265,Female,58,Writer,8.2,9,1,5,Underweight,120/74.0,71,2176,None
+1266,Male,54,Lawyer,8.6,5,0,8,Obese,141/88.65,88,1420,Sleep Apnea
+1267,Female,38,Chef,8.0,7,78,7,Obese,132/82.8,90,4342,Narcolepsy
+1268,Female,62,Sales Representative,6.3,3,37,8,Overweight,128/81.2,81,3446,Sleep Apnea
+1269,Female,73,Manager,9.1,4,0,4,Overweight,123/84.95,89,1000,None
+1270,Male,32,Doctor,7.4,6,44,7,Normal,113/76.45,76,5633,None
+1271,Female,78,Student,7.3,1,41,8,Obese,136/93.4,89,4018,Restless Leg Syndrome
+1272,Female,48,Nurse,7.0,6,120,10,Underweight,113/70.45,78,9559,None
+1273,Female,78,Artist,9.1,9,34,2,Obese,130/85.5,69,3036,Sleep Apnea
+1274,Male,39,Teacher,8.8,8,64,6,Overweight,118/77.7,65,6075,None
+1275,Male,72,Manager,6.5,3,0,8,Normal,127/80.55,93,2477,None
+1276,Male,23,Student,8.0,7,114,6,Overweight,123/83.95,66,10530,None
+1277,Female,43,Doctor,7.1,2,20,6,Overweight,131/88.15,90,4652,Sleep Apnea
+1278,Female,34,Scientist,8.2,9,94,2,Overweight,115/77.75,82,6898,None
+1279,Female,32,Sales Representative,9.4,8,66,4,Overweight,126/84.9,64,7164,Narcolepsy
+1280,Male,26,Software Engineer,9.2,4,0,4,Underweight,113/72.45,100,1383,None
+1281,Male,64,Artist,8.9,7,77,1,Obese,146/98.9,60,8551,None
+1282,Female,60,Artist,8.5,7,37,2,Overweight,125/83.25,76,4797,None
+1283,Female,22,Lawyer,7.0,5,16,8,Overweight,113/76.45,95,4498,None
+1284,Male,69,Accountant,7.4,6,78,5,Normal,115/70.75,61,6145,Insomnia
+1285,Male,61,Engineer,8.6,8,44,5,Overweight,124/84.60000000000001,78,4947,None
+1286,Male,66,Chef,7.9,2,101,6,Normal,122/82.3,73,9868,Insomnia
+1287,Male,26,Nurse,6.9,6,126,6,Overweight,111/72.15,71,10027,None
+1288,Male,30,Engineer,7.6,8,82,6,Normal,106/63.900000000000006,67,5967,None
+1289,Male,73,Writer,7.5,6,8,4,Overweight,134/83.10000000000001,72,3073,None
+1290,Male,34,Chef,8.5,6,133,3,Overweight,123/74.95,65,11664,None
+1291,Male,20,Sales Representative,9.2,7,109,4,Normal,108/67.2,84,11190,None
+1292,Male,40,Chef,6.8,8,95,10,Overweight,117/72.05,78,9851,Insomnia
+1293,Female,51,Lawyer,5.9,4,12,9,Obese,130/85.5,100,4226,None
+1294,Female,80,Accountant,8.1,4,41,6,Normal,113/74.45,59,4855,None
+1295,Female,63,Chef,8.5,7,127,9,Overweight,131/81.15,64,12650,Sleep Apnea
+1296,Male,74,Sales Representative,8.4,5,32,5,Normal,119/80.35000000000001,58,3813,Restless Leg Syndrome
+1297,Male,72,Writer,7.1,8,59,6,Obese,143/89.95,82,5910,Sleep Apnea
+1298,Female,43,Salesperson,7.3,7,65,10,Overweight,115/70.75,85,6643,None
+1299,Female,69,Software Engineer,8.8,5,74,5,Obese,134/89.10000000000001,77,8399,None
+1300,Female,31,Manager,8.5,5,67,7,Normal,108/69.2,87,4729,None
+1301,Female,42,Salesperson,8.0,6,75,9,Overweight,115/76.75,65,6976,Insomnia
+1302,Male,34,Lawyer,8.7,3,39,9,Overweight,110/72.5,57,4447,Insomnia
+1303,Female,73,Manager,6.7,8,27,7,Normal,115/79.75,76,5790,Restless Leg Syndrome
+1304,Male,59,Accountant,5.5,6,19,7,Obese,130/82.5,92,2230,Insomnia
+1305,Male,67,Salesperson,7.5,4,33,3,Overweight,131/83.15,72,3474,None
+1306,Male,68,Scientist,7.3,7,29,3,Underweight,113/72.45,77,3718,None
+1307,Female,37,Salesperson,7.8,6,85,5,Normal,115/74.75,69,8821,None
+1308,Male,66,Writer,7.7,6,0,5,Overweight,120/82.0,74,3569,None
+1309,Male,52,Student,7.4,8,58,7,Overweight,131/83.15,66,6439,None
+1310,Female,53,Manager,8.9,6,56,6,Normal,108/75.2,57,6439,None
+1311,Male,80,Accountant,7.3,5,43,7,Obese,135/86.75,78,5625,Sleep Apnea
+1312,Female,36,Accountant,7.2,6,73,5,Normal,101/69.65,70,5242,Restless Leg Syndrome
+1313,Female,63,Writer,8.5,6,48,4,Overweight,130/83.5,79,5620,None
+1314,Female,75,Lawyer,7.1,4,20,10,Overweight,132/86.8,77,4120,None
+1315,Female,64,Student,6.5,6,72,6,Normal,126/82.9,84,5581,None
+1316,Female,44,Engineer,9.0,4,0,3,Obese,130/88.5,90,2480,None
+1317,Male,20,Student,7.6,5,99,5,Overweight,116/74.4,63,8849,None
+1318,Male,51,Engineer,7.6,6,52,5,Normal,121/83.65,66,5133,None
+1319,Female,78,Manager,5.7,6,18,10,Overweight,137/88.05,78,5258,Sleep Apnea
+1320,Female,67,Salesperson,7.2,6,22,5,Normal,122/81.3,80,4218,None
+1321,Female,71,Accountant,8.0,5,0,7,Obese,138/90.7,75,1785,None
+1322,Male,60,Software Engineer,9.7,10,71,2,Normal,125/82.25,88,7607,None
+1323,Male,73,Sales Representative,6.7,8,9,10,Obese,148/93.2,88,3043,Insomnia
+1324,Female,35,Doctor,6.4,7,43,8,Normal,116/76.4,64,6749,None
+1325,Female,20,Accountant,6.0,7,68,6,Obese,129/87.85000000000001,70,7575,None
+1326,Female,45,Nurse,6.9,5,93,8,Obese,141/87.65,77,7742,None
+1327,Male,72,Student,8.1,7,82,2,Normal,128/87.2,82,8134,None
+1328,Male,54,Artist,7.4,7,74,3,Normal,106/73.9,71,5860,None
+1329,Male,26,Sales Representative,8.0,6,61,6,Normal,118/75.7,58,6583,Insomnia
+1330,Male,31,Artist,8.0,7,82,9,Obese,125/79.25,90,5161,None
+1331,Female,25,Nurse,8.3,5,54,8,Obese,122/76.3,75,5645,Restless Leg Syndrome
+1332,Male,32,Lawyer,7.2,4,21,9,Overweight,110/71.5,88,4391,Insomnia
+1333,Female,39,Doctor,7.8,5,54,9,Overweight,125/83.25,57,4983,None
+1334,Female,56,Artist,8.6,6,82,3,Normal,118/72.7,64,7382,None
+1335,Female,66,Engineer,8.8,9,73,4,Overweight,121/79.65,63,6706,None
+1336,Male,46,Engineer,8.8,8,61,4,Obese,126/81.9,88,4886,None
+1337,Female,29,Doctor,7.5,4,20,7,Overweight,125/79.25,95,3433,Restless Leg Syndrome
+1338,Male,62,Manager,6.7,7,40,10,Underweight,110/69.5,86,3856,None
+1339,Female,59,Engineer,7.7,5,42,6,Obese,127/83.55,67,7641,Sleep Apnea
+1340,Female,59,Salesperson,7.9,7,89,7,Normal,119/75.35000000000001,74,9057,None
+1341,Male,44,Engineer,8.0,6,79,7,Underweight,103/63.95,79,7742,Insomnia
+1342,Male,78,Accountant,7.1,6,64,7,Underweight,120/83.0,74,7204,None
+1343,Female,34,Engineer,8.4,8,85,4,Overweight,111/69.15,63,8455,None
+1344,Female,43,Teacher,7.5,8,24,3,Normal,109/71.85000000000001,87,4896,Insomnia
+1345,Male,67,Doctor,9.0,4,58,8,Normal,118/75.7,63,5846,None
+1346,Male,20,Software Engineer,9.1,6,0,5,Obese,138/88.7,75,1000,None
+1347,Male,57,Engineer,9.7,4,9,6,Obese,132/87.8,71,2911,None
+1348,Female,59,Salesperson,7.1,7,114,8,Obese,139/95.35000000000001,74,9466,None
+1349,Female,63,Doctor,7.2,1,32,7,Normal,106/71.9,63,2571,None
+1350,Female,47,Sales Representative,7.3,8,38,6,Obese,134/87.10000000000001,72,4270,Insomnia
+1351,Female,38,Accountant,6.0,7,34,8,Normal,102/68.3,69,4744,None
+1352,Female,71,Lawyer,6.4,3,14,10,Normal,111/69.15,71,3090,Restless Leg Syndrome
+1353,Female,69,Sales Representative,6.6,6,76,8,Overweight,123/78.95,84,7158,Sleep Apnea
+1354,Male,42,Sales Representative,5.6,6,83,5,Overweight,118/78.7,73,6186,None
+1355,Female,38,Artist,9.6,7,55,1,Overweight,119/80.35000000000001,89,5553,None
+1356,Male,58,Manager,7.5,5,56,9,Underweight,105/63.25,86,5759,None
+1357,Female,64,Student,7.6,8,86,3,Obese,134/83.10000000000001,90,7624,Insomnia
+1358,Female,79,Writer,8.2,7,66,1,Overweight,133/87.45,79,5913,None
+1359,Female,53,Lawyer,6.5,3,50,10,Normal,107/74.55,58,7078,Insomnia
+1360,Male,18,Manager,7.3,4,90,10,Normal,109/65.85000000000001,80,7902,None
+1361,Male,30,Teacher,7.2,5,105,10,Obese,131/84.15,78,9124,Insomnia
+1362,Male,44,Engineer,8.3,9,68,3,Obese,140/87.0,79,7563,Restless Leg Syndrome
+1363,Female,79,Chef,8.7,4,143,5,Normal,118/77.7,66,12210,Sleep Apnea
+1364,Female,33,Student,5.6,8,67,7,Normal,119/79.35000000000001,73,6941,None
+1365,Male,35,Salesperson,7.9,9,67,8,Obese,123/83.95,71,4627,None
+1366,Male,19,Chef,8.0,6,116,8,Overweight,106/69.9,67,10424,Sleep Apnea
+1367,Female,50,Manager,7.7,7,44,3,Normal,122/78.3,70,6533,Restless Leg Syndrome
+1368,Male,31,Software Engineer,9.2,6,76,5,Obese,138/88.7,69,7122,None
+1369,Male,71,Artist,8.4,5,21,4,Normal,124/76.60000000000001,86,3299,None
+1370,Female,44,Chef,6.2,3,93,8,Obese,131/88.15,80,10755,Insomnia
+1371,Female,62,Accountant,9.5,5,0,5,Obese,146/90.9,108,2238,None
+1372,Male,46,Scientist,9.0,9,94,3,Underweight,104/67.60000000000001,75,7773,None
+1373,Female,50,Accountant,7.6,7,61,6,Overweight,126/78.9,57,6023,None
+1374,Male,42,Nurse,7.8,6,48,9,Normal,107/70.55,61,4303,None
+1375,Male,42,Writer,8.7,4,0,5,Overweight,120/73.0,89,2766,Narcolepsy
+1376,Female,72,Software Engineer,8.1,3,115,4,Normal,114/72.10000000000001,67,10187,None
+1377,Female,18,Chef,8.0,5,105,9,Normal,97/60.050000000000004,69,9417,None
+1378,Female,46,Nurse,7.7,6,73,9,Overweight,120/79.0,69,5371,Insomnia
+1379,Male,21,Writer,8.4,8,0,1,Overweight,126/85.9,94,2546,Restless Leg Syndrome
+1380,Female,74,Software Engineer,8.0,10,127,4,Normal,116/74.4,74,11264,None
+1381,Female,54,Writer,7.3,5,64,5,Obese,125/78.25,61,8037,None
+1382,Male,18,Nurse,7.5,5,111,9,Normal,113/68.45,64,8737,Insomnia
+1383,Female,22,Lawyer,7.1,5,37,8,Normal,116/77.4,53,6640,Sleep Apnea
+1384,Male,41,Engineer,7.5,6,38,5,Overweight,128/88.2,77,5057,None
+1385,Female,70,Software Engineer,8.7,7,124,4,Overweight,127/80.55,56,9524,Sleep Apnea
+1386,Male,23,Salesperson,7.5,6,92,4,Overweight,108/71.2,65,8717,Sleep Apnea
+1387,Female,28,Sales Representative,7.1,5,67,8,Normal,118/75.7,84,6018,Insomnia
+1388,Female,20,Nurse,7.4,7,34,8,Overweight,117/74.05,80,4220,None
+1389,Female,67,Student,9.9,8,139,5,Normal,126/82.9,67,11919,Sleep Apnea
+1390,Female,54,Scientist,7.1,7,73,5,Normal,107/64.55,88,8443,None
+1391,Male,48,Engineer,8.3,8,25,6,Obese,128/84.2,91,5744,Sleep Apnea
+1392,Female,27,Accountant,7.2,6,17,8,Overweight,117/78.05,66,4020,None
+1393,Female,29,Artist,8.4,5,81,4,Normal,99/64.35000000000001,69,6328,Narcolepsy
+1394,Female,34,Lawyer,7.7,2,23,9,Overweight,125/82.25,91,2835,None
+1395,Male,18,Sales Representative,7.8,6,109,6,Normal,114/75.10000000000001,78,10111,None
+1396,Female,31,Nurse,8.4,6,145,6,Normal,106/72.9,64,11640,None
+1397,Female,51,Lawyer,6.7,3,67,9,Normal,107/70.55,68,6125,None
+1398,Female,69,Writer,8.0,5,0,4,Overweight,127/84.55,83,1513,None
+1399,Male,26,Scientist,8.0,8,70,4,Overweight,117/77.05,81,6684,None
+1400,Female,45,Chef,6.4,7,117,6,Normal,108/73.2,64,10190,None
+1401,Male,23,Engineer,7.4,4,22,3,Underweight,118/74.7,83,2031,None
+1402,Female,34,Nurse,7.5,6,120,6,Overweight,129/86.85000000000001,88,10765,None
+1403,Male,41,Writer,7.6,7,57,4,Normal,117/77.05,83,5197,Narcolepsy
+1404,Male,32,Writer,9.4,7,0,1,Normal,120/83.0,107,1000,None
+1405,Female,39,Chef,8.2,7,118,10,Normal,103/69.95,68,10239,Narcolepsy
+1406,Female,29,Artist,7.2,7,0,4,Overweight,124/76.60000000000001,106,1069,None
+1407,Male,74,Engineer,8.5,7,32,8,Overweight,131/87.15,79,5264,None
+1408,Female,71,Accountant,7.9,5,36,5,Obese,144/94.60000000000001,78,5438,None
+1409,Female,35,Student,8.6,9,176,4,Underweight,111/71.15,53,16036,Restless Leg Syndrome
+1410,Male,77,Lawyer,8.8,3,20,8,Obese,141/95.65,102,2665,Sleep Apnea
+1411,Male,19,Writer,8.1,4,0,4,Overweight,110/75.5,88,2528,Narcolepsy
+1412,Male,80,Writer,9.4,5,36,4,Obese,130/88.5,70,3912,None
+1413,Female,22,Sales Representative,8.9,5,64,6,Underweight,118/75.7,68,7875,Restless Leg Syndrome
+1414,Male,30,Chef,6.3,6,78,4,Underweight,103/66.95,57,8469,Sleep Apnea
+1415,Female,51,Teacher,7.1,7,75,5,Normal,114/71.10000000000001,80,6613,None
+1416,Female,40,Nurse,7.5,6,120,8,Normal,119/79.35000000000001,87,11236,None
+1417,Female,43,Accountant,8.8,8,45,6,Obese,142/88.3,54,4364,Insomnia
+1418,Male,55,Sales Representative,7.0,4,109,8,Normal,118/77.7,71,9573,Insomnia
+1419,Female,43,Scientist,7.2,9,41,6,Underweight,116/77.4,76,3086,Sleep Apnea
+1420,Female,73,Scientist,9.0,7,72,6,Overweight,127/86.55,56,7269,None
+1421,Female,59,Sales Representative,7.4,6,80,4,Obese,140/89.0,75,6875,None
+1422,Male,27,Artist,8.8,6,53,1,Normal,117/76.05,66,5632,None
+1423,Male,49,Artist,9.2,9,26,3,Overweight,132/81.8,107,3339,None
+1424,Female,74,Software Engineer,7.1,5,70,5,Overweight,120/77.0,76,6427,None
+1425,Male,78,Teacher,6.8,7,31,9,Overweight,131/90.15,89,3597,Sleep Apnea
+1426,Female,43,Software Engineer,8.1,8,100,3,Normal,114/77.10000000000001,85,9645,Narcolepsy
+1427,Male,41,Engineer,7.2,5,103,4,Normal,112/74.8,87,8323,None
+1428,Male,31,Software Engineer,7.8,8,33,3,Overweight,112/68.8,59,4429,None
+1429,Female,56,Nurse,7.0,5,82,7,Overweight,129/88.85000000000001,80,9620,None
+1430,Male,35,Writer,7.8,8,37,1,Normal,101/60.650000000000006,77,5840,Narcolepsy
+1431,Male,52,Student,8.5,6,43,4,Overweight,121/83.65,71,4416,None
+1432,Male,22,Student,7.5,7,102,5,Underweight,110/74.5,75,9479,None
+1433,Female,78,Salesperson,8.5,5,66,8,Overweight,118/75.7,71,6945,None
+1434,Female,19,Lawyer,7.9,6,14,8,Overweight,115/79.75,85,2559,Insomnia
+1435,Male,55,Accountant,8.3,7,19,7,Underweight,105/71.25,82,3622,None
+1436,Male,51,Sales Representative,7.5,4,60,7,Normal,112/72.8,53,5364,Insomnia
+1437,Male,19,Writer,8.1,6,47,3,Normal,110/68.5,80,3286,None
+1438,Male,32,Scientist,7.7,6,37,5,Obese,120/77.0,73,6918,None
+1439,Male,76,Student,7.2,4,16,5,Obese,144/94.60000000000001,84,3381,None
+1440,Male,34,Writer,8.9,9,39,5,Normal,103/61.95,68,3050,None
+1441,Female,69,Scientist,8.8,4,89,4,Normal,108/67.2,79,9704,None
+1442,Male,79,Accountant,8.6,4,11,5,Underweight,126/83.9,76,3469,None
+1443,Female,53,Sales Representative,8.7,5,110,5,Overweight,117/73.05,75,10488,Sleep Apnea
+1444,Male,80,Writer,8.0,7,14,1,Normal,127/79.55,97,1822,Restless Leg Syndrome
+1445,Female,34,Engineer,7.8,4,53,5,Normal,115/76.75,84,6592,Sleep Apnea
+1446,Male,60,Accountant,8.9,6,64,6,Normal,109/71.85000000000001,77,6623,None
+1447,Female,45,Software Engineer,7.6,5,100,3,Normal,115/73.75,86,9186,None
+1448,Male,70,Nurse,7.2,8,123,8,Underweight,112/74.8,56,10602,None
+1449,Female,64,Teacher,8.5,8,76,6,Overweight,131/81.15,80,6740,None
+1450,Female,31,Engineer,7.5,6,49,3,Normal,102/71.3,67,6807,None
+1451,Female,74,Writer,7.5,6,14,7,Obese,147/99.55,63,4034,Sleep Apnea
+1452,Female,19,Engineer,6.7,8,6,7,Normal,116/71.4,81,1325,None
+1453,Male,54,Salesperson,7.3,3,0,8,Obese,134/88.10000000000001,79,1552,Sleep Apnea
+1454,Female,49,Nurse,7.9,6,180,7,Normal,120/82.0,55,13606,None
+1455,Male,68,Nurse,7.4,7,81,8,Normal,107/74.55,63,6436,Sleep Apnea
+1456,Male,67,Writer,8.5,6,28,2,Underweight,117/73.05,67,4443,None
+1457,Female,47,Nurse,7.2,6,111,6,Normal,114/75.10000000000001,75,9190,Sleep Apnea
+1458,Male,28,Artist,9.0,5,79,1,Overweight,111/74.15,70,6896,None
+1459,Male,22,Engineer,7.3,6,22,6,Obese,138/93.7,90,5328,None
+1460,Male,40,Scientist,9.4,6,23,1,Overweight,123/74.95,76,3371,None
+1461,Female,43,Student,8.7,3,0,5,Normal,117/81.05,90,1314,None
+1462,Female,59,Sales Representative,7.4,4,48,8,Normal,111/74.15,94,4868,None
+1463,Male,46,Nurse,7.7,5,103,7,Underweight,107/71.55,89,8334,None
+1464,Male,74,Sales Representative,8.5,4,2,9,Overweight,136/84.4,91,1844,None
+1465,Female,40,Sales Representative,7.9,5,91,7,Overweight,120/83.0,76,8602,None
+1466,Female,29,Engineer,8.3,7,64,6,Obese,119/76.35000000000001,72,6116,Narcolepsy
+1467,Female,38,Nurse,7.7,4,49,6,Normal,109/65.85000000000001,74,6266,None
+1468,Male,36,Accountant,7.6,6,8,6,Overweight,110/67.5,78,2137,None
+1469,Male,79,Accountant,6.5,6,31,6,Overweight,127/80.55,79,3812,None
+1470,Female,40,Nurse,8.1,8,128,10,Normal,106/65.9,61,11636,None
+1471,Male,74,Sales Representative,8.5,3,61,7,Underweight,121/73.65,71,7672,Insomnia
+1472,Male,79,Scientist,8.4,6,92,4,Obese,132/83.8,75,8289,None
+1473,Female,60,Salesperson,5.8,6,154,10,Normal,112/68.8,50,10876,None
+1474,Female,34,Artist,8.2,10,121,3,Obese,139/87.35000000000001,65,10445,None
+1475,Female,43,Engineer,8.4,7,72,4,Normal,114/75.10000000000001,72,5672,None
+1476,Female,33,Salesperson,6.4,5,117,9,Normal,117/79.05,82,10988,None
+1477,Female,26,Engineer,6.6,6,82,7,Obese,129/78.85000000000001,75,6407,None
+1478,Female,68,Scientist,8.7,6,69,7,Normal,121/80.65,80,7808,None
+1479,Female,57,Lawyer,7.9,5,49,9,Normal,104/62.60000000000001,67,5776,None
+1480,Male,30,Artist,8.0,6,58,4,Overweight,114/76.10000000000001,82,4911,None
+1481,Female,42,Sales Representative,7.7,8,180,7,Normal,102/62.3,60,13309,None
+1482,Male,63,Nurse,7.3,3,87,10,Obese,145/90.25,77,9751,None
+1483,Female,40,Salesperson,8.9,6,100,6,Normal,113/73.45,92,8760,Restless Leg Syndrome
+1484,Female,57,Engineer,6.8,5,0,7,Underweight,122/78.3,109,2304,Sleep Apnea
+1485,Female,36,Sales Representative,8.0,8,105,5,Overweight,118/77.7,58,10314,None
+1486,Female,18,Artist,8.0,6,86,3,Underweight,113/68.45,90,8039,Insomnia
+1487,Female,34,Salesperson,7.1,6,64,7,Obese,127/85.55,92,5683,None
+1488,Female,42,Sales Representative,7.6,6,147,6,Normal,110/73.5,51,13417,None
+1489,Female,33,Engineer,8.4,3,48,6,Normal,105/67.25,64,6085,None
+1490,Male,28,Lawyer,8.0,3,0,7,Overweight,108/73.2,76,2046,None
+1491,Female,57,Scientist,7.3,6,104,5,Overweight,130/82.5,53,8517,None
+1492,Female,44,Scientist,8.8,4,35,1,Normal,118/72.7,74,5620,Restless Leg Syndrome
+1493,Female,73,Sales Representative,9.4,8,60,4,Obese,141/93.65,76,4900,None
+1494,Female,37,Scientist,7.7,7,82,6,Normal,113/78.45,80,6878,None
+1495,Female,28,Lawyer,8.4,6,38,8,Overweight,120/82.0,89,5026,None
+1496,Male,63,Engineer,9.1,7,34,4,Obese,131/90.15,70,4830,None
+1497,Male,70,Lawyer,8.6,1,26,9,Normal,117/74.05,104,3576,Narcolepsy
+1498,Male,23,Engineer,7.3,5,62,9,Overweight,110/67.5,67,6785,Sleep Apnea
+1499,Male,76,Engineer,8.1,7,36,5,Overweight,126/86.9,54,3751,Insomnia
+1500,Female,22,Engineer,5.8,7,50,5,Normal,114/78.10000000000001,63,4556,Narcolepsy
