@@ -7,12 +7,12 @@ import pandas as pd
 import numpy as np
 import base64
 from io import BytesIO
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 import re
 from flask import flash
-import matplotlib
-matplotlib.use('Agg')
 from sklearn.dummy import DummyRegressor, DummyClassifier
 
 app = Flask(__name__)
@@ -91,9 +91,14 @@ def stress_analyzer():
                 'gender': request.form.get('gender'),
                 'age': int(request.form.get('age')),
                 'sleep_duration': float(request.form.get('sleep_duration')),
+                'sleep_quality': int(request.form.get('sleep_quality', 5)),
                 'activity': int(request.form.get('activity')),
                 'heart_rate': int(request.form.get('heart_rate')),
-                'blood_pressure': bp
+                'blood_pressure': bp,
+                'occupation': request.form.get('occupation', 'Accountant'),
+                'bmi_category': request.form.get('bmi_category', 'Normal'),
+                'daily_steps': int(request.form.get('daily_steps', 5000)),
+                'sleep_disorder': request.form.get('sleep_disorder', 'None')
             }
             return redirect(url_for('analysis_results'))
             
@@ -140,7 +145,12 @@ def analysis_results():
                 activity_level=user_data['activity'],
                 heart_rate=user_data['heart_rate'],
                 blood_pressure=user_data['blood_pressure'],
-                gender=user_data['gender']
+                gender=user_data['gender'],
+                occupation=user_data.get('occupation', 'Accountant'),
+                quality_of_sleep=user_data.get('sleep_quality', 5),
+                bmi_category=user_data.get('bmi_category', 'Normal'),
+                daily_steps=user_data.get('daily_steps', 5000),
+                sleep_disorder=user_data.get('sleep_disorder', 'None')
             )
             
             stress_level = prediction_results['stress_level']
@@ -304,4 +314,4 @@ def toggle_rag():
         return jsonify({'success': False, 'error': str(e)}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, use_reloader=False)

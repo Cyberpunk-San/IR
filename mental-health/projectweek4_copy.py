@@ -1,4 +1,7 @@
 import os
+os.environ.setdefault("USE_TF", "0")
+os.environ.setdefault("TRANSFORMERS_NO_TF", "1")
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -153,11 +156,17 @@ class MentalHealthChatbot:
         self.bm25 = BM25Okapi(tokenized_faqs)
         
         self.faq_df['retrieval_text'] = self.faq_df['Questions'] + " " + self.faq_df['Answers'].str.slice(0, 200)
-        self.bert_model = SentenceTransformer('all-MiniLM-L6-v2')
-        self.bert_embeddings = self.bert_model.encode(
-            self.faq_df['retrieval_text'].tolist(),
-            show_progress_bar=False
-        )
+        self.bert_model = None
+        self.bert_embeddings = None
+        try:
+            self.bert_model = SentenceTransformer('all-MiniLM-L6-v2')
+            self.bert_embeddings = self.bert_model.encode(
+                self.faq_df['retrieval_text'].tolist(),
+                show_progress_bar=False
+            )
+        except Exception as e:
+            print(f"Could not load Sentence-BERT model: {str(e)}")
+            print("   Falling back to TF-IDF + BM25 retrieval")
         
         try:
             if os.path.exists('user_feedback.csv'):
@@ -175,15 +184,17 @@ class MentalHealthChatbot:
         
         bm25_scores = self.bm25.get_scores(processed_query.split())
         
-        bert_scores = cosine_similarity(
-            self.bert_model.encode([question]),
-            self.bert_embeddings
-        ).flatten()
-        
         tfidf_norm = (tfidf_scores - tfidf_scores.min()) / (tfidf_scores.max() - tfidf_scores.min() + 1e-8)
         bm25_norm = (bm25_scores - bm25_scores.min()) / (bm25_scores.max() - bm25_scores.min() + 1e-8)
-        
-        combined_scores = 0.4*bm25_norm + 0.1*tfidf_norm + 0.5*bert_scores
+
+        if self.bert_model is not None and self.bert_embeddings is not None:
+            bert_scores = cosine_similarity(
+                self.bert_model.encode([question]),
+                self.bert_embeddings
+            ).flatten()
+            combined_scores = 0.4*bm25_norm + 0.1*tfidf_norm + 0.5*bert_scores
+        else:
+            combined_scores = 0.8*bm25_norm + 0.2*tfidf_norm
         
         top_indices = np.argsort(combined_scores)[-top_k:][::-1]
         

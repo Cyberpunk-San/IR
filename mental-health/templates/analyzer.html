@@ -64,6 +64,20 @@
                         </div>
                         <div class="form-text">Most adults need 7-9 hours of quality sleep</div>
                     </div>
+
+                    <div class="mb-4">
+                        <label for="sleep_quality" class="form-label fw-bold">
+                            <i class="fas fa-bed me-2"></i>
+                            Quality of Sleep
+                        </label>
+                        <input type="number" class="form-control form-control-lg"
+                                id="sleep_quality" name="sleep_quality"
+                                min="1" max="10" required
+                                placeholder="Rate from 1-10">
+                        <div class="invalid-feedback">
+                            Please enter sleep quality between 1-10
+                        </div>
+                    </div>
                     
                    
                     <div class="mb-4">
@@ -102,6 +116,20 @@
                         </div>
                         <div class="form-text">Normal resting rate: 60-100 bpm</div>
                     </div>
+
+                    <div class="mb-4">
+                        <label for="daily_steps" class="form-label fw-bold">
+                            <i class="fas fa-shoe-prints me-2"></i>
+                            Daily Steps
+                        </label>
+                        <input type="number" class="form-control form-control-lg"
+                                id="daily_steps" name="daily_steps"
+                                min="0" max="25000" required
+                                placeholder="e.g., 6500">
+                        <div class="invalid-feedback">
+                            Please enter a valid daily step count
+                        </div>
+                    </div>
                     
                     
                     <div class="mb-4">
@@ -117,6 +145,69 @@
                             Please enter blood pressure in format like 120/80
                         </div>
                         <div class="form-text">Normal blood pressure is around 120/80 mmHg</div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="bmi_category" class="form-label fw-bold">
+                            <i class="fas fa-weight me-2"></i>
+                            BMI Category
+                        </label>
+                        <select class="form-select form-select-lg" id="bmi_category" name="bmi_category" required>
+                            <option value="" selected disabled>Select BMI category</option>
+                            <option value="Underweight">Underweight</option>
+                            <option value="Normal">Normal</option>
+                            <option value="Overweight">Overweight</option>
+                            <option value="Obese">Obese</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select your BMI category
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="sleep_disorder" class="form-label fw-bold">
+                            <i class="fas fa-notes-medical me-2"></i>
+                            Sleep Disorder
+                        </label>
+                        <select class="form-select form-select-lg" id="sleep_disorder" name="sleep_disorder" required>
+                            <option value="" selected disabled>Select sleep disorder status</option>
+                            <option value="None">None</option>
+                            <option value="Insomnia">Insomnia</option>
+                            <option value="Narcolepsy">Narcolepsy</option>
+                            <option value="Restless Leg Syndrome">Restless Leg Syndrome</option>
+                            <option value="Sleep Apnea">Sleep Apnea</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a sleep disorder option
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="occupation" class="form-label fw-bold">
+                            <i class="fas fa-briefcase me-2"></i>
+                            Occupation
+                        </label>
+                        <select class="form-select form-select-lg" id="occupation" name="occupation" required>
+                            <option value="" selected disabled>Select your occupation</option>
+                            <option value="Accountant">Accountant</option>
+                            <option value="Artist">Artist</option>
+                            <option value="Chef">Chef</option>
+                            <option value="Doctor">Doctor</option>
+                            <option value="Engineer">Engineer</option>
+                            <option value="Lawyer">Lawyer</option>
+                            <option value="Manager">Manager</option>
+                            <option value="Nurse">Nurse</option>
+                            <option value="Sales Representative">Sales Representative</option>
+                            <option value="Salesperson">Salesperson</option>
+                            <option value="Scientist">Scientist</option>
+                            <option value="Software Engineer">Software Engineer</option>
+                            <option value="Student">Student</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="Writer">Writer</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select your occupation
+                        </div>
                     </div>
                     
                     <div class="d-grid gap-2 mt-4">

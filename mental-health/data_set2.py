@@ -1,8 +1,12 @@
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import keras
 from keras import layers, models
+from keras.models import load_model
+from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.metrics import mean_absolute_error, accuracy_score, classification_report
@@ -12,11 +16,168 @@ warnings.filterwarnings('ignore')
 
 class StressAnalyzer:
     def __init__(self):
+        self.base_dir = Path(__file__).resolve().parent
+        self.project_dir = self.base_dir.parent
+        self.saved_model = None
+        self.saved_model_path = None
+        self.saved_feature_columns = []
+        self.saved_feature_defaults = None
+        self.raw_feature_ranges = {}
+
         self.df = self._load_data()
         self.scaler = StandardScaler()
         self.label_encoder = LabelEncoder()
         self._preprocess_data()
-        self._build_and_train_nn()
+        if not self._load_saved_model():
+            self._build_and_train_nn()
+
+    def _load_saved_model(self):
+        preprocessed_path = self.project_dir / 'stressdata_preprocessed.csv'
+        if not preprocessed_path.exists():
+            print(f"Saved-model mode skipped: {preprocessed_path} not found")
+            return False
+
+        try:
+            model_df = pd.read_csv(preprocessed_path)
+            self.saved_feature_columns = [col for col in model_df.columns if col != 'Stress Level']
+            self.saved_feature_defaults = model_df[self.saved_feature_columns].median(numeric_only=True)
+            self._load_raw_feature_ranges()
+
+            for model_path in (self.base_dir / 'stress_model.keras', self.base_dir / 'stress_model.h5'):
+                if not model_path.exists():
+                    continue
+
+                model = load_model(model_path, compile=False)
+                expected_inputs = model.input_shape[-1]
+                if expected_inputs != len(self.saved_feature_columns):
+                    print(
+                        f"Skipping {model_path.name}: expects {expected_inputs} inputs, "
+                        f"but {len(self.saved_feature_columns)} features are available"
+                    )
+                    continue
+
+                self.saved_model = model
+                self.saved_model_path = model_path
+                print(
+                    f"Loaded saved stress model: {model_path.name} "
+                    f"({expected_inputs} inputs -> {model.output_shape[-1]} outputs)"
+                )
+                return True
+        except Exception as e:
+            print(f"Saved-model load failed: {type(e).__name__}: {str(e)}")
+
+        return False
+
+    def _load_raw_feature_ranges(self):
+        raw_path = self.project_dir / 'stressdata.csv'
+        if not raw_path.exists():
+            return
+
+        raw_df = pd.read_csv(raw_path)
+        if 'Blood Pressure' in raw_df.columns:
+            bp_split = raw_df['Blood Pressure'].astype(str).str.split('/', expand=True)
+            raw_df['Systolic_BP'] = pd.to_numeric(bp_split[0], errors='coerce')
+            raw_df['Diastolic_BP'] = pd.to_numeric(bp_split[1], errors='coerce')
+
+        for col in ['Age', 'Sleep Duration', 'Quality of Sleep', 'Physical Activity Level',
+                    'Heart Rate', 'Daily Steps', 'Systolic_BP', 'Diastolic_BP']:
+            if col in raw_df.columns:
+                values = pd.to_numeric(raw_df[col], errors='coerce').dropna()
+                if not values.empty:
+                    self.raw_feature_ranges[col] = (float(values.min()), float(values.max()))
+
+    def _scale_like_training_data(self, column, value):
+        min_value, max_value = self.raw_feature_ranges.get(column, (None, None))
+        if min_value is None or max_value is None or max_value == min_value:
+            return value
+        return (float(value) - min_value) / (max_value - min_value)
+
+    def _saved_model_input(
+        self, age, sleep_duration, activity_level, heart_rate, blood_pressure, gender,
+        occupation='Accountant', quality_of_sleep=5, bmi_category='Normal',
+        daily_steps=5000, sleep_disorder='None'
+    ):
+        try:
+            systolic, diastolic = map(float, blood_pressure.split('/'))
+        except Exception:
+            systolic, diastolic = 120.0, 80.0
+
+        row = self.saved_feature_defaults.copy()
+        bmi_mapping = {
+            'underweight': 0.0,
+            'normal': 1.0 / 3.0,
+            'overweight': 2.0 / 3.0,
+            'obese': 1.0,
+        }
+        values = {
+            'Gender': 1.0 if str(gender).lower() == 'male' else 0.0,
+            'Age': self._scale_like_training_data('Age', age),
+            'Sleep Duration': self._scale_like_training_data('Sleep Duration', sleep_duration),
+            'Quality of Sleep': self._scale_like_training_data('Quality of Sleep', quality_of_sleep),
+            'Physical Activity Level': self._scale_like_training_data('Physical Activity Level', activity_level),
+            'BMI Category': bmi_mapping.get(str(bmi_category).lower(), 1.0 / 3.0),
+            'Heart Rate': self._scale_like_training_data('Heart Rate', heart_rate),
+            'Daily Steps': self._scale_like_training_data('Daily Steps', daily_steps),
+            'Sleep Disorder': 0.0 if str(sleep_disorder).lower() in ('none', 'no', 'nan', '') else 1.0,
+            'Systolic_BP': self._scale_like_training_data('Systolic_BP', systolic),
+            'Diastolic_BP': self._scale_like_training_data('Diastolic_BP', diastolic),
+        }
+
+        for column, value in values.items():
+            if column in row.index:
+                row[column] = value
+
+        occupation_column = f"Occupation_{occupation}"
+        occupation_columns = [col for col in row.index if col.startswith('Occupation_')]
+        for column in occupation_columns:
+            row[column] = 1.0 if column == occupation_column else 0.0
+
+        return row[self.saved_feature_columns].to_numpy(dtype=np.float32).reshape(1, -1), systolic, diastolic
+
+    def _predict_with_saved_model(
+        self, age, sleep_duration, activity_level, heart_rate, blood_pressure, gender,
+        occupation='Accountant', quality_of_sleep=5, bmi_category='Normal',
+        daily_steps=5000, sleep_disorder='None'
+    ):
+        input_features, systolic, diastolic = self._saved_model_input(
+            age, sleep_duration, activity_level, heart_rate, blood_pressure, gender,
+            occupation, quality_of_sleep, bmi_category, daily_steps, sleep_disorder
+        )
+
+        raw_output = np.asarray(self.saved_model.predict(input_features, verbose=0))[0].astype(float)
+        if np.any(raw_output < 0) or not np.isclose(raw_output.sum(), 1.0, atol=1e-3):
+            shifted = raw_output - np.max(raw_output)
+            probabilities = np.exp(shifted) / np.sum(np.exp(shifted))
+        else:
+            probabilities = raw_output / raw_output.sum()
+
+        stress_idx = int(np.argmax(probabilities))
+        stress_level = float(stress_idx + 1)
+        stress_category = self._categorize_stress_level(stress_level)
+        confidence = float(probabilities[stress_idx])
+
+        fig = self._generate_visualizations(
+            age, sleep_duration, activity_level, heart_rate,
+            systolic, diastolic, stress_level, stress_category
+        )
+
+        return {
+            'stress_level': round(stress_level, 1),
+            'stress_category': stress_category,
+            'confidence': round(confidence * 100, 1),
+            'probabilities': {
+                f'Level {idx + 1}': round(float(prob) * 100, 1)
+                for idx, prob in enumerate(probabilities)
+            },
+            'visualization': fig
+        }
+
+    def _categorize_stress_level(self, stress):
+        if stress <= 3.5:
+            return 'Low'
+        if stress <= 6.5:
+            return 'Medium'
+        return 'High'
     
     def _load_data(self):
         try:
@@ -205,7 +366,17 @@ class StressAnalyzer:
         importance = importance / np.sum(importance)
         return dict(zip(feature_names, importance))
     
-    def predict_stress(self, age, sleep_duration, activity_level, heart_rate, blood_pressure, gender):
+    def predict_stress(
+        self, age, sleep_duration, activity_level, heart_rate, blood_pressure, gender,
+        occupation='Accountant', quality_of_sleep=5, bmi_category='Normal',
+        daily_steps=5000, sleep_disorder='None'
+    ):
+        if self.saved_model is not None:
+            return self._predict_with_saved_model(
+                age, sleep_duration, activity_level, heart_rate, blood_pressure, gender,
+                occupation, quality_of_sleep, bmi_category, daily_steps, sleep_disorder
+            )
+
         try:
             systolic, diastolic = map(float, blood_pressure.split('/'))
         except:
